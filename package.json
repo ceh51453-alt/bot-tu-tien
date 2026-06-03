@@ -1,0 +1,19 @@
+{
+  "name": "bottutien",
+  "version": "1.0.0",
+  "description": "Bot Discord Tu Tiên RPG - Xianxia Cultivation Game",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy": "node src/deploy-commands.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "better-sqlite3": "^11.7.0",
+    "dotenv": "^16.4.7"
+  }
+}
