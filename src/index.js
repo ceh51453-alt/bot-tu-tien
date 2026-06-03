@@ -29,6 +29,24 @@ if (fs.existsSync(eventsPath)) {
 }
 
 // ══════════════════════════════════
+// Khởi tạo Database TRƯỚC KHI load handlers
+// (Các module hệ thống dùng db.prepare() ở top-level,
+//  nên bảng phải tồn tại trước khi require())
+// ══════════════════════════════════
+const { initSchema } = require('./database/schema');
+const { runMigrations } = require('./database/migrations');
+
+try {
+    initSchema();
+    logger.success('✦ Database schema đã khởi tạo');
+    runMigrations();
+    logger.success('✦ Database migrations hoàn tất');
+} catch (err) {
+    logger.error('✗ Lỗi khởi tạo database:', err.message);
+    process.exit(1);
+}
+
+// ══════════════════════════════════
 // Tải Interaction Handlers
 // ══════════════════════════════════
 loadHandlers();

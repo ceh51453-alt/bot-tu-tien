@@ -1,7 +1,5 @@
 const { ActivityType } = require('discord.js');
 const logger = require('../utils/logger');
-const { initSchema } = require('../database/schema');
-const { runMigrations } = require('../database/migrations');
 
 module.exports = {
     name: 'ready',
@@ -20,20 +18,13 @@ module.exports = {
             status: 'online',
         });
 
-        // Khởi tạo database
+        // Khởi chạy scheduler nền (cần client để gửi DM và edit message)
         try {
-            initSchema();
-            logger.success('✦ Database schema đã khởi tạo');
-
-            runMigrations();
-            logger.success('✦ Database migrations hoàn tất');
-
-            // Khởi chạy scheduler nền
             const { startScheduler } = require('../systems/scheduler');
             startScheduler(client);
+            logger.success('✦ Scheduler nền đã khởi chạy');
         } catch (err) {
-            logger.error('✗ Lỗi khởi tạo database:', err.message);
-            process.exit(1);
+            logger.error('✗ Lỗi khởi chạy scheduler:', err.message);
         }
 
         logger.success('══════════════════════════════════');
