@@ -175,6 +175,24 @@ async function checkWorldBossDespawn(client) {
 }
 
 /**
+ * Dọn dẹp Khí Vận hết hạn (gọi mỗi 60s)
+ */
+function cleanupExpiredKhiVan() {
+  try {
+    const { removeExpiredKhiVan } = require('./khi-van');
+    const removed = removeExpiredKhiVan();
+    if (removed > 0) {
+      logger.info(`[Scheduler] Đã dọn ${removed} khí vận hết hạn.`);
+    }
+  } catch (err) {
+    // Khi van module chưa sẵn sàng (DB chưa migrate)
+    if (!err.message.includes('no such table')) {
+      logger.error('[Scheduler] Lỗi dọn khí vận:', err.message);
+    }
+  }
+}
+
+/**
  * Khởi chạy Scheduler nền
  */
 function startScheduler(client) {
@@ -184,12 +202,14 @@ function startScheduler(client) {
   expireAuctionListings(client);
   timeoutTradeRequests(client);
   checkWorldBossDespawn(client);
+  cleanupExpiredKhiVan();
 
   // Lặp lại mỗi 60 giây
   const intervalId = setInterval(() => {
     expireAuctionListings(client);
     timeoutTradeRequests(client);
     checkWorldBossDespawn(client);
+    cleanupExpiredKhiVan();
   }, 60000);
 
   // Trả về intervalId để phục vụ clear khi cần (ví dụ khi tắt bot hoặc chạy unit test)

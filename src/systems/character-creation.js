@@ -1,10 +1,12 @@
-const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle } = require('discord.js');
+const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle, StringSelectMenuBuilder } = require('discord.js');
 const { COLORS } = require('../utils/constants');
 const { weightedRandom, rollConstitution } = require('../utils/random');
+const weaponTypes = require('../../config/weapon-types');
+const tienThien = require('../../config/tien-thien');
 
 /**
  * Character Creation System
- * Flow: Chọn Đạo → Nhập Tên (Modal) → Chọn Linh Căn → Roll Thể Chất → Tạo xong
+ * Flow: Chọn Đạo → Nhập Tên → Chọn Linh Căn → Chọn Loại Võ Khí → Roll → Tạo xong
  */
 
 /**
@@ -123,17 +125,70 @@ async function handleRootSelect(interaction, rootId, daoPath, name) {
       `Phẩm Cấp: **${constitution.rarity}**\n` +
       `Đặc Tính: _${constitution.special_ability ? constitution.special_ability.name : 'Không có'}_\n\n` +
       `━━━━━━━━━━━━━━━━━━━━\n\n` +
-      `Xác nhận tạo nhân vật **${name}**?`
+      `\n\nBước tiếp theo: **Chọn loại Võ Khí**`
+    );
+
+  // Chọn Weapon Type thay vì confirm ngay
+  const weaponSelect = new ActionRowBuilder().addComponents(
+    new StringSelectMenuBuilder()
+      .setCustomId(`create:weapon:${name}:${selectedRoot}:${rootType}:${rolledConstitution}:${daoPath}`)
+      .setPlaceholder('⚔️ Chọn loại Võ Khí tu luyện...')
+      .addOptions(
+        weaponTypes.list.map(wt => ({
+          label: `${wt.name}`,
+          value: wt.id,
+          emoji: wt.emoji,
+          description: wt.description.slice(0, 80),
+        }))
+      )
+  );
+
+  await interaction.update({ embeds: [embed], components: [weaponSelect] });
+}
+
+/**
+ * Handle weapon type selection → Roll Tiên Thiên → Confirm
+ */
+async function handleWeaponSelect(interaction, weaponTypeId, name, rootId, rootType, constitutionId, daoPath) {
+  const roots = require('../../config/spiritual-roots');
+  const constitutions = require('../../config/constitutions');
+
+  const root = roots.list.find(r => r.id === rootId);
+  const constitution = constitutions.list.find(c => c.id === constitutionId);
+  const weaponType = weaponTypes.getWeaponTypeById(weaponTypeId);
+
+  // Roll Ngộ Tính, Vận Khí, Tiên Thiên
+  const ngoTinh = tienThien.rollNgoTinh();
+  const vanKhi = tienThien.rollVanKhi();
+  const traits = tienThien.rollTraits();
+  const traitIds = traits.map(t => t.id).join(',');
+
+  const embed = new EmbedBuilder()
+    .setColor(0xFFD700)
+    .setTitle('🎲 Kết Quả Roll Nhân Vật')
+    .setDescription(
+      `**${name}** — ${daoPath === 'ma' ? '😈 Ma Đạo' : '☀️ Chính Đạo'}\n\n` +
+      `${root ? root.emoji : '🌱'} **Linh Căn**: ${root ? root.name : 'N/A'} (${rootType})\n` +
+      `${weaponType.emoji} **Loại Võ Khí**: ${weaponType.name}\n` +
+      `💪 **Thể Chất**: ${constitution ? constitution.name : 'Phàm Thể'}\n\n` +
+      `━━━━━ 📊 Chỉ Số Ẩn ━━━━━\n\n` +
+      `🧠 **Ngộ Tính**: ${ngoTinh} ${ngoTinh >= 140 ? '🔥 Cao!' : ngoTinh >= 100 ? '✅ Tốt' : '⚠️ Thấp'}\n` +
+      `🍀 **Vận Khí**: ${vanKhi} ${vanKhi >= 120 ? '🔥 Cao!' : vanKhi >= 80 ? '✅ Tốt' : '⚠️ Thấp'}\n\n` +
+      `━━━━ ⭐ Tiên Thiên Khí Vận ━━━━\n\n` +
+      (traits.length > 0
+        ? traits.map(t => `${t.rarity.emoji} **${t.name}** — _${t.description}_`).join('\n')
+        : '⚪ Không có đặc tính đặc biệt') +
+      `\n\n━━━━━━━━━━━━━━━━━━━━\n\nXác nhận tạo nhân vật?`
     );
 
   const row = new ActionRowBuilder().addComponents(
     new ButtonBuilder()
-      .setCustomId(`create:confirm:${name}:${selectedRoot}:${rootType}:${rolledConstitution}:${daoPath}`)
+      .setCustomId(`create:confirm:${name}:${rootId}:${rootType}:${constitutionId}:${daoPath}:${weaponTypeId}:${ngoTinh}:${vanKhi}:${traitIds}`)
       .setLabel('✅ Xác Nhận')
       .setStyle(ButtonStyle.Success),
     new ButtonBuilder()
-      .setCustomId(`create:reroll:${name}:${selectedRoot}:${rootType}:${daoPath}`)
-      .setLabel('🔄 Roll Lại Thể Chất (2 lần)')
+      .setCustomId(`create:reroll_all:${name}:${rootId}:${rootType}:${daoPath}`)
+      .setLabel('🔄 Roll Lại Toàn Bộ')
       .setStyle(ButtonStyle.Primary),
   );
 
@@ -143,7 +198,7 @@ async function handleRootSelect(interaction, rootId, daoPath, name) {
 /**
  * Confirm character creation
  */
-async function confirmCreation(interaction, name, rootId, rootType, constitutionId, daoPath) {
+async function confirmCreation(interaction, name, rootId, rootType, constitutionId, daoPath, weaponTypeId, ngoTinh, vanKhi, traitIds) {
   const db = require('../database/connection');
   const realms = require('../../config/realms');
   const roots = require('../../config/spiritual-roots');
@@ -191,21 +246,51 @@ async function confirmCreation(interaction, name, rootId, rootType, constitution
     baseDef = Math.floor(baseDef * 0.95);
   }
 
+  // Áp dụng Tiên Thiên trait bonuses
+  const parsedTraitIds = traitIds ? traitIds.split(',').filter(Boolean) : [];
+  let bonusNgoTinh = 0, bonusVanKhi = 0, bonusDanhVong = 0;
+  for (const tid of parsedTraitIds) {
+    const trait = tienThien.getTraitById(tid);
+    if (trait && trait.effects) {
+      if (trait.effects.atk) baseAtk += trait.effects.atk;
+      if (trait.effects.def) baseDef += trait.effects.def;
+      if (trait.effects.hp) baseHp += trait.effects.hp;
+      if (trait.effects.mana) baseMana += trait.effects.mana;
+      if (trait.effects.speed) baseSpeed += trait.effects.speed;
+      if (trait.effects.ngo_tinh) bonusNgoTinh += trait.effects.ngo_tinh;
+      if (trait.effects.van_khi) bonusVanKhi += trait.effects.van_khi;
+      if (trait.effects.danh_vong) bonusDanhVong += trait.effects.danh_vong;
+    }
+  }
+
+  const finalNgoTinh = (parseInt(ngoTinh) || 100) + bonusNgoTinh;
+  const finalVanKhi = (parseInt(vanKhi) || 80) + bonusVanKhi;
+
   try {
     db.prepare(`
       INSERT INTO players (discord_id, name, spiritual_root, root_type, constitution, dao_path,
         technique_id, realm_index, sub_realm, exp, hp, max_hp, atk, def, speed, mana, max_mana,
-        linh_thach, tien_thach, cong_duc, created_at, is_dead)
-      VALUES (?, ?, ?, ?, ?, ?, 'co_ban_tam_phap', 0, 1, 0, ?, ?, ?, ?, ?, ?, ?, 100, 0, 0, ?, 0)
+        linh_thach, tien_thach, cong_duc, weapon_type, ngo_tinh, van_khi, age, danh_vong, dao_tam,
+        created_at, is_dead)
+      VALUES (?, ?, ?, ?, ?, ?, 'co_ban_tam_phap', 0, 1, 0, ?, ?, ?, ?, ?, ?, ?, 100, 0, 0,
+        ?, ?, ?, 16, ?, 0, ?, 0)
     `).run(
       interaction.user.id, name, rootId, rootType, constitutionId, daoPath,
       baseHp, baseHp, baseAtk, baseDef, baseSpeed, baseMana, baseMana,
+      weaponTypeId || null, finalNgoTinh, finalVanKhi, bonusDanhVong,
       Date.now()
     );
 
-    // Grant starter skills — Kiếm Quang (basic attack) + Thổ Thuẫn (basic defense)
+    // Lưu Tiên Thiên traits
     const newPlayer = db.prepare('SELECT id FROM players WHERE discord_id = ?').get(interaction.user.id);
     if (newPlayer) {
+      // Tiên Thiên Khí Vận
+      for (const tid of parsedTraitIds) {
+        db.prepare('INSERT OR IGNORE INTO player_tien_thien (player_id, trait_id) VALUES (?, ?)')
+          .run(newPlayer.id, tid);
+      }
+
+      // Grant starter skills
       db.prepare('INSERT OR IGNORE INTO learned_skills (player_id, skill_id, level) VALUES (?, ?, 1)').run(newPlayer.id, 'kiem_quang');
       db.prepare('INSERT OR IGNORE INTO learned_skills (player_id, skill_id, level) VALUES (?, ?, 1)').run(newPlayer.id, 'tho_thuan');
       db.prepare('INSERT OR IGNORE INTO player_skills (player_id, skill_id, slot, level) VALUES (?, ?, 1, 1)').run(newPlayer.id, 'kiem_quang');
@@ -222,6 +307,15 @@ async function confirmCreation(interaction, name, rootId, rootType, constitution
     throw err;
   }
 
+  const wt = weaponTypeId ? weaponTypes.getWeaponTypeById(weaponTypeId) : null;
+
+  // Lấy traits đã roll để hiển thị
+  const traitsDisplay = parsedTraitIds
+    .map(tid => tienThien.getTraitById(tid))
+    .filter(Boolean)
+    .map(t => `${t.rarity.emoji} ${t.name}`)
+    .join(', ') || 'Không có';
+
   const embed = new EmbedBuilder()
     .setColor(0xFFD700)
     .setTitle('🐉 NHÂN VẬT ĐÃ TẠO THÀNH CÔNG!')
@@ -229,13 +323,17 @@ async function confirmCreation(interaction, name, rootId, rootType, constitution
       `✨ Hoan nghênh **${name}** bước vào thế giới tu tiên!\n\n` +
       `${daoPath === 'ma' ? '😈' : '☀️'} **Đạo**: ${daoPath === 'ma' ? 'Ma Đạo' : 'Chính Đạo'}\n` +
       `${root ? root.emoji : '🌱'} **Linh Căn**: ${root ? root.name : 'N/A'} (${rootType === 'don' ? 'Đơn' : rootType === 'song' ? 'Song' : rootType === 'tam' ? 'Tam' : 'Hỗn Độn'})\n` +
+      `${wt ? wt.emoji : '⚔️'} **Võ Khí**: ${wt ? wt.name : 'Chưa chọn'}\n` +
       `💪 **Thể Chất**: ${constitution ? constitution.name : 'Phàm Thể'}\n` +
       `📜 **Công Pháp**: Cơ Bản Tâm Pháp\n` +
       `🏔️ **Cảnh Giới**: ${startRealm.emoji} ${startRealm.name} Tầng 1\n\n` +
-      `━━━━━━━━━━━━━━━━━━━━\n\n` +
+      `━━━ 📊 Chỉ Số ━━━\n\n` +
       `⚔️ ATK: **${baseAtk}** | 🛡️ DEF: **${baseDef}**\n` +
       `❤️ HP: **${baseHp}** | 💨 Speed: **${baseSpeed}**\n` +
       `🔮 Mana: **${baseMana}** | 💎 Linh Thạch: **100**\n\n` +
+      `━━━ 🧠 Chỉ Số Ẩn ━━━\n\n` +
+      `🧠 Ngộ Tính: **${finalNgoTinh}** | 🍀 Vận Khí: **${finalVanKhi}**\n` +
+      `⭐ Tiên Thiên: ${traitsDisplay}\n\n` +
       `_Nhấn Menu Chính để bắt đầu hành trình!_`
     )
     .setTimestamp();
@@ -269,6 +367,13 @@ async function handleReincarnate(interaction) {
     db.prepare('DELETE FROM sect_members WHERE player_id = ?').run(player.id);
     db.prepare('DELETE FROM npc_affinity WHERE player_id = ?').run(player.id);
     db.prepare('DELETE FROM cooldowns WHERE player_id = ?').run(player.id);
+    // Chiến kỹ tables
+    db.prepare('DELETE FROM player_skill_slots WHERE player_id = ?').run(player.id);
+    db.prepare('DELETE FROM player_nghich_thien WHERE player_id = ?').run(player.id);
+    db.prepare('DELETE FROM player_tam_phap WHERE player_id = ?').run(player.id);
+    db.prepare('DELETE FROM player_tien_thien WHERE player_id = ?').run(player.id);
+    db.prepare('DELETE FROM player_dao_tam WHERE player_id = ?').run(player.id);
+    db.prepare('DELETE FROM player_hau_thien WHERE player_id = ?').run(player.id);
     db.prepare('DELETE FROM players WHERE id = ?').run(player.id);
   }
 
@@ -291,6 +396,7 @@ module.exports = {
   handleDaoPathSelect,
   handleNameSubmit,
   handleRootSelect,
+  handleWeaponSelect,
   confirmCreation,
   handleReincarnate,
 };

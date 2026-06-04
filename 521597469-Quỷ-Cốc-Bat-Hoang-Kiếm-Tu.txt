@@ -1,0 +1,553 @@
+                         Quỷ Cốc Bát Hoang
+                                     Kiếm Tu
+I. Mở Đầu:
+
+Nói về tu tiên thì Thể Tu, Pháp Tu và Kiếm Tu là 3 món phổ biến hầu như ai từng đọc
+qua truyện tu tiên đều biết, game tu tiên thì 3 món này lại càng ko thể thiếu, nhưng ở
+bản path 1057 mà mình đang chơi và viết hướng dẫn này thì chỉ có 2 loại Võ Khí
+( Kiếm, Đao, Thương, Quyền, Chưởng, Chỉ) và Linh Căn (Mộc, Thủy, Hỏa,Thổ, Phong,
+Lôi), chưa có Thể Tu ko biết có update trong tương lai hay không. Mỗi cái có cái hay
+riêng, điểm mạnh riêng, game hiện tại ít hạn chế nên mỗi người chơi sẽ có cách build
+và mix công pháp của bản thân, bài hướng dẫn này mình chỉ hướng dẫn sơ qua về 3
+cách build kiếm theo kinh nghiệm chơi của mình cho mấy bạn mới chơi có hướng đi
+khỏi bỡ ngỡ, ai pro rồi thì đọc chơi cho vui.
+
+Bài viết có sự đóng góp của bác Cửu Kiếp Chân Tiên trong group discord.
+
+Chỉ áp dụng cho bất cứ phiên bản nào dưới 1057, path cao hơn có lẽ có những đổi
+mới mà hướng dẫn này không hợp nữa nên chỉ cho path Việt Hóa 1057 trở xuống thôi
+nha, hướng dẫn này dành cho các độ khó từ Dễ đến Địa Ngục 1 2 3 4, còn chế độ Hồng
+Hoang dành cho expert thì các bạn tự build vì nghịch thiên bị khóa không roll được,
+công pháp đấu giá bị lock ở 1 mốc nào đó mình không tìm ra được, nếu bạn muốn thử
+cảm giác tu tiên đích thực thì độ khó Hồng Hoang chào đón bạn vì chết đồng nghĩa với
+auto xóa save (ALT+F4 thần chưởng).
+
+Max cảnh giới hiện tại là Nguyên Anh chưa có Hóa Thần.
+
+II. Giới Thiệu Kiếm Tu
+
+      II.a/ Ưu Khuyết điểm:
+
+             1/ Ưu Điểm: Theo 3 cách build trong hướng dẫn của mình thì So với đa
+      số các võ khí và linh căn khác thì tốc độ đánh cao hơn nên Kiếm Tu chuyên về
+      tốc độ, max speed Võ Kỹ của kiếm bắn liên tục không cần countdown hay delay,
+      tốc độ di chuyển cao, Hiệu Ứng ngự kiếm cũng đẹp hơn mấy loại linh căn khác
+      (nhìn cưỡi kiếm bay giống Tiên Kiếm Kỳ Hiệp ☺ ).
+      2/ Khuyết Điểm: Cả 3 cách build đều ko có nghịch thiên hồi máu nên hết
+máu là hết game ☺.
+
+II.b/ Các hiệu ứng kiếm tu: Có 2 loại chính
+
+   -   Kiếm Trảm: Mỗi stack tăng 2% damage với kẻ địch có Sinh Lực Thấp hơn
+       50%. duy trì 7 giây.
+   -   Xuất Huyết: Gây hiệu ứng trừ máu của quái theo thời gian.
+
+II.c/ Các Loại Kiếm Tu:
+
+Kiếm Tu theo mình build có 3 loại:
+
+       1/ Phong Kiếm Tu:
+
+   -   Siêu né, hầu như gặp boss là win do nếu bạn biết dùng thân pháp hợp lý
+       thì nó đánh mình hầu như không được nhưng damage thấp hơn 2 loại
+       kia.
+   -   Mình định làm clip tham khảo rồi nhưng thấy nó chán quá nên thôi bỏ
+       qua cái clip cho cái build hack/cheat này cứ build theo là end game.
+    2/ Thủy Kiếm Tu:
+
+-   Siêu Damage, Bắn damage nhìn số nhảy liên tục, chưa full damage và
+    công pháp nhưng mình ở Nguyên Anh sơ kỳ đánh boss Hóa Thần Cô vân
+    Trường Thừa 1 triệu hp trong 1 phút 20 giây, nếu build full thì có thể
+    đánh trong vòng 1 phút hoặc nhanh hơn, nhưng khả năng né tránh thấp
+    dễ ăn hành.
+-   Video tham khảo dùng Thủy kiếm https://youtu.be/QTqZzOtRDcI
+    3/Tốc Kiếm Tu:
+
+-   Siêu tốc độ, nhìn tên là biết dựa vào tốc độ kiếm bắn ra để gây damage,
+    cưỡi phi kiếm rồi Hit and Run. Chạy nhanh bắn kiếm nhanh nhưng cưỡi
+    phi kiếm nó tăng thân pháp nhiều quá, tốc độ cao quá dễ chạy thẳng vô
+    vùng AOE của địch thì từ Flash lại chuyển thành Lính Cảm Tử. Thân pháp
+    kiếm cho buff giảm sát thương, buff sát thương nên lối build này chỉ cần
+    1 tâm pháp linh căn kháng tính hệ kiếm có opt +5s thân pháp, thân pháp
+    này sẽ rất mạnh.
+-   Video tham khảo: https://youtu.be/nEyEPiRf_sI
+III. Hướng Dẫn Build:
+
+      1/ Tiên Thiên Khí Vận:
+
+Đối với những bạn mới chơi mình khuyến nghị 1 vài cái nên lấy là:
+
+Thiên Đố Anh Tài: Ngộ tính +30, đạt được tu vi +20%
+
+Kiếm Si: Kiếm pháp tư chất +30, kiếm pháp thuần thục tăng lên +50%
+
+Vũ Khí Đại Sư: Kiếm, đao, thương pháp tư chất +20, kiếm, đao, thương pháp thuần
+thục tăng lên +30%
+
+Hậu Nghệ Xạ Nhật: Lực công kích +5, công kích khoảng cách +20, hiểu ý +20
+
+Quỷ Trong Cốc Môn: Lực công kích +12, ngộ tính +30, sinh ra mang theo một quyển
+màu cam Trúc Cơ cảnh thân pháp.
+
+Võ Thánh Chuyển Thế: Lực công kích +10, lực phòng ngự +3, ngộ tính +20, danh vọng
++100
+Các trait tiên thiên trên chỉ là tương đối có thể giúp đầu game nhẹ nhàng hơn các bạn
+mới chơi đừng cố gắn roll ra 3 trait đỏ vì cái quan trọng trong game là Ngộ Tính và Vận
+khí là 2 cái không thay đổi được còn mấy stats khác sẽ thay đổi khi bạn đột phá cảnh
+giới cao hơn hoặc ăn linh quả từ môn phái.
+
+      -   Ngộ Tính: giúp các bạn roll option đỏ của skill late game nên nếu được các
+          bạn cố roll nhân vật Ngộ tính cao một chút, nếu cao hơn 140 điểm ngộ tính
+          là tốt nhất.
+      -   Vận Hạnh: càng cao thì giúp các bạn gặp nhiều kỳ ngộ khi đi trên Map, cái
+          này trên 90 điểm là dư sài theo kinh nghiệm của mình.
+
+Khi chơi quen rồi thì không quan trọng cái này nữa, chọn sao ngộ tính cao là được con
+nhân vật của mình roll 3 trait như vầy
+
+
+
+
+      2/Nghịch Thiên Cải Mệnh:
+
+      Kiến nghị các skill
+
+      -   Vũ Pháp Nhập Môn => Vũ Pháp Tiến Giai => Vũ Pháp Tinh Thông: Giảm thời
+          gian Countdown max 40% ở cấp độ tinh thông.(max level 3 là Phải có cho cả
+          3 loại build)
+-   Tiểu Lý Phi Kiếm => Trung Lý Phi Kiếm: Bắn ra phi kiếm debuff random hiệu
+    ứng Trúng độc, Choáng, Giảm tốc độ, Thiêu đốt, Đóng băng, Tê liệt, Hút
+    máu, đẩy lùi, linh lực tổn thất, Trói buộc, Trầm mặc(ko thể dùng skill?).
+-   Binh Nhận Chuyên Tinh: Sử dụng đao / kiếm / thương công pháp thần thông
+    không cần điều kiện, best cho Thần Thông triệu hồi Vạn Thần Kiếm, chống
+    chỉ định đem dùng cho Thần Thông Sậu Thiên Kiếm vì nó triệu hồi có duy
+    nhất 1 thanh Cự Kiếm rồi thôi.
+-   Song linh cộng sinh => Tam Linh Cộng Sinh: Khi thi triển tuyệt kỹ/thần thông
+    có từ 25%-30% cơ hội bắn thêm 1 lần hoặc 2 lần tùy cấp nghịch thiên.
+-   Lão Nhi Kiên Di: Thêm 1 tuổi là thêm 1 điểm phòng thủ, tuổi càng cao phòng
+    thủ càng trâu.
+
+-   Thủy lực tứ xa: 8/10đ là 1 trait tím nhưng dame, tầm đánh của trait là quá
+    lỗi, là 1 trait lỗi game cực hợp với kiếm tu, với tốc độ cao việc kích 2-3 thủy
+    lực 1 lần là quá dễ => sát thương trait này rất cao
+
+-   Hồng trần kiếm hạp: 6/10 nên up khi bạn chơi mode 5 mà ko có cái gì ngon.
+    trait này khi lên cấp 2 theo đánh giá của tôi thì nó đáng 10/10 đ. Nhược
+    điểm của trait này là cần tốc đánh cao để kích hoạt… với kiếm tu nó là 1
+    điều quá dễ. Sát thương kiếm hộp cấp 2 = 3 lần thả util =))
+
+-   Kiếm linh x3: 9/10 là 1 trait lỗi game với khả năng gây dame siêu khủng và
+    hồi mana với tốc độ bàn thờ. Không khó để kiếm linh được xếp vô 1 trong
+    những trait ngon nhất game, bạn sẽ ko thất vọng khi sài kiếm linh tinh thông
+    khi đánh boss.
+
+-   Cúc hoa năng: 5/10 Cái trait bựa này nhìn có vẻ hài nhưng thực tế nó rất
+    mạnh, tâm pháp kiếm cung cấp 1 lượng tốc chạy khổng lồ, khi kết hợp với lỗ
+    đít phun lửa kiếm tu sẽ chạy như the flash theo đúng nghĩa đen, việc bắt
+    kiếm tu … là điều không thể. Và tốc độ ấy bạn cũng sẽ lao vào AOE boss và
+    teo rất nhanh.
+
+-   Thuẫn linh nhập môn: 5/10 Trait này nếu chơi hồng hoang ko roll dc vũ pháp
+    mà ra thì cũng khá ngon. Chỉ nên để cấp 1 đê thuẫn chặn đường đạn boss,
+    chống sốc dame trong nhiều trường hợp. Tuy ngon nhưng đây là 1 trait thủ
+    nên nhiều bác sẽ ko thích lắm … là 1 quả gân gà.
+-   Kim thiền vô ảnh: Miễn tử 1 lần và hồi 25% máu khá xịn. khi cảm thấy bạn
+    quá dễ chết nó là 1 trait mà khi chả còn gì để lấy thì chọn cũng được dù đây
+    là 1 trait khá gân gà.
+
+-   Tinh diệu trần hoàng: Đọc hiệu ứng bạn sẽ kiểu…. làm mù boss trong 15s
+    ngon vậy. Thực tế là boss có bị mù cơ mà nó vẫn biết bạn ở đâu để vả bạn
+    sml...Vâng boss bị mù…
+
+3/ Build Thủy Kiếm:
+
+       o Nghịch thiên:
+            ▪ 3 slot đầu chọn Vũ Pháp Nhập Môn => Vũ Pháp Tiến Giai => Vũ
+                Pháp Tinh Thông.
+            ▪ 2 slot sau chọn Trung Lý Phi Kiếm hoặc combo Thủy Lực Tứ Xạ
+                + Binh Nhận Chuyên Tinh hoặc combo Song Linh Cộng Sinh +
+                Tam Linh Cộng Sinh hoặc combo Binh Nhận Chuyên Tinh + Song
+                Linh Cộng Sinh
+       o Võ Kỹ:
+            ▪ Chọn võ kỹ bắn ra 5 kiếm để tăng max damage, 1 kiếm 200hp
+                x5= 1000hp 1 lần bắn, nếu đứng cuối map bắn ra boss ở giữa
+                map thì khoảng 5 đến 7 lượt kiếm nếu trúng cả thì trung bình
+                200hp x5 kiếm x5 lượt=5000hp chưa tính Phân Thân, max
+                phân thân mình huyễn ảnh ra là 4 trước khi nó bị đánh tan
+                hoặc tự biến mất cộng thêm bản thân con nhân vật là 5.
+                5000hp x 5 =25k chỉ với bắn thường chưa tính Tuyệt Kỹ và
+                Thần Thông. (SỐ LIỆU CHỈ MANG TÍNH CHẤT THAM KHẢO)
+      ▪
+
+
+
+
+o Thân Pháp:
+     ▪ Thân pháp hệ thủy chú ý các option đỏ trên thân pháp, các
+        hiệu ứng Thời Gian Duy trì huyễn ảnh giúp huyễn ảnh lưu lại
+        lâu hơn đồng nghĩa cái bóng nó bắn nhiều hơn, nhận sát
+        thương trừ % giúp huyễn ảnh chịu đòn cao hơn, và cái quan
+        trọng nhất là Thời Gian Hồi Chiêu trừ xxx giây, giúp giảm
+        countdown thân pháp, cố gắn roll đỏ những option này, mấy
+        cái khác hên ra opt màu xịn thì lấy không thì cũng không sao .
+      ▪
+
+
+
+
+o Tuyệt Kỹ:
+     ▪ Chọn Tuyệt Kỹ Kiếm với những dòng opt trừ thời gian hồi
+        chiêu và tích Kiếm Trảm được ít nhất xxx Tầng thì trừ thời gian
+        hồi chiêu thân pháp như trong hình rồi roll max đỏ, nếu được
+        thì cố roll đỏ các dòng Tăng Sát thương Đại Yêu thú và Tất Cả
+        Kẻ Địch vì hiện tại tu tiên giả trong game khá yếu nên chưa cần
+        cái tăng sát thương tu tiên giả.
+      ▪
+
+
+
+
+o Thần Thông:
+     ▪ Lợi dụng cái Binh Nhận Chuyên Tinh + Song Linh Cộng Sinh lấy
+        thần thông triệu hồi Kiếm Thánh bắn khỏi cần điều kiện. Cố
+        gắn tìm thần thông có dòng trừ Countdown và quả opt cuối
+    như trong hình để chịu đòn thì tốt nhất do Thủy kiếm chuyên
+    về damage nên Def của nó mỏng như giấy nhưng nếu ko có
+    cũng không sao (ráng né thôi ☺). Lúc viết guide mình skip 80
+    năm hơn 40 lần đấu giá nhưng không có thần thông Kiếm
+    Thánh đỏ nên damage hơi thấp với dòng opt chưa nói lên
+    được hết cái mạnh của thần thông triệu hồi Vạn Thần Kiếm
+    này.
+▪
+▪   Nếu sài Combo Song Linh Cộng Sinh + Tam Linh Cộng Sinh thì
+    bạn có thêm 1 hướng build khác của Thủy Kiếm là bạn bỏ qua
+    cái Vũ Pháp Tinh Thông -40% CD lấy Vũ Pháp Tiến Giai -25%
+    thôi, rồi dùng 1 slot dư ra lấy Binh Nhận Chuyên Tinh để gọi
+    Thần Thông Vạn Thần Kiếm không cần điều kiện, nhưng đổi lại
+    tốc độ bắn võ kỹ sẽ giảm xuống tùy bạn chọn thôi, mình thấy
+    lối này cũng khá hay khi bạn gọi 3 cái Kiếm Thánh 1 lúc. Hình
+    bên dưới đây là kết quả của lối build này.
+▪
+
+
+
+
+▪   Nếu sài combo Thủy Lực Tứ Xạ + Song Linh Cộng Sinh đổi sang
+    sài cự kiếm thần thông Sậu Thiên Kiếm, riêng bản thân mình
+    thì mình thích xài combo này hơn do quen tay và cái hiệu quả
+    của opt Vô Địch của nó miễn địch tất cả sát thương khá là
+    imba, chơi chế độ hồng hoang cái opt Vô Địch này sẽ cứu mấy
+    bạn chơi thủy kiếm khỏi việc ALT+F4 Thần Chưởng khá nhiều.
+    Lại thêm Opt giảm tốc của quái nữa càng làm mình thích thần
+    thông này hơn dù damage thấp hơn xíu nhưng tâm pháp sẽ bù
+    lại phần nào vụ damage.
+      ▪
+
+
+
+
+o Tâm Pháp:
+    ▪ Thần Công:
+          ● Các bạn đi theo Kiếm, cố gắn đấu giá quả kiếm này hoặc
+            chơi tà đạo như mình chờ nó đấu giá xong coi đứa nào
+            đấu thắng thì nhớ tên rồi kết thúc đấu giá thì tìm nó
+            trong thành chặn đường giết người cướp Sắc, nhầm... là
+            Cướp Sách Nha.
+       ● Nhìn trong hình thì max đỏ thân pháp trừ 6 giây
+         countdown (1), mỗi khi dùng thân pháp lại trừ 6 giây
+         countdown tuyệt kỹ (2), dùng thân pháp giảm sát
+         thương 77% nếu khá ngon nếu ko sài hiệu ứng Vô Địch
+         của thần thông cự kiếm Sậu Thiên Kiếm.
+▪
+
+
+
+
+▪   Đại Pháp:
+       ● Mấy bạn xài Đại Pháp của Đao dùm mình, miễn là sách
+          đỏ từ đấu giá hoặc mua từ môn phái chuyên Đao sau khi
+rời phái chuyên Kiếm đều có 4 dòng opt trừ countdown
+võ kỹ 25%/ tuyệt kỹ 25%/ thân pháp 25%(3)/ Thần
+thông -40% linh lực(4) này roll max đỏ 3 cái này, còn
+mấy opt còn lại nó ra màu gì cứ xài tạm, nếu đủ ngộ tính
+thì roll mấy dòng kia xịn hơn. Quả đại pháp này mình
+đấu giá có cái Opt cuối auto đỏ nên mình roll trước mớ
+opt trên, rồi mới unlock cái cuối là mình có thêm 1 opt
+đỏ, nhớ vụ opt đỏ cuối tâm pháp đừng bao giờ unlock
+nó mà phải roll trước mấy opt kia rồi mới unlock opt
+cuối nha.
+▪
+▪   Bí Quyển:
+        ● Bí quyển của kiếm, chú ý hiệu ứng Xuất Huyết và Kiếm
+          Trảm cộng dồn 3 tầng vì kiếm trẩm 8 tầng thì nhìn
+          ngược lại tuyệt kỹ mình có -8 giây Thân Pháp(5).
+        ● Chú ý là ở đây mình tập trung vô Kiếm Trảm để build Cự
+          Kiếm Sậu Thiên Kiếm do chưa có thần thông Đỏ Kiếm
+          Thánh.
+        ● Nhìn lại (1)+(2)+(3)+(5)= LIÊN TỤC SỬ DỤNG TUYỆT KỸ
+          VÀ THÂN PHÁP NẾU DUY TRÌ 8 TẦNG KIẾM TRẢM.
+        ● Mà liên tục sử dụng thân pháp nghĩa là liên tục tích
+          Kiếm Ảnh => Xả thần thông Sậu Thiên Kiếm, đọc lại trên
+          miêu tả của Sậu Thiên Kiếm:” 1 đạo kiếm ảnh nó thả rơi
+          xuống 20 cự kiếm”. Vậy trung bình tích 4 thủy phân thân
+          mình có 4 kiếm ảnh x20= 80 cự kiếm sau khi test 1 cự
+          kiếm rơi xuống thì mình chém tầm 700hp-900hp chưa
+          cắn đan tăng ATK, mình lấy số thấp nhất 700hp x 80
+          kiếm=56k từ 4 kiếm ảnh, thủy phân thân Có Thể Tự
+          Dùng Thần Thông=> không tốn linh lực sử dụng thần
+          thông, không bị countdown, free hiệu ứng bất tử 4
+          giây(mình chưa test quả free hiệu ứng vô địch từ phân
+          thân này ai rảnh test dùm ☺) => cự kiếm vừa rơi hết mà
+          thủy phân thân không kích hoạt thần thông thì mình lại
+          kích hoạt=> mưa cự kiếm rơi liên tục.
+▪
+▪
+
+
+
+
+▪   Tâm Pháp Quyết:
+      ● Câu hỏi lớn nhất đặt ra, Linh Lực nào chịu nổi Thủy Phân
+         Thân, Tuyệt Kỹ và Thần Thông Spam như vậy, thì đây
+         mọi vấn đề về linh lực được giải quyết bằng cái Tâm
+         Pháp Linh Lực của hệ Thủy, chú ý 2 Opt tăng linh lực thôi
+         là cái nhỏ hơn 20% mỗi giây hồi 14 điểm và Huyễn Ảnh
+         tan/bị giết hồi phục tự thân linh lực 244 điểm, huyễn
+ảnh biến mất mỗi 10.5 giây theo cách build của mình
+nên mỗi lần sài 1 combo sẽ tốn thời gian tích kiếm ảnh
+và tạo ảnh phân thân, tổng cộng tốn khoảng trung bình
+350 linh lực, chỉ cần 2 ảnh phân thân biến mất sẽ hồi
+hơn số linh lực vừa mất đi=> hầu như boss sẽ chết trong
+tình trạng bạn còn 90% cây linh lực nếu bạn sài thần
+thông trước Phân Thân, còn nếu cứ để thủy Phân thân
+Gọi thần thông Sậu Thiên Kiếm thì trừ đi 200 linh lực tức
+là lượng linh lực mất đi do sài skill mất sẽ luôn nhỏ hơn
+lượng linh lực dùng=> khỏi cần hack cheat cũng
+INFINITY MANA
+            ▪
+
+
+
+
+4/ Build Phong Kiếm:
+
+      o Nghịch thiên chọn:
+           ▪ 3 slot đầu chọn Vũ Pháp Nhập Môn => Vũ Pháp Tiến Giai => Vũ
+               Pháp Tinh Thông.
+           ▪ 2 slot sau chọn Tiểu Lý Phi Kiếm => Trung Lý Phi Kiếm
+      o Võ Kỹ:
+▪   Lấy cái Nguyệt Ảnh Kiếm 0.6 giây như thủy kiếm cũng được,
+    tùy bạn.
+▪   Nhưng mình khuyên nên Chọn Cô Tinh Kiếm bắn tốc độ 0.2
+    giây, lý do mình kiến nghị chọn võ kỹ này là gì? tại sao tỷ lệ
+    trúng thấp mà lại chọn nó? Lý do duy nhất chính là vì Phong
+    Kiếm chúng ta có thân pháp Phong bất tử, võ kỹ này bắn độ
+    chính xác thấp nhưng nhờ có thân pháp phong chúng ta có thể
+    sáp vô đánh giáp lá cà YOLO với boss, bắn sáp lá cà với nó thì tỉ
+    lệ trúng chiêu có hạ như thế nào thì cũng sẽ bắn trúng hầu như
+    100% và tốc độ rút máu của Boss thì khỏi bàn vì mình bắn max
+    ping như súng AK47. Tốc độ 0.2 giây Countdown nghịch thiên
+    trừ 40% thì còn lại 0.12 giây, trừ Opt cuối 0.07 giây nữa còn
+    0.05 giây, trừ thêm tâm pháp giảm countdown của Đao 25%
+    nữa thì hầu như là gần bằng không countdown với kiểu này thì
+    tốc độ rút máu của boss rất dị. Lại thêm Trung Lý Phi Kiếm có
+    debuff giam boss lại bằng hiệu ứng Random Trói, Băng,
+    Choáng,.. thì boss sẽ đứng đó làm bia cho bạn bắn hơn 1/3
+    trận chiến.
+      ▪
+
+
+
+
+o Tuyệt Kỹ:
+     ▪ Chọn Tuyệt Kỹ giống với Thủy kiếm với những dòng opt trừ
+        thời gian hồi chiêu và tích Kiếm Trảm được ít nhất xxx Tầng thì
+        trừ thời gian hồi chiêu thân pháp như trong hình rồi roll max
+        đỏ, nếu được thì cố roll đỏ các dòng Tăng Sát thương Đại Yêu
+        thú và Tất Cả Kẻ Địch vì hiện tại tu tiên giả trong game khá yếu
+        nên chưa cần cái tăng sát thương tu tiên giả.
+      ▪
+
+
+
+
+o Thân Pháp:
+     ▪ Thân Pháp Hệ Phong, hiện tại theo mình thấy hiệu ứng max né
+        khi dùng thân pháp hệ phong là một trong những bug game sẽ
+        bị nerf trong những update tới vì bật thân pháp lên miễn còn
+        hiệu lực thì hoàn toàn không nhận sát thương, các bạn nhìn
+        hình bên dưới để tăng tối đa số lần sử dụng thân pháp và
+        damage cần chú ý roll đỏ các dòng opt:
+            ● Thân Pháp Hồi Chiêu -xxx giây
+            ● Vòi Rồng Sát Thương uy lực xxx/giây
+            ● Thân pháp hộ tâm được ưu tiên hơn mấy thằng trên, vì
+              chống sốc dame tránh tình trạng 1 hít chết luôn.
+            ● Cách xxx giây tạo ra 1 đạo Toàn Phong
+      ▪
+
+
+
+
+o Thần Thông:
+     ▪ Chọn Cự Kiếm Sậu Thiên Kiếm chắc luôn vì 2 slot sau chúng ta
+        đã lấy Tiểu Lý và Trung lý Phi Kiếm nên không thể lấy Vạn Thần
+        Kiếm nữa do thu thập kiếm hồn khá lâu nên thần thông Sậu
+Thiên Kiếm theo mình khá là hợp lý trong trường hợp này, mặt
+khác bạn cứ đứng tại chỗ dùng Toàn Phong của phong thân
+pháp hút nó vô trung tâm của Cự Kiếm rồi có Trung Lý Phi Kiếm
+debuff đóng băng, choáng, trói giữ nó lại tại chỗ thì không khác
+nào boss nó đứng giữa làn đạn làm bia cho mấy bác xả AK47.
+Mọi thứ về thần thông này mình đã giải thích phía trên Thủy
+Kiếm bạn kéo lên coi lại.
+o Tâm Pháp: Tất cả Tâm Pháp Phong Kiếm giữ nguyên như Thủy Kiếm
+  ngoại trừ Tâm pháp hồi linh lực Quyết và Ngang.
+
+     ▪   Tâm Pháp Quyết:
+
+           ● Đối với Phong kiếm thì Linh Lực để duy trì thân pháp
+             cực kỳ quan trọng, hết linh lực đồng nghĩa với về thành
+             dưỡng sức :) nên thay vì hồi linh từ huyễn anh như thủy
+             kiếm thì bây giờ các bạn cần tâm pháp hồi linh lực dựa
+             vào thời gian duy trì của thân pháp như hình tâm pháp
+             Quyết mình chuẩn bị mua dưới đây, bạn chú ý 2 cái opt
+             mà mình khoanh đỏ sẽ thấy độ bá đạo của nó roll max
+             đỏ mấy cái opt này dùm mình:
+
+                 o Tại thời gian duy trì thân pháp mỗi giây hồi phục
+                   xxx linh lực
+
+                 o Linh Lực Thấp hơn 20% thì mỗi giây hồi xxx linh
+                   lực
+
+                 o Duy trì thân pháp hồi xx mana
+
+                 o Trong tp linh căn có opt mỗi 8 stack xuất
+                   huyết/kiếm trảm hồi 22 linh lực /s
+
+           ● Chơi Phong Kiếm gần như bắt buộc phải có tâm pháp
+             này, ráng tìm mua rồi roll đỏ 2 opt này dùm mình thì
+         linh lực của Phong Kiếm hầu như không cạn:
+
+
+
+
+▪   Tâm Pháp Ngang:
+
+      ● Tâm pháp hồi máu lúc duy trì thân pháp, xác định phong
+        kiếm bất tử linh lực và máu, roll max đỏ opt mình
+        khoanh tròn.
+                     ●
+
+
+
+
+             ▪   Gắn 2 tâm pháp này vô khi xài Phong Kiếm xác định END
+                 GAME.
+
+5/ Build Tốc Kiếm:
+
+   ○ Nghịch Thiên:
+        ■ 3 slot đầu chọn Vũ Pháp Nhập Môn => Vũ Pháp Tiến Giai => Vũ
+            Pháp Tinh Thông.
+        ■ 2 Slot sau chọn Binh Nhận Chuyên Tinh + Thủy Lực Tứ Xạ hoặc
+            combo Binh Nhận Chuyên Tinh + Lão Nhi Kiên Di lý do chọn 2 món
+            này? do đây là build để đi PK nên chọn combo đầu thì thêm
+            damage, chọn combo sau thì thêm Def vậy thôi, nói chung là Binh
+            Nhận Chuyên Tinh buộc phải có cái còn lại muốn lấy gì thì lấy tùy
+            bạn. Nhiều bạn sẽ nghĩ sao không lấy Trung Lý Phi Kiếm? tùy bạn
+            nếu bạn chọn Trung Lý phi kiếm thì đổi thần thông sang Sậu Thiên
+            kiếm thôi nhưng cái gì cũng có cái được và mất nên bạn tự tìm
+            hiểu lấy cách build cho bản thân cũng tốt.
+   ○ Võ Kỹ:
+        ■ Vì cái này chủ yếu là build tốc độ bắn nên thật sự cái nào hợp tay,
+            chơi quen thì các bạn lấy, cả 3 võ kỹ đều ngon.
+➢ Mình thì mình quen build thủy kiếm từ đầu nên mình dùng
+  cái Nguyệt Ảnh Kiếm 0.6 giây do nó build kiếm trảm cực
+  nhanh (kéo lên xem Võ kỹ của Thủy Kiếm) .
+➢ Nếu bạn chọn Cô Tinh Kiếm 0.2 giây của Phong Kiếm thì cứ
+  tốc độ bàn thờ mà bắn vì nó chẳng có Countdown, nhớ roll
+  đỏ cái thời gian hồi chiêu trừ 0.07 giây nha(kéo lên xem Võ
+  Kỹ Phong Kiếm).
+➢ Còn cái Thanh phong kiếm 0.3 giây thì mình cạch mặt luôn
+  vì mình không xài nó từ đầu, nhưng cái cô tinh kiếm này nó
+  có cái hay là Hiệu Ứng Xuyên Thấu, tức là bắn xuyên qua
+  gây damage cho nhiều kẻ địch như võ kỹ Thương dọn map
+  khá ngon chứ không như 2 võ kỹ kia nó bắn trúng là thôi và
+  với cách build tốc kiếm thì nó cũng bắn không khác gì AK47,
+  nhớ roll đỏ cái thời gian hồi chiêu 0.1 giây nha, hình ở
+  dưới:
+            ➢
+
+
+
+
+○ Tuyệt Kỹ:
+     ■ Dùng cái của Thủy Kiếm khỏi thay mắc công
+○ Thân Pháp:
+     ■ Đương Nhiên là Thân Pháp Kiếm, nhìn hình bên dưới các bạn cái
+        opt mình khoanh tròn không? đúng đó, xài thân pháp nó trừ 20%
+        countdown võ kỹ(7). Mình Tính cái võ kỹ 0.6 giây cho mấy bạn còn
+        2 cái võ kỹ kia tự tính nha:
+            ➢ Base countdown võ kỹ là 0.6s - 0.21s = 0.39s
+➢ 0.6s x (3)= 0.15s
+➢ 0.6s x (7)=0.2s
+➢ 0.6s x (8)=0.216s
+     ➜ 0.39s - (0.15s + 0.2s + 0.216s)= ??????? vì game ko có
+          countdown bằng số âm nên đây là cheat bạn nhé cố
+          gắng đừng chơi cheat, cheat/hack là ko tốt, mình ở
+          đây nói cho bạn cách làm thôi mình hoàn toàn ko
+          biết gì cả.
+     ➜ Thân pháp kiếm opt + dame khi ngự kiếm cải thiện
+          cực lớn sát thương đầu ra
+■
+○ Thần Thông:
+     ■ Buộc phải xài Thần Thông Vạn Thần Kiếm vì cái opt trừ countdown
+        võ kỹ của nó, nhìn hình ở dưới mình khoanh tròn thì thấy, do lúc
+        làm guide Tốc Kiếm mình rời phái Kiếm để chơi thử và build Lôi
+        lúc chụp hình này nên ko mua được.
+     ■ Thần Thông Vạn Thần kiếm Đỏ có thể trừ countdown lên tới 50%
+        hoặc hơn.(8) (do cuốn Tím đã trừ countdown võ kỹ 36% rồi)
+     ■
+
+
+
+
+○ Tâm Pháp:
+■ Đại Pháp: Dùng Đại Pháp của Đao trên Thủy Kiếm nói có kéo lên
+  xem lại.
+■ Tâm Pháp Quyết: Vì đây là lối build tập trung 100% vào tốc độ bắn
+  của Võ Kỹ nên Linh Lực không quan trọng lắm nhưng cứ sài Tâm
+  Pháp Quyết hồi linh lực của Phong Kiếm có tác dụng hồi Linh lực
+  khi duy trì thân pháp là đủ dùng.(tự kéo lên xem Phong Kiếm nha).
+■ Tâm Pháp Ngang: Dùng cái giống Phong Kiếm để hồi máu khi anh
+  em cưỡi kiếm bỏ chạy haha, giỡn chứ cưỡi kiếm bắn max ping
+  nên cứ vừa lùi vừa bắn nha đừng chạy(tự kéo lên Phong Kiếm
+  xem nha)
+■ Tâm Pháp Lục: Để PK thì chúng ta cần gì? Đan Được cuồng hóa
+  tăng sức đánh và phòng ngự, hốt cái Lục nào có mớ opt như hình
+  dưới dùm mình. Để tráng bị tối đa “Thuốc Lắc” bạn có thể.
+➢
+              ■ Mấy Tâm Pháp khác muốn xài sao tùy bạn miễn tăng max damage
+                là ok.
+              ■ Cách xài thì đơn giản:
+                    ➢ Gear 1: Bắn thường.
+                    ➢ Gear 2: Đè chuột trái bắn rồi kích hoạt thân pháp, thả tuyệt
+                       kỹ để trừ countdown Thân Pháp cho đợt sau.
+                    ➢ Gear 3: Trong lúc Đè chuột trái bắn rồi kích hoạt thân pháp
+                       thì kích hoạt luôn thần thông Vạn Thần kiếm để trừ max
+                       countdown.
+                    ➢ Gear 4: Rất quan trọng nên mình tô đỏ nha nha nha, sau khi
+                       hết buff thì Chạy chờ nó hồi skill(chắc chờ thân pháp kích
+                       hoạt tầm 3 giây rồi lặp lại). Đó là lý do cái này dùng cho PK
+                       thì ngon chứ đánh Boss thì…...
+
+IV: LỜI NHẮN NHỦ:
+
+        ○ XONG LUÔN 3 CÁCH BUILD NHA, VÌ GAME MỚI NÊN MÌNH CÒN NHIỀU
+          CHỖ KHÔNG BIẾT, BUILD CHỈ DỰA VÀO CÁCH NGHĨ VÀ PHỐI HỢP CÔNG
+          PHÁP CỦA BẢN THÂN NÊN CÓ GÌ KHÔNG ĐÚNG THÌ ĐỪNG NÉM ĐÁ
+          MÌNH NHA, BẠN NÀO PRO THÌ XEM CHƠI, CÓ GÓP Ý GÌ HAY CỨ NÓI
+          MÌNH SẼ CHỈNH SỬA.
+        ○ CHÚC CÁC BẠN MAY MẮN TRONG CÔNG CUỘC SKIP NĂM CHỜ ĐẤU GIÁ
+          NÓ RA SÁCH XỊN ĐỂ BUILD.
+

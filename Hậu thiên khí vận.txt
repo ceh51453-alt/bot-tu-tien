@@ -1,0 +1,2448 @@
+﻿Lưu ý: Có một số hậu thiên không được sử dụng trong base game
+
+
+Khí vận
+
+
+501 - Đói khổ lạnh lẽo
+        Mỗi tháng sinh lực -200
+
+
+502 - Miệng đắng lưỡi khô
+        Mỗi tháng tinh lực -50
+
+
+503 - Đầu váng mắt hoa
+        Mỗi tháng sinh lực -300, tinh lực -60
+
+
+5011 - Trọng thương
+        Sinh lực tối đa tạm thời giảm bớt 30%
+Nhận được sau khi thua trong sinh tử quyết đấu. Chạy trốn cũng bị tính như thua.
+
+
+5023 - Cực độ bi thương
+        Mỗi tháng tâm tình -20, duy trì 6 tháng
+        Có tỷ lệ nhận được khi hảo hữu bị người giết.
+
+
+5024 - Bi thống dục tuyệt
+        Mỗi tháng tâm tình -50, duy trì 6 tháng
+Có tỷ lệ nhận được khi thân nhân bị người giết.
+
+
+5082 - Lễ kính thượng tiên
+        May mắn +20, cước trình +100, duy trì 3 tháng
+        Nhận được sau khi thắp hương trong nhiệm vụ gặp điện thờ tiên
+
+
+5083 - Đối tiên bất kính
+        Ngộ tính -30, may mắn -40, cước trình -200, duy trì 3 tháng
+        Nhận được sau khi trộm đan lô trong nhiệm vụ gặp điện thờ tiên
+
+
+5085 - Tam Sinh Thạch chúc phúc
+        May mắn +30, cước trình +200, duy trì 24 tháng
+        Nhận được sau khi kết duyên với NPC được người chơi cứu (Con vợ game cho)
+
+
+7001 - Sầu mi khổ kiểm
+        Mỗi tháng giảm bớt 10 điểm tâm tình.
+
+
+7002 - Ủ rũ
+        Giảm xuống 50% hội tâm.
+
+
+7003 - Thất hồn lạc phách
+        Giảm xuống 50% hộ tâm.
+
+
+7004 - Ảm đạm hao tổn tinh thần
+        Mỗi tháng giảm bớt 10 điểm thể chất.
+
+
+7005 - Lực bất tòng tâm
+        Giảm xuống 10% công kích.
+
+
+7006 - Tâm lực giao tụy
+        Mỗi tháng giảm bớt 10 điểm tinh lực.
+
+
+7007 - Thần tình hoảng hốt
+        Giảm xuống 10% Phòng ngự.
+
+
+7008 - Nghi thần nghi quỷ
+        Cái khác nhân vật đối ngươi độ thân mật không cách nào tăng lên.
+
+
+7009 - Tâm thần bất định
+        Tâm tình tối đa giảm xuống 50%.
+
+
+7010 - Lo lắng
+        Không thể tiến hành tu luyện.
+
+
+7011 - Tâm phiền ý loạn
+        Không thể sử dụng đan dược.
+
+
+7012 - Ngỡ ngàng
+        Mỗi tháng có xác suất ngẫu nhiên mất đi bộ phận đạo cụ.
+
+
+7013 - Sầu não uất ức
+        Giảm xuống 50% may mắn.
+
+
+7014 - Tự bế
+        Không thể cùng cái khác nhân vật tiến hành trò chuyện.
+
+
+7015 - Ghét chiến tranh
+        Không thể chủ động tiến vào chiến đấu.
+Ngẫu nhiên nhận được sau khi thua trong sinh tử quyết đấu và bị đối phương sỉ nhục.
+
+
+7016 - Hoang mang lo sợ
+        Không thể ngồi cưỡi tọa kỵ.
+
+
+7017 - Hồn hồn ngạc ngạc
+        Giảm xuống 50% Ngộ tính.
+
+
+7000531 - Ma linh chi lực
+Mị lực -300, mỗi tháng hồi phục sinh lực 20%, duy trì 6 tháng.
+        Nhận được sau khi sử dụng vật phẩm: “Kỳ quái đích ma cô”
+
+
+8301 - Căn cơ bị hao tổn
+Không cách nào tu luyện, lại công kích, phòng ngự, sinh lực, linh lực, niệm lực giảm xuống 10%.
+
+
+8501 - Không nhìn địa hình
+        Có thể vượt qua bộ phận không cách nào thông qua địa hình.
+Nhận được sau khi trang bị một số tọa kỵ
+
+
+9097 - Oan hồn quấn thân
+        Chẳng biết tại sao, ngươi luôn cảm thấy có người ở bên người nói nhỏ
+        Nhận được sau khi mua vật phẩm hồn đăng
+
+
+9098 - Oan hồn di hận
+        Gặp oán hận, giảm xuống 15% công kích
+Nhận được sau khi tế luyện hồn đăng, tiến về ma tông song lại lựa chọn không can thiệp.
+
+
+9100 - Nguyệt chi
+        Gia tăng 20% tốc độ tu luyện
+        Nhận được sau khi hoàn thành một nhiệm vụ ngẫu nhiên ở Hoa Phong Châu
+
+
+9102 - Mạc Tuyết quà tặng
+        Gia tăng 15% may mắn
+        Nhận được ở kỳ ngộ Bất Quy Hà, lựa chọn “Có kỳ dị” -> “Ban cho hương hỏa”
+
+
+9103 - Cảnh giác
+        Gia tăng 20% hộ tâm
+        Nhận được ở kỳ ngộ Bất Quy Hà, lựa chọn “Có kỳ dị” -> “Không liên quan”
+
+
+9104 - Thụ Yêu nguyền rủa
+        Giảm xuống 20% may mắn
+        Nhận được ở kỳ ngộ Bất Quy Hà, lựa chọn “Có kỳ dị” -> “Hỏi thêm” -> Thua trận
+
+
+9108 - Nhiễm di khí tức
+        Mỗi tháng khôi phục 20 điểm tâm tình
+
+
+9109 - Hồ yêu chúc phúc
+        Gia tăng 25 điểm may mắn
+
+
+9110 - Cuồng bạo
+        Gia tăng 100 bội số bạo kích
+Có tỉ lệ nhận được khi di chuyển trên bản đồ
+
+
+9111 - Không sợ
+        Gia tăng 10% công kích
+        Có tỉ lệ nhận được khi di chuyển trên bản đồ
+        
+9112 - Sợ hãi
+        Giảm bớt 10% công kích
+        Có tỉ lệ nhận được khi di chuyển trên bản đồ
+
+
+9113 - Lộc Thục ưu ái
+        Gia tăng 20 điểm may mắn
+        Có tỉ lệ nhận được khi di chuyển trên bản đồ
+
+
+9114 - Ôn dịch
+        Mỗi tháng giảm bớt 10% sinh lực hiện tại
+
+
+9115 - Cẩn thận
+        Gia tăng 10% hộ tâm
+
+
+9116 - Sinh cơ bị quản chế
+        Giảm bớt 15% sinh lực tối đa
+        Có tỉ lệ nhận được khi di chuyển trên bản đồ
+
+
+9117 - Thần sông chúc phúc
+Gia tăng 10 điểm may mắn, lại mỗi tháng khôi phục 10% sinh lực cùng thể chất.
+
+
+9118 - Phẩm đức cao thượng
+        Gia tăng 5 điểm may mắn cùng 10% hộ tâm.
+
+
+9119 - Tế thần
+        Gia tăng 5 điểm may mắn.
+
+
+9120 - Tế thần
+        Gia tăng 10 điểm may mắn.
+
+
+9121 - Quái điểu chi vũ
+        Gia tăng 10% linh căn kháng tính
+
+
+9122 - Nguyệt ngấn
+        Gia tăng 10% hiệu suất tu luyện
+
+
+9123 - Tính tính chi linh
+        Gia tăng 200 Cước lực cùng 20 điểm di tốc
+
+
+9124 - Tính tính chi khí
+        Gia tăng 200 Cước lực
+        Nhận được sau khi cứu con lợn bị trúng độc
+
+
+9125 – Thượng ký
+        Gia tăng 20 điểm may mắn
+
+
+9126 - Trúng thăm
+        Gia tăng 10 điểm may mắn
+
+
+9127 - Hạ ký
+        Giảm bớt 10 điểm may mắn
+
+
+9139 - Tiên tửu
+        Gia tăng 10% công kích cùng 10 điểm may mắn
+        Có tỉ lệ nhận được khi di chuyển trên bản đồ
+
+
+9140 - Tiên tửu
+        Gia tăng 10% Phòng ngự cùng 10 điểm may mắn
+        Có tỉ lệ nhận được khi di chuyển trên bản đồ
+
+
+9141 - Tiên tửu
+        Gia tăng 10% hội tâm cùng 10 điểm may mắn
+        Có tỉ lệ nhận được khi di chuyển trên bản đồ
+
+
+9142 - Tiên tửu
+        Gia tăng 100 Bội số bạo kích cùng 10 điểm may mắn
+        Có tỉ lệ nhận được khi di chuyển trên bản đồ
+
+
+9143 - Trừng phạt nho nhỏ
+        Giảm bớt 10% công kích cùng 10 điểm may mắn
+
+
+9144 - Trừng phạt nho nhỏ
+        Giảm bớt 10% Phòng ngự cùng 10 điểm may mắn
+
+
+9145 - Trừng phạt nho nhỏ
+        Giảm bớt 10% hội tâm cùng 10 điểm may mắn
+
+
+9146 - Trừng phạt nho nhỏ
+        Giảm bớt 100 bội số bạo kích cùng 10 điểm may mắn
+
+
+9147 - Ngàn vạn ma niệm
+        Giảm bớt 100 điểm niệm lực tối đa
+
+
+9148 - Vết thương nhỏ
+Giảm bớt 10% sinh lực tối đa cùng linh lực tối đa
+
+
+9149 - Linh tuyền bị hủy
+        tips_9149
+
+
+9150 - Tư duy rõ ràng
+        Gia tăng 20 điểm ngộ tính
+
+
+9151 - Tư duy trì trệ
+        Giảm 10 điểm ngộ tính
+
+
+9152 - Cảm ngộ
+        Gia tăng 20 điểm ngộ tính cùng 10% hiệu suất tu luyện
+        Có tỉ lệ nhận được khi di chuyển tông môn
+
+
+9153 – Tiểu say
+        Gia tăng 5% công kích
+        Có tỉ lệ nhận được khi cùng NPC uống rượu khi hẹn hò
+
+
+9154 - Hơi say rượu
+        Gia tăng 5% sinh lực cùng 10% hội tâm
+        Có tỉ lệ nhận được khi cùng NPC uống rượu khi hẹn hò
+
+
+9155 - Hạnh vận thảo
+        Gia tăng 20 điểm may mắn
+        Có tỉ lệ nhận được khi cùng NPC ngắm hoa khi hẹn hò
+
+
+9156 – Ách vận thảo
+        Giảm bớt 10 điểm may mắn
+        Có tỉ lệ nhận được khi cùng NPC ngắm hoa khi hẹn hò
+
+
+9157 - Lòng tốt làm chuyện xấu
+        Giảm bớt 1 điểm may mắn
+
+
+9158 - Di oán
+        Giảm bớt 500 điểm niệm lực tối đa
+
+
+9159 - Khí huyết sung mãn
+        Gia tăng sinh lực tối đa 5%
+
+
+9160 - Yêu khí nhập thể
+        Giảm xuống 5% sinh lực tối đa
+
+
+9163 - Ham học hỏi
+        Gia tăng 10 điểm ngộ tính
+
+
+9172 - Kỳ cục mê tư
+        Ngộ tính đề cao 40 điểm, tốc độ tu luyện đề cao 50%
+        Nhận được trong sự kiện xem cờ. Chọn “Xem cờ không nói chân quân tử”
+
+
+9173 - Ấn đường phát hắc
+        May mắn giảm bớt 20 điểm, mị lực giảm bớt 500 điểm
+
+
+9183 - Phản báo
+Người chết lâm chung oán niệm chỗ tụ, nhiều thì một năm, ít thì một tháng, người chết nhất định đoàn tụ nhục thân, tìm ngươi trả thù......
+
+
+9186 - Lòng dạ từ bi
+        Gia tăng 20 điểm may mắn
+
+
+9188 - Ẩn nấp
+Có thể lặn nhập người khác tông môn bộ phận trong kiến trúc. Một khi kích phát chui vào sau rất nhanh liền sẽ mất đi hiệu dụng, thời gian có hạn. Nhưng vẫn có khả năng bị tu vi cao thâm người nhìn thấu.
+        Nhận được khi sử dụng vật phẩm Ẩn Nặc Đan
+
+
+9190 - Tu vi đình trệ
+Tông môn linh khí khó khăn, tu vi đình trệ, lại cùng người lúc chiến đấu lại nhận ảnh hưởng bất lợi.
+
+
+9192 - Dạy không biết mệt
+Hướng đồ đệ truyền thụ công pháp, cần thời gian nhất định khôi phục công lực, trong vòng nửa năm không thể lại hướng người khác truyền thụ công pháp
+        Nhận được khi truyền thụ công pháp cho đệ tử
+
+
+9193 - Học mà không ngại
+Hướng sư phụ học tập công pháp, cần thời gian nhất định tinh tiến công pháp, trong vòng nửa năm không thể lại hướng người khác học tập công pháp
+        Nhận được khi thỉnh giáo công pháp với sư phụ
+
+
+20003 - Liên tâm kết
+Ngưu Lang Chức Nữ cùng khoản tín vật, tượng trưng cho ngươi cùng đối phương thâm hậu tình nghĩa. Đương đối phương tao ngộ cái khác tu tiên giả trí mạng uy hiếp lúc, cái này nút buộc đem sinh ra vượt qua không gian kỳ diệu phản ứng, có lẽ có thể đem ngươi đưa đến đối phương bên người.
+Nhận được khi tặng vật phẩm Liên Tâm Kết cho NPC khác
+
+
+20004 - Liên tâm kết
+Ngưu Lang Chức Nữ cùng khoản tín vật, tượng trưng cho ngươi cùng đối phương thâm hậu tình nghĩa. Đương đối phương tao ngộ cái khác tu tiên giả trí mạng uy hiếp lúc, cái này nút buộc đem sinh ra vượt qua không gian kỳ diệu phản ứng, có lẽ có thể đem ngươi đưa đến đối phương bên người.
+Nhận được khi tặng vật phẩm Liên Tâm Kết cho NPC khác
+
+
+20005 - Kim ô ngọc vũ
+Thân hoài kim ô ngọc vũ, đi tới chỗ nào đều sẽ trở thành Bát Hoang giới đông đảo loài chim cực kỳ hâm mộ đối tượng.
+Nhận được sau khi hoàn thành sự kiện đuổi giết kim ô trong tửu quán ở Vân Mạch Châu
+
+
+6114221 - Linh lung hồn đăng
+Chiến đấu bên trong sắp chết lúc lập tức trả lời toàn bộ sinh lực linh lực cùng niệm lực, chỉ có thể phát động một lần, phát động sau khí vận biến mất.
+
+
+6114191 - Chiêu Hồn Phiên 
+Chiến đấu bên trong sắp chết lúc có thể không địch 5 giây, một trận chiến đấu chỉ có thể phát động một lần, tổng cộng nhưng phát động 3 Lần, số lần sau khi dùng xong khí vận biến mất.( Đã sử dụng số lần: {luckUseCount}/3)
+
+
+6120411 - Ngự quỷ kỳ
+Sinh lực thấp hơn 20% Lúc phát động, triệu hoán 3 Cái khô lâu, trong đó một cái mang theo đặc kỹ cách mỗi 5 giây hồi phục người chơi lớn nhất HP 5%. Một trận chiến đấu chỉ có thể phát động một lần, tổng cộng có thể phát động 3 Lần, số lần sau khi dùng xong khí vận biến mất.( Đã sử dụng số lần: {luckUseCount}/3)
+
+
+6121371 – Cửu ngôn trấn linh chú
+Trong chiến đấu gặp được đại yêu thú cùng một chút khá mạnh lực địch nhân lúc 9 giây sau đối tất cả địch nhân tạo thành tổn thương cũng tại về sau 5 giây bên trong trầm mặc địch nhân cũng tạo thành tiểu ngạch tổn thương, một trận chiến đấu chỉ có thể phát động một lần, tổng cộng nhưng phát động 9 Lần, số lần sau khi dùng xong khí vận biến mất.( Đã sử dụng số lần: {luckUseCount}/9)
+
+
+6120001 - Ngự quỷ kỳ
+Sinh lực thấp hơn 20% Lúc phát động, triệu hoán 4 Cái Quỷ Tướng, trong đó một cái mang theo đặc kỹ cách mỗi 5 giây hồi phục người chơi lớn nhất HP 5%. Một trận chiến đấu chỉ có thể phát động một lần, tổng cộng có thể phát động 3 Lần, số lần sau khi dùng xong khí vận biến mất.( Đã sử dụng số lần: {luckUseCount}/3)
+
+
+6120002 - Thiên kiếm thạch
+Sử dụng thần thông về sau qua một đoạn thời gian, nhưng tại trên trận triệu hoán một đạo thiên kiếm đối tất cả địch nhân tạo thành cao tổn thương. Một trận chiến đấu chỉ có thể phát động một lần, tổng cộng có thể phát động 9 Lần, số lần sau khi dùng xong khí vận biến mất.( Đã sử dụng số lần: {luckUseCount}/9)
+
+
+6120003 - Tổn hại ngự quỷ kỳ
+Một mặt tổn hại ngự quỷ cờ, nhưng vẫn là bảo lưu lại nó bộ phận lực lượng. Sinh lực thấp hơn 20% Lúc phát động, triệu hoán 2 Cái Quỷ Tướng. Một trận chiến đấu chỉ có thể phát động một lần, tổng cộng có thể phát động 2 Lần, số lần sau khi dùng xong khí vận biến mất.( Đã sử dụng số lần: {luckUseCount}/2)
+
+
+6120004 - Tổn hại thiên kiếm thạch
+Một khối tổn hại thiên kiếm thạch, nhưng vẫn là bảo lưu lại nó bộ phận lực lượng. Sử dụng thần thông về sau qua một đoạn thời gian, nhưng tại trên trận triệu hoán một đạo thiên kiếm đối tất cả địch nhân tạo thành tổn thương. Một trận chiến đấu chỉ có thể phát động một lần, tổng cộng có thể phát động 3 Lần, số lần sau khi dùng xong khí vận biến mất.( Đã sử dụng số lần: {luckUseCount}/3)
+
+
+76211 - Chân dương hộ thể
+        Lực phòng ngự +10, có thể chống cự Bàn Long sơn bên trong hàn khí
+        Nhận được sau khi đưa linh chi cho thủ hộ Bàn Long Sơn
+
+
+8805510 - Băng lam ôn lưu
+        Sinh lực tối đa +5%
+        Nhận được sau khi cứu A Hi ở Băng Nguyên
+
+
+8805212 - Khí tức hỗn loạn
+        Công kích -10%, trước mắt trạng thái không cách nào tiến hành đột phá
+
+
+8805213 - Cam Lâm Quảng Trạch
+Tiểu sư muội đột phá lúc hiệu quả đặc biệt, ngươi cơ duyên phía dưới từ bên cạnh đạt được chỗ tốt, kết thành khí vận, tăng trưởng tinh thần. Sinh lực, linh lực, niệm lực tối đa tăng 100 điểm.
+
+
+8805214 - Tiểu sư muội chiếu cố
+Tại bản tông môn bên trong mua sắm thu hoạch được giảm còn 80% ưu đãi
+Nhận được khi lần đầu vào Tàng Kinh Các
+
+
+8805215 - Giải thoát dược hiệu
+Không nghĩ sư huynh bí dược lại có cường kiện thân thể chi công, thể nội khí tức lưu chuyển, hết sức thông thuận. Sinh lực tối đa +100
+
+
+8805216 - Thương Minh Kính Tượng
+Linh đài đảo ngược, tận nghiêng phiền não, biển kính dòm tâm, hơi thở nghi trong vắt lo, tiến nhập nội thị cảnh giới, xem khắp nội phủ. Ngộ tính +25
+
+
+8805217 - Tâm tình tỉnh lại
+Ngươi đạt được môn nhân tôn kính, tinh thần đại chấn, giơ tay nhấc chân, đều là tự tin. Tâm tình tối đa +50, mỗi tháng khôi phục tâm tình +5
+
+
+8805221 - Thần thú tinh thần
+Tinh lực tối đa +30, thể chất tối đa +30, cước lực +100
+Có tỷ lệ nhận được khi cho thần thú tông môn ăn
+
+
+8805222 - Thần thú phúc khí
+        May mắn +60, ngộ tính +30
+
+
+8805505 - Trùng đồng chi lực
+        Sinh lực tối đa +3%
+        Nhận được sau khi đánh bại Dạ Vũ Lâu
+
+
+8805506 - Vũ diễm dương viêm
+        Sinh lực tối đa +5%, linh lực tối đa +3%
+        Nhận được sau khi đánh bại Hành Thiên trên đỉnh núi
+
+
+8805300 - Ngưng Tâm
+Gia tăng 10% sinh lực tối đa, 10% Niệm lực tối đa
+        Có tỷ lệ nhận được khi mở tửu quán ở Vân Mạch Châu
+
+
+8805301 - Cố thần
+Gia tăng 15% sinh lực tối đa, 15% Niệm lực tối đa
+        Có tỷ lệ nhận được khi mở tửu quán ở Vân Mạch Châu
+
+
+8805350 - Minh khí quấn thân
+Ngươi hút vào minh khí, gây nên thân thể bị hao tổn, sinh lực tối đa -15%, linh lực tối đa -15%, tinh lực cùng thể chất tối đa -15
+        Nhận được trong sự kiện giải cứu Phong Bình Mạt
+
+
+8805351 - Minh khí quấn thân
+Ngươi hút vào minh khí, gây nên thân thể bị hao tổn, sinh lực tối đa -10%, linh lực tối đa -10%, tinh lực cùng thể chất tối đa -5
+        Nhận được trong sự kiện giải cứu Phong Bình Mạt
+
+
+8805352 - Minh khí quấn thân
+Ngươi hút vào minh khí, gây nên thân thể bị hao tổn, sinh lực tối đa -5%, linh lực tối đa -5%
+Nhận được trong sự kiện giải cứu Phong Bình Mạt
+
+
+9200001 - Thần bí kiếm khí
+Kiếm tư chất +20. Có một đoàn kiếm khí quay chung quanh tại bên cạnh ngươi.
+        Nhận được sau khi đọc hết 4 quyển Kiếm Tu Vãng Sự
+
+
+9200002 - Tinh thần hoảng hốt
+        Thể chất -20, tâm tình -10, tinh lực -20
+        Nhận được sau lần tìm công nhận đầu tiên với Song Song
+
+
+9200122 - Tế nhật tiên khuẩn nguyền rủa
+May mắn giảm xuống -20, khi có khí vận này sẽ bị dược linh truy sát.
+        Nhận được sau khi hoàn thành nhiệm vụ “Truyền bá kế hoạch của nấm tiên”
+
+
+8011316 - Gân cốt bị hao tổn
+        Sinh lực -40%, cước lực -80%, duy trì ba tháng.
+Nhận được trong quest Huyền trong Tửu quán ở Hoa Phong Châu. Sau khi gạ gục 3 NPC, cưỡng chế đánh giết sẽ nhận được.
+
+
+8805500 – Đan tâm cực ý
+Sinh lực tối đa +2%; Khi mang khí vận này tiến hành đột phá có thể thu được luyện đan sư đặc thù nghịch thiên cải mệnh.
+        Có tỷ lệ nhận được khi ngồi tu luyện trong Đan phòng
+
+
+8805501 - Dương cang chi độc
+        Sinh lực tối đa -2%
+        Nhận được sau khi từ chối gia nhập Đan các
+
+
+9300101 - Tôi ruột chi độc
+        Có xác suất xuất hiện cùng thân tộc hoặc hảo hữu đoạn tuyệt quan hệ
+        Nhận được sau khi thua trong sinh tử quyết đấu và bị nhét độc đan 
+
+
+9300102 - Tình hoa
+Có xác suất xuất hiện cùng độ thân mật tương đối cao cái khác nhân vật thỉnh cầu kết thành quan hệ
+        Nhận được sau khi thua trong sinh tử quyết đấu và bị nhét độc đan 
+
+
+9300103 - Lửa giận chi độc
+Mỗi tháng cũng sẽ có chủ động tìm cái khác cừu hận nhân vật chiến đấu
+        Nhận được sau khi thua trong sinh tử quyết đấu và bị nhét độc đan 
+
+
+9300104 - Ma chướng
+        Mỗi tháng đều sẽ chủ động ăn cắp cái khác nhân vật đạo cụ
+        Nhận được sau khi thua trong sinh tử quyết đấu và bị nhét độc đan 
+
+
+9300105 - Trăm năm nghèo ba đời
+Mỗi tháng đều sẽ chủ động hướng người khác ( Bao quát cừu nhân chờ ) bố thí đạo cụ
+Nhận được sau khi thua trong sinh tử quyết đấu và bị nhét độc đan 
+
+
+9300106 - Ăn nhầm thú dược
+Sẽ cảm thấy Đương Khang tộc trở nên mi thanh mục tú, nhìn nhiều hai mắt sẽ khống chế không nổi mình.
+Nhận được sau khi thua trong sinh tử quyết đấu và bị nhét độc đan 
+
+
+9300107 - Cừu thị ma đạo
+        Cực độ cừu thị ma đạo người.
+        Nhận được sau khi thua trong sinh tử quyết đấu và bị nhét độc đan 
+
+
+9300108 - Cừu thị chính đạo
+        Cực độ cừu thị chính đạo người.
+Nhận được sau khi thua trong sinh tử quyết đấu và bị nhét độc đan 
+
+
+9300109 - Nghịch mạch đan
+Có thể khiến người mạch đập nghịch chuyển linh khí đảo ngược, phế tu sĩ công pháp, lại trong vòng mấy tháng không thể sử dụng cao giai công pháp.
+Nhận được sau khi thua trong sinh tử quyết đấu và bị nhét độc đan 
+
+
+9300110 - Nghịch mạch đan
+Có thể khiến người mạch đập nghịch chuyển linh khí đảo ngược, phế tu sĩ công pháp, lại trong vòng mấy tháng không thể sử dụng cao giai công pháp.
+Nhận được sau khi thua trong sinh tử quyết đấu và bị nhét độc đan 
+
+
+Khí vận liên quan sự kiện truyền công
+8012001 - Nguyên hồn viên mãn
+Đệ nhị nguyên hồn đã viên mãn, nhưng tại chiến đấu sắp chết lúc phát động, hồi phục đầy trạng thái cùng thu hoạch được cực mạnh phòng ngự hộ thuẫn duy trì 10 giây.
+
+
+8012002 - Nguyên hồn phôi thai
+Đệ nhị nguyên hồn còn đang trong quá trình trưởng thành. Sau khi trưởng thành đến viên mãn, có thể cung cấp cường đại phòng hộ năng lực, cần mười năm mới có thể viên mãn.
+
+
+Khí vận liên quan sự kiện Quân Mạc Tri
+9164 – Mạc Tri
+        Mỗi tháng tâm tình +10
+
+
+9165 – Tầm đạo
+        Gia tăng 5% công kích cùng 10 điểm ngộ tính
+
+
+9166 – Mạc Cầu
+        Gia tăng 5% phòng ngự cùng 10 điểm may mắn
+
+
+9167 - Nhân sinh vô thường
+        Gia tăng 5 điểm ngộ tính cùng 100 cước lực
+
+
+9168 - Nhát gan
+        Công kích giảm bớt 5%, mỗi tháng tâm tình -10, di tốc +20 điểm
+
+
+9169 - Nguyện Tri tiền bối
+        Gia tăng công kích cùng phòng ngự 5%
+
+
+9170 - Quân mạc ai
+        Gia tăng công kích 10%, gia tăng 20 điểm ngộ tính
+
+
+9171 - Quân mạc tri
+        Phòng ngự +10%, Ngộ tính +20, mỗi tháng tâm tình +10
+
+
+Khí vận đặc thù của chế độ Hồng Hoang
+9162 - Ngự Hoang Thần pháp
+Bát Hoang giới tự có thiên đạo pháp tắc ước thúc, âm dương điều hòa, hóa nguyên quy nhất. Nơi đây sơn hải bên trong yêu tà chi lực dị thường hung mãnh, cho nên thiên đạo đem cho tới đối kháng người lấy lực lượng pháp tắc gia trì, lấy đạt tới lưỡng nghi hòa hợp chi cảnh. Nên lực lượng pháp tắc sẽ thật to cường hóa tu tiên giả triệu hồi ra sinh vật, khiến cho có thể cùng hung ác yêu thú phân cao thấp.<g> Tự thân triệu hoán vật ( Bao quát pháp bảo ) nhận đến tổn thương từ đại yêu thú sẽ diện rộng hạ thấp.</g>
+
+
+Khí vận của Song Ngư Bội
+150 - Song Ngư Bội
+Nắm giữ một nửa Song Ngư Bội, có thể cùng người nắm giữ một nửa Song Ngư Bội khác cùng hưởng diệu dụng của tiên khí Song Ngư Bội. (Tại bên trong giao diện Song Ngư Bội có thể xem xét tường tình )
+Nhận được sau khi trao/nhận SNB cho người khác
+
+
+Khí vận liên quan khí linh
+
+
+141 - Mệnh hồn khuyết tổn
+Tại mở ra bản mệnh khí linh khế ước lúc, tổn thất bộ phận mệnh hồn. Sinh lực cùng linh lực cơ bản giảm xuống 20%, lại không cách nào khóa lại bản mệnh khí linh.
+Nhận được sau khi hủy khế ước với khí linh bản mệnh.
+
+
+810103 - Tiên tư
+        Mị lực +200
+        Nhận được sau khi dùng kỹ năng Tiên Tư của Vân Mộng Y
+
+
+8804211 - Đầy bụng hồ nghi
+        May mắn +40, ngộ tính -20
+        Có tỷ lệ nhận được sau khi dùng kỹ năng Vân Mộng Vô Ngân của Vân Mộng Y
+
+
+8804311 - Mộng trung lôi kiếp
+        Ngộ tính +30, sinh lực tối đa -10%, cước lực -100
+        Có tỷ lệ nhận được sau khi dùng kỹ năng Vân Mộng Vô Ngân của Vân Mộng Y
+
+
+8812021 - Hô phong hoán vũ
+        Trời nắng
+        Nhận được sau khi dùng kỹ năng Hô phong hoán vũ của Chúc Diêu Nguyệt
+        
+8812031 - Hô phong hoán vũ
+        Mưa to
+        Nhận được sau khi dùng kỹ năng Hô phong hoán vũ của Chúc Diêu Nguyệt
+
+
+8812041 - Hô phong hoán vũ
+        Trời đầy mây
+        Nhận được sau khi dùng kỹ năng Hô phong hoán vũ của Chúc Diêu Nguyệt
+
+
+8812051 - Hô phong hoán vũ
+        Ngày mưa
+        Nhận được sau khi dùng kỹ năng Hô phong hoán vũ của Chúc Diêu Nguyệt
+
+
+8812061 - Hô phong hoán vũ
+        Tuyết trời
+        Nhận được sau khi dùng kỹ năng Hô phong hoán vũ của Chúc Diêu Nguyệt
+
+
+8812071 - Uy áp yêu thú
+        Nhưng uy áp lôi trạch yêu thú.
+        Nhận được sau khi dùng kỹ năng Chước nhật chi uy của Chúc Diêu Nguyệt
+
+
+8812081 - Uy áp yêu thú
+        Nhưng uy áp lôi trạch, Thập Vạn Đại Sơn yêu thú.
+        Nhận được sau khi dùng kỹ năng Chước nhật chi uy của Chúc Diêu Nguyệt
+
+
+8812091 - Uy áp yêu thú
+        Nhưng uy áp lôi trạch, Thập Vạn Đại Sơn, vĩnh hằng băng nguyên yêu thú.
+        Nhận được sau khi dùng kỹ năng Chước nhật chi uy của Chúc Diêu Nguyệt
+
+
+8812101 - Uy áp yêu thú
+        Nhưng uy áp tất cả khu vực nguy hiểm yêu thú.
+        Nhận được sau khi dùng kỹ năng Chước nhật chi uy của Chúc Diêu Nguyệt
+
+
+8813111 - Kỳ quái ma cô
+        Sinh lực tối đa +15%, linh lực tối đa -15%
+        Có tỉ lệ nhận được khi sau khi  qua tháng và trang bị khí linh Lãnh Kinh Đường
+
+
+8813121 - Kỳ quái ma cô
+        Sinh lực tối đa -15%, linh lực tối đa +15%
+        Có tỉ lệ nhận được khi sau khi  qua tháng và trang bị khí linh Lãnh Kinh Đường
+
+
+8813131 - Kỳ quái ma cô
+        Hội tâm bội suất +15%, hộ tâm bội suất -15%
+        Có tỉ lệ nhận được khi sau khi  qua tháng và trang bị khí linh Lãnh Kinh Đường
+
+
+8813141 - Kỳ quái ma cô
+        Hội tâm bội suất -15%, hộ tâm bội suất +15%
+        Có tỉ lệ nhận được khi sau khi  qua tháng và trang bị khí linh Lãnh Kinh Đường
+
+
+8813151 - Kỳ quái ma cô
+        Mị lực giá trị +15%, tinh lực tối đa -15%
+        Có tỉ lệ nhận được khi sau khi  qua tháng và trang bị khí linh Lãnh Kinh Đường
+
+
+8813161 - Kỳ quái ma cô
+        Lực công kích +15%, lực phòng ngự -15%
+        Có tỉ lệ nhận được khi sau khi  qua tháng và trang bị khí linh Lãnh Kinh Đường
+
+
+8813171 - Kỳ quái ma cô
+        Cước lực +15%, may mắn -15%
+        Có tỉ lệ nhận được khi sau khi  qua tháng và trang bị khí linh Lãnh Kinh Đường
+
+
+8813181 - Kỳ quái ma cô
+        Thể chất tối đa +15%, tâm tình tối đa -15%
+        Có tỉ lệ nhận được khi sau khi  qua tháng và trang bị khí linh Lãnh Kinh Đường
+
+
+8813191 - Kỳ quái ma cô
+        Lực công kích -15%, lực phòng ngự +15%
+        Có tỉ lệ nhận được khi sau khi  qua tháng và trang bị khí linh Lãnh Kinh Đường
+
+
+Khí vận liên quan đến phù
+8012301 - Thần mục chi lực
+Tầm mắt +1, có thể sẽ nhìn thấy thường nhân không cách nào nhìn thấy đồ vật!
+        Nhận được sau khi dùng vật phẩm “Thần Mục Phù”
+
+
+6331011 - Dẫn yêu u hương
+Khi hành tẩu tại khu vực Vĩnh Ninh Châu, Lôi Trạch, xác suất gặp quái vật tập kích tăng lên 50%
+        Nhận được sau khi dùng vật phẩm “Dẫn Yêu Phù”
+
+
+6331012 - Dẫn yêu u hương
+Khi hành tẩu tại khu vực Hoa Phong Châu, Thập Vạn Đại Sơn, xác suất gặp quái vật tập kích tăng lên 50%
+        Nhận được sau khi dùng vật phẩm “Dẫn Yêu Phù”
+
+
+6331013 - Dẫn yêu u hương
+Khi hành tẩu tại khu vực Vân Mạch Châu, Vĩnh Hằng Băng Nguyên, xác suất gặp quái vật tập kích tăng lên 50%
+        Nhận được sau khi dùng vật phẩm “Dẫn Yêu Phù”
+
+
+6331014 - Dẫn yêu u hương
+Khi hành tẩu tại khu vực Mộ Tiên Châu, Mê Đồ Hoang Mạc, xác suất gặp quái vật tập kích tăng lên 50%
+        Nhận được sau khi dùng vật phẩm “Dẫn Yêu Phù”
+
+
+6331015 - Dẫn yêu u hương
+Khi hành tẩu tại khu vực Xích U Châu, xác suất gặp quái vật tập kích tăng lên 50%
+        Nhận được sau khi dùng vật phẩm “Dẫn Yêu Phù”
+
+
+6331021 - Tị yêu u hương
+Khi hành tẩu tại khu vực Vĩnh Ninh Châu, Lôi Trạch, xác suất gặp quái vật tập kích giảm 50%
+        Nhận được sau khi dùng vật phẩm “Tị Yêu Phù”
+
+
+6331022 - Tị yêu u hương
+Khi hành tẩu tại khu vực Hoa Phong Châu, Thập Vạn Đại Sơn, xác suất gặp quái vật tập kích giảm 50%
+        Nhận được sau khi dùng vật phẩm “Tị Yêu Phù”
+
+
+6331023 - Tị yêu u hương
+Khi hành tẩu tại khu vực Vân Mạch Châu, Vĩnh Hằng Băng Nguyên, xác suất gặp quái vật tập kích giảm 50%
+        Nhận được sau khi dùng vật phẩm “Tị Yêu Phù”
+
+
+6331024 - Tị yêu u hương
+Khi hành tẩu tại khu vực Mộ Tiên Châu, Mê Đồ Hoang Mạc, xác suất gặp quái vật tập kích tăng lên 50%
+        Nhận được sau khi dùng vật phẩm “Tị Yêu Phù”
+
+
+6331025 - Tị yêu u hương
+Khi hành tẩu tại khu vực Xích U Châu, xác suất gặp quái vật tập kích tăng lên 50%
+        Nhận được sau khi dùng vật phẩm “Tị Yêu Phù”
+
+
+63310411 - Thu liễm khí tức
+Thu liễm tự thân khí tức, khiến cho tu tiên giả khác tìm tới bản thân tiến hành hỗ động tần suất giảm xuống. Tại <g>Tân Đạt Trấn, Vĩnh Ninh Châu, Lôi Trạch</g> sẽ có hiệu quả.
+        Nhận được sau khi dùng vật phẩm “Ẩn Tức Phù”
+
+
+63310421 - Thu liễm khí tức
+Thu liễm tự thân khí tức, khiến cho tu tiên giả khác tìm tới bản thân tiến hành hỗ động tần suất giảm xuống. Tại <g>Hoa Phong Châu, Thập Vạn Đại Sơn</g> cùng các khu vực trước đó đều có hiệu quả.
+        Nhận được sau khi dùng vật phẩm “Ẩn Tức Phù”
+
+
+63310431 - Thu liễm khí tức
+Thu liễm tự thân khí tức, khiến cho tu tiên giả khác tìm tới bản thân tiến hành hỗ động tần suất giảm xuống. Tại <g>Vân Mạch Châu, Vĩnh Hằng Băng Nguyên</g> cùng các khu vực trước đó đều có hiệu quả.
+        Nhận được sau khi dùng vật phẩm “Ẩn Tức Phù”
+
+
+63310441 - Thu liễm khí tức
+Thu liễm tự thân khí tức, khiến cho tu tiên giả khác tìm tới bản thân tiến hành hỗ động tần suất giảm xuống. Tại <g>Mộ Tiên Châu, Mê Đồ Hoang Mạc</g> cùng các khu vực trước đó đều có hiệu quả.
+        Nhận được sau khi dùng vật phẩm “Ẩn Tức Phù”
+
+
+63310451 - Thu liễm khí tức
+Thu liễm tự thân khí tức, khiến cho tu tiên giả khác tìm tới bản thân tiến hành hỗ động tần suất giảm xuống. Tại <g>Xích U Châu</g> cùng các khu vực trước đó đều có hiệu quả.
+Nhận được sau khi dùng vật phẩm “Ẩn Tức Phù”
+Khí vận liên quan thi đấu tông môn
+
+
+9175 - Thiên hạ đệ nhất tông
+        Hoa Phong Châu đệ nhất tông môn
+        Nhận được khi tông môn dành chiến thắng trong thi đấu tông môn
+
+
+9176 - Thiên hạ đệ nhất tông
+        Vân Mạch Châu đệ nhất tông môn
+        Nhận được khi tông môn dành chiến thắng trong thi đấu tông môn
+
+
+9177 - Thiên hạ đệ nhất tông
+        Mộ Tiên Châu đệ nhất tông môn
+        Nhận được khi tông môn dành chiến thắng trong thi đấu tông môn
+
+
+9178 - Thiên hạ đệ nhất tông
+        Xích U châu đệ nhất tông môn
+        Nhận được khi tông môn dành chiến thắng trong thi đấu tông môn
+
+
+9179 - Hoa phong châu mạnh nhất đệ tử
+        Hoa Phong Châu mạnh nhất đệ tử
+        Nhận được khi là đệ tử có thành tích tốt nhất trong thi đấu tông môn.
+
+
+9180 - Mây mạch châu mạnh nhất đệ tử
+        Vân Mạch Châu mạnh nhất đệ tử
+        Nhận được khi là đệ tử có thành tích tốt nhất trong thi đấu tông môn.
+
+
+9181 - Mộ Tiên Châu mạnh nhất đệ tử
+        Mộ Tiên Châu mạnh nhất đệ tử
+        Nhận được khi là đệ tử có thành tích tốt nhất trong thi đấu tông môn.
+
+
+9182 - Xích U châu mạnh nhất đệ tử
+        Xích U châu mạnh nhất đệ tử
+        Nhận được khi là đệ tử có thành tích tốt nhất trong thi đấu tông môn.
+
+
+Khí vận liên quan đạo tâm
+
+
+9000001 - Thông dụng đạo tâm hiệu quả 2
+        Bị thương tổn -10%
+
+
+9000002 - Thông dụng đạo tâm hiệu quả 1
+        Tạo thành tổn thương +5%
+
+
+9000003 - Thông dụng đạo tâm hiệu quả -1
+        Tạo thành tổn thương -10%
+
+
+9000004 - Thông dụng đạo tâm hiệu quả -2
+        Bị thương tổn +20%
+
+
+9000005 - Đạo tâm trừ khử
+        Không cách nào đột phá
+
+
+9000101 - Vô danh
+        Tự thân cùng tất cả phe mình triệu hoán vật tạo thành tổn thương +10%
+
+
+9000102 – Bất tức
+        Tốc độ di chuyển +10%
+
+
+9000103 – Tể ngự
+        Kỹ năng CD-10%
+
+
+9000104 - Vạn Tượng
+        Võ kỹ / Linh kỹ tầm bắn +20%
+
+
+9000105 – Tuần thiên
+        Tốc độ di chuyển +10%
+
+
+9000106 – Thượng thiện
+        Sử dụng đan dược, pháp bảo niệm lực tiêu hao -20%
+
+
+9000107 - Hóa ngại
+        Nhận đến tự học tiên giả tổn thương -15%
+
+
+9000108 - Kế minh
+        Võ kỹ / Linh kỹ tầm bắn +20%
+
+
+9000109 - Khô nhiên
+        Võ kỹ / Linh kỹ tầm bắn +20%
+
+
+9000110 - Tu tỉnh
+        Kỹ năng CD-10%
+
+
+9000111 – Vô cữu
+        Nhận đến tự học tiên giả tổn thương -15%
+
+
+9000112 - Quy Tàng
+        Sử dụng đan dược, pháp bảo niệm lực tiêu hao -20%
+
+
+9000113 – Chỉ du
+        Sử dụng đan dược, pháp bảo niệm lực tiêu hao -20%
+
+
+9000114 - Vô định
+        Kỹ năng CD-10%
+
+
+9000115 – Trường hằng
+        Tốc độ di chuyển +10%
+
+
+9000116 - Phúc sinh
+        May mắn +40
+
+
+9000117 - Bách hiểu
+        May mắn +40
+
+
+9000118 - Vô danh · Thiên cơ
+Tự thân cùng tất cả phe mình triệu hoán vật tạo thành tổn thương +10% may mắn +40
+
+
+9000119 - Vô danh · Quy nhất
+Tự thân cùng tất cả phe mình triệu hoán vật tạo thành tổn thương +10% may mắn +40
+
+
+9000120 - Thiên cơ
+        May mắn +40
+
+
+9000121 - Quy nhất
+        May mắn +40
+
+
+9001201 - Đạo tâm mới sinh
+Đạo tâm ở vào ban đầu lúc mới sinh trạng thái, đã có thể thu hoạch nghịch thiên cải mệnh
+
+
+9001202 - Đạo tâm ngưng tụ
+Đạo tâm ở vào đang phát triển ngưng tụ trạng thái, thu được đạo tâm sở thuộc hiệu quả đặc biệt
+
+
+9001203 - Đạo tâm kết túy
+Đạo tâm ở vào viên mãn sau kết túy trạng thái, thu được cuối cùng cường đại hiệu quả đặc biệt
+
+
+9001204 - Đạo tâm dao động
+Đạo tâm ở vào dao động trạng thái, như lại tiếp tục gặp đả kích liền sẽ tiến vào sụp đổ sụp đổ, sinh ra nhất định mặt trái hiệu quả
+        Nhận được khi độ kiên định đạo tâm chỉ còn ~30%
+
+
+9001205 - Đạo tâm sụp đổ
+Đạo tâm ở vào sụp đổ trạng thái, như lại tiếp tục gặp đả kích liền có vỡ vụn trừ khử phong hiểm, sinh ra nghiêm trọng mặt trái hiệu quả
+        Nhận được khi độ kiên định đạo tâm dưới 0
+
+
+9001206 - Đạo tâm trừ khử
+Đạo tâm đã trừ khử, cận tồn một tia vết tích chứng minh nó đã từng tồn tại, sinh ra cực kì nghiêm trọng mặt trái hiệu quả
+Nhận được khi độ kiên định đạo tâm hoàn toàn vỡ vụn
+
+
+9001001 - Lòng như tro nguội
+        Tạo thành tổn thương -50%, bị thương tổn +100%
+        Có tỷ lệ nhận được khi độ kiên định đạo tâm hao tổn
+
+
+9001002 - Nản lòng thoái chí
+        Tinh lực tối đa -50%, có xác suất không cách nào hành động
+        Có tỷ lệ nhận được khi độ kiên định đạo tâm hao tổn
+
+
+9001101 - Ý chí tinh thần sa sút
+        Tạo thành tổn thương -10%
+        Có tỷ lệ nhận được khi độ kiên định đạo tâm hao tổn
+
+
+9001102 - Trăm mối lo
+        Nhận tổn thương +20%
+        Có tỷ lệ nhận được khi độ kiên định đạo tâm hao tổn
+
+
+9002001 - Tiêu cực tị thế
+        Nhận nhục nhã, sinh hoạt tính tích cực bị đả kích
+        Có tỷ lệ nhận được khi độ kiên định đạo tâm hao tổn
+
+
+9002002 - Uể oải tinh thần sa sút
+        Nhận nhục nhã, đối gặp trắc trở cùng khảo nghiệm cảm thấy chán ghét
+        Có tỷ lệ nhận được khi độ kiên định đạo tâm hao tổn
+
+
+9002003 - Tín niệm gặp khó
+        Nhận nhục nhã, tu đạo tín niệm sinh ra dao động
+        Có tỷ lệ nhận được khi độ kiên định đạo tâm hao tổn
+Khí vận rượu
+8001 - Lực lớn vô cùng
+        Lực công kích +6
+
+
+8002 - Nhiệt huyết phi đằng
+        Sinh lực tối đa +100
+
+
+8003 - Sâm La Vạn Tượng
+        Linh lực tối đa +100
+
+
+8004 - Đề thần tỉnh não
+        Niệm lực tối đa +100
+
+
+8005 - Cường thân kiện thể
+        Lực phòng ngự +6
+
+
+8006 - Thần nguyên hóa sát
+        Hội tâm +20
+
+
+8007 - Cương cân thiết cốt
+        Hộ tâm +20
+
+
+8008 - Ba lan bất kinh
+        Mỗi tháng khôi phục sinh lực 200
+
+
+8009 - Xuyên lưu bất tức
+        Mỗi tháng khôi phục linh lực 200
+
+
+8010 - Tĩnh du dĩ thân
+        Mỗi tháng khôi phục niệm lực 100
+
+
+8011 - Tinh lực sung mãn
+        Tinh lực tối đa +10, mỗi tháng khôi phục tinh lực 10.
+
+
+8012 - Nhân giả nhạc sơn
+        Tâm tình tối đa +10, mỗi tháng khôi phục tâm tình 5.
+
+
+8013 - Thân khinh như yến
+        Tốc độ di chuyển +15, cước lực +400.
+
+
+8021 - Lực lớn vô cùng
+        Lực công kích +24
+
+
+8022 - Nhiệt huyết phi đằng
+        Sinh lực tối đa +500
+
+
+8023 - Sâm La Vạn Tượng
+        Linh lực tối đa +250
+
+
+8024 - Đề thần tỉnh não
+        Niệm lực tối đa +250
+
+
+8025 - Cường thân kiện thể
+        Lực phòng ngự +24
+
+
+8026 - Thần nguyên hóa sát
+        Hội tâm +65
+
+
+8027 - Cương cân thiết cốt
+        Hộ tâm +65
+
+
+8028 - Ba lan bất kinh
+        Mỗi tháng khôi phục sinh lực 1000
+
+
+8029 - Xuyên lưu bất tức
+        Mỗi tháng khôi phục linh lực 500
+
+
+8030 - Tĩnh du dĩ thân
+        Mỗi tháng khôi phục niệm lực 250
+
+
+8031 - Tinh lực sung mãn
+        Tinh lực tối đa +20, mỗi tháng khôi phục tinh lực 20.
+
+
+8032 - Nhân giả nhạc sơn
+        Tâm tình tối đa +20, mỗi tháng khôi phục tâm tình 10.
+
+
+8033 - Thân khinh như yến
+        Tốc độ di chuyển +25, cước lực +700.
+
+
+8041 - Lực lớn vô cùng
+        Lực công kích +85
+
+
+8042 - Nhiệt huyết phi đằng
+        Sinh lực tối đa +2000
+
+
+8043 - Sâm La Vạn Tượng
+        Linh lực tối đa +800
+
+
+8044 - Đề thần tỉnh não
+        Niệm lực tối đa +800
+
+
+8045 - Cường thân kiện thể
+        Lực phòng ngự +87
+
+
+8046 - Thần nguyên hóa sát
+        Hội tâm +200
+
+
+8047 - Cương cân thiết cốt
+        Hộ tâm +200
+
+
+8048 - Ba lan bất kinh
+        Mỗi tháng khôi phục sinh lực 4000
+
+
+8049 - Xuyên lưu bất tức
+        Mỗi tháng khôi phục linh lực 1600
+
+
+8050 - Tĩnh du dĩ thân
+        Mỗi tháng khôi phục niệm lực 800
+
+
+8051 - Tinh lực sung mãn
+        Tinh lực tối đa +30, mỗi tháng khôi phục tinh lực 30.
+
+
+8052 - Nhân giả nhạc sơn
+        Tâm tình tối đa +30, mỗi tháng khôi phục tâm tình 15.
+
+
+8053 - Thân khinh như yến
+        Tốc độ di chuyển +35, cước lực +1000.
+
+
+8061 - Lực lớn vô cùng
+        Lực công kích +320
+
+
+8062 - Nhiệt huyết phi đằng
+        Sinh lực tối đa +7000
+
+
+8063 - Sâm La Vạn Tượng
+        Linh lực tối đa +1200
+
+
+8064 - Đề thần tỉnh não
+        Niệm lực tối đa +1200
+
+
+8065 - Cường thân kiện thể
+        Lực phòng ngự +317
+
+
+8066 - Thần nguyên hóa sát
+        Hội tâm +700
+
+
+8067 - Cương cân thiết cốt
+        Hộ tâm +700
+
+
+8068 - Ba lan bất kinh
+        Mỗi tháng khôi phục sinh lực 14000
+
+
+8069 - Xuyên lưu bất tức
+        Mỗi tháng khôi phục linh lực 2400
+
+
+8070 - Tĩnh du dĩ thân
+        Mỗi tháng khôi phục niệm lực 1200
+
+
+8071 - Tinh lực sung mãn
+        Tinh lực tối đa +40, mỗi tháng khôi phục tinh lực 40.
+
+
+8072 - Nhân giả nhạc sơn
+        Tâm tình tối đa +40, mỗi tháng khôi phục tâm tình 20.
+
+
+8073 - Thân khinh như yến
+        Tốc độ di chuyển +45, cước lực +1250.
+
+
+8081 - Lực lớn vô cùng
+        Lực công kích +1150
+
+
+8082 - Nhiệt huyết phi đằng
+        Sinh lực tối đa +25000
+
+
+8083 - Sâm La Vạn Tượng
+        Linh lực tối đa +3000
+
+
+8084 - Đề thần tỉnh não
+        Niệm lực tối đa +3000
+
+
+8085 - Cường thân kiện thể
+        Lực phòng ngự +1146
+
+
+8086 - Thần nguyên hóa sát
+        Hội tâm +2200
+
+
+8087 - Cương cân thiết cốt
+        Hộ tâm +2200
+
+
+8088 - Ba lan bất kinh
+        Mỗi tháng khôi phục sinh lực 50000
+
+
+8089 - Xuyên lưu bất tức
+        Mỗi tháng khôi phục linh lực 6000
+
+
+8090 - Tĩnh du dĩ thân
+        Mỗi tháng khôi phục niệm lực 3000
+
+
+8091 - Tinh lực sung mãn
+        Tinh lực tối đa +50, mỗi tháng khôi phục tinh lực 50.
+
+
+8092 - Nhân giả nhạc sơn
+        Tâm tình tối đa +50, mỗi tháng khôi phục tâm tình 25.
+
+
+8093 - Thân khinh như yến
+        Tốc độ di chuyển +55, cước lực +1500.
+
+
+Khí vận đặc thù của NPC
+101 - Một tia nguyên hồn
+Nhục thể nhận trọng thương mà vỡ vụn, còn sót lại một tia nguyên hồn, cần dùng Tam Dương Sinh Cốt Đan mới có thể tái tạo nhục thân, nếu không nguyên hồn sẽ tiêu tán.
+Khí vận đặc thù của NPC - Nhận được khi một NPC Kim Đan Cảnh bị người giết chết.
+
+
+1011 - Một tia nguyên hồn
+Nhục thể nhận trọng thương mà vỡ vụn, còn sót lại một tia nguyên hồn, cần dùng Ngũ Bảo Đại Hoàn Đan mới có thể tái tạo nhục thân, nếu không nguyên hồn sẽ tiêu tán.
+Khí vận đặc thù của NPC - Nhận được khi một NPC Cụ Linh/Nguyên Anh Cảnh bị người giết chết.
+
+
+1012 - Một tia nguyên hồn
+Nhục thể nhận trọng thương mà vỡ vụn, còn sót lại một tia nguyên hồn, cần dùng Thất Cực Cố Hồn Đan mới có thể tái tạo nhục thân, nếu không nguyên hồn sẽ tiêu tán.
+Khí vận đặc thù của NPC - Nhận được khi một NPC Hóa Thần/Ngộ Đạo Cảnh bị người giết chết.
+1013 - Một tia nguyên hồn
+Nhục thể nhận trọng thương mà vỡ vụn, còn sót lại một tia nguyên hồn, cần dùng Cửu Chuyển Hoàn Hồn Đan mới có thể tái tạo nhục thân, nếu không nguyên hồn sẽ tiêu tán.
+Khí vận đặc thù của NPC - Nhận được khi một NPC Vũ Hóa/Đăng Tiên Cảnh bị người giết chết.
+102 - Tái tạo nhục thân
+        Đang trong quá trình tái tạo nhục thân...
+        Khí vận đặc thù của NPC - Nhận được sau khi NPC sử dụng đan dược hồi sinh.
+
+
+118 - Lâm nguy
+        Bị khốn tại yêu thú sào huyệt
+Khí vận đặc thù của NPC - Sau khi người chơi nhận quest cứu người sẽ được gắn lên 1 NPC ngẫu nhiên
+
+
+1014 - Đệ nhị nguyên hồn
+Lợi dụng bí pháp tu luyện đệ nhị nguyên hồn ( Không trọn vẹn ). Cần ký ức khắc sâu nhất người dùng cửu chuyển hoàn hồn đan trợ giúp mới có thể tái tạo nhục thân, nếu không nguyên hồn sẽ tiêu tán.
+Khí vận đặc thù của NPC trong nhiệm vụ truyền công
+
+
+8012112 - Tam khuyết
+        Thiên Khiển!
+        Khí vận đặc thù của NPC “Chư Cát Trần” trong nhiệm vụ phù phổ
+Khí vận liên quan đạo hiệu đệ nhất tư chất
+
+
+9100001 - Đao pháp ngưng trệ
+        Tự thân tạo thành đao pháp tổn thương sẽ bị đệ nhất đao tu hóa giải.
+
+
+9100002 - Thương pháp ngưng trệ
+Tự thân tạo thành thương pháp tổn thương sẽ bị đệ nhất thương tu hóa giải.
+
+
+9100003 - Kiếm pháp ngưng trệ
+Tự thân tạo thành kiếm pháp tổn thương sẽ bị đệ nhất kiếm tu hóa giải.
+
+
+9100004 - Quyền pháp ngưng trệ
+Tự thân tạo thành quyền pháp tổn thương sẽ bị đệ nhất quyền tu hóa giải.
+
+
+9100005 - Chưởng pháp ngưng trệ
+Tự thân tạo thành chưởng pháp tổn thương sẽ bị đệ nhất chưởng tu hóa giải.
+
+
+9100006 - Chỉ pháp ngưng trệ
+        Tự thân tạo thành chỉ pháp tổn thương sẽ bị đệ nhất chỉ tu hóa giải.
+
+
+9100007 - Hỏa pháp ngưng trệ
+Tự thân tạo thành Hỏa thuộc tính tổn thương sẽ bị đệ nhất hỏa tu hóa giải.
+
+
+9100008 - Thủy pháp ngưng trệ
+Tự thân tạo thành Thủy thuộc tính tổn thương sẽ bị đệ nhất thủy tu hóa giải.
+
+
+9100009 - Lôi pháp ngưng trệ
+        Tự thân tạo thành lôi thuộc tính tổn thương sẽ bị đệ nhất lôi tu hóa giải.
+
+
+9100010 - Phong pháp ngưng trệ
+Tự thân tạo thành Phong thuộc tính tổn thương sẽ bị đệ nhất phong tu hóa giải.
+
+
+9100011 – Thổ pháp ngưng trệ
+Tự thân tạo thành Thổ thuộc tính tổn thương sẽ bị đệ nhất thổ tu hóa giải.
+
+
+9100012 - Mộc pháp ngưng trệ
+Tự thân tạo thành Mộc thuộc tính tổn thương sẽ bị đệ nhất mộc tu hóa giải.
+Khí vận liên quan bình cảnh
+
+
+120 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào luyện khí trung kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+121 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào luyện khí hậu kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+122 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào trúc cơ trung kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+123 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào trúc cơ hậu kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+124 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào kết tinh trung kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+125 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào kết tinh hậu kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+126 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào kim đan trung kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+127 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào kim đan hậu kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+128 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào cụ linh trung kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+129 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào cụ linh hậu kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+130 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào nguyên anh trung kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+131 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào nguyên anh hậu kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+132 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào hóa thần trung kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+133 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào hóa thần hậu kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+134 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào ngộ đạo trung kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+135 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào ngộ đạo hậu kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+136 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào vũ hóa trung kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+137 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào vũ hóa hậu kỳ kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+138 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào đăng tiên trung kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+
+
+139 - Lâm vào bình cảnh
+Tu vi đình trệ, cần đột phá bình cảnh mới có thể đi vào đăng tiên hậu kỳ. Phương pháp đột phá bình cảnh tại bên trong giao diện nghịch thiên cải mệnh có mô tả rõ ( Phím tắt: J).
+Checking
+142 - Cấm đoán
+Chấp hành tông môn nhiệm vụ thất bại, bị trưởng lão trừng phạt cấm đoán, không cách nào rời khỏi tông môn
+
+
+5010 - Linh lực phong ấn
+        Toàn linh căn giảm bớt 10 điểm
+
+
+9200004 - U hồn kỳ độc
+        Mỗi tháng sinh lực, linh lực, niệm lực hạ xuống 50%,
+
+
+9200006 - Đế Giang chi nộ
+        Tốc độ di chuyển cùng lớn nhất HP giảm xuống 50%.
+
+
+9200008 - Dao Cơ hương hoa
+        May mắn +20, duy trì 3 tháng
+
+
+9200009 – Hắc bạch chi đạo · Huyền
+        Tiên pháp uy lực tăng lên 10%( Không làm )
+
+
+9200010 - Hắc bạch chi đạo · Tố
+        Tiên pháp làm lạnh giảm xuống 10%( Không làm )
+
+
+9200101 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, tinh lực +10
+
+
+9200102 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, thể chất +10
+
+
+9200103 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, tâm tình +10
+
+
+9200104 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, may mắn +10
+
+
+9200105 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, hội tâm +10
+
+
+9200106 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, linh căn kháng tính gia tăng 10 điểm
+
+
+9200107 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, hộ tâm gia tăng 10 điểm
+
+
+9200108 - Tiên vận gia thân
+Đến từ tiên nhân ban ân, linh lực tối đa gia tăng 10%
+
+
+9200109 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, phòng ngự +10
+
+
+9200110 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, tốc độ di chuyển +10
+
+
+9200111 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, công kích +10
+
+
+9200112 - Tiên vận gia thân
+Đến từ tiên nhân ban ân, sinh lực tối đa gia tăng 10%
+
+
+9200113 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, cước lực +10
+
+
+9200114 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, công pháp kháng tính gia tăng 20 điểm
+
+
+9200115 - Tiên vận gia thân
+        Đến từ tiên nhân ban ân, niệm lực tối đa gia tăng 10%
+
+
+9200117 - Lực lớn vô cùng
+        Phong Linh Lan đan dược sinh ra thần bí hiệu quả, công kích +20%
+
+
+9200118 - Đầu váng mắt hoa
+        Phong Linh Lan đan dược sinh ra thần bí hiệu quả, thể chất -20%
+
+
+9200119 - Tâm tình thư sướng
+        Phong Linh Lan đan dược sinh ra thần bí hiệu quả, tâm tình +50%
+
+
+9200120 - Mị lực vô tận
+        Phong Linh Lan đan dược sinh ra thần bí hiệu quả, mị lực +20%
+
+
+9200121 - Thân khinh như yến
+        Tốc độ di chuyển +20%
+
+
+8805511 - Xuân thọ kéo dài
+Sinh lực tối đa gia tăng 15%, linh lực tối đa gia tăng 10%, duy trì 12 tháng;
+
+
+8805553 - Khắp cả người dương hòa
+        Khắp cả người dương hòa
+
+
+8805554 - Dương hòa thông thái
+        Dương hòa thông thái
+
+
+8012101 – Thiên cương ngũ lôi đạo thể
+Được trời ưu ái thể chất, có được tuyệt hảo căn cốt cùng dung mạo, thân thụ đại khí vận gia trì. Truyền thuyết này thể chất người tại hàng thế lúc lại không có dấu hiệu nào dẫn phát Thiên Cương Ngũ Lôi Kiếp, trong vòng phương viên trăm dặm sinh linh đồng đều khó thoát khỏi cái chết.
+
+
+8012111 - Phù bụi
+        Với thiên cơ bên trong sở ngộ!
+
+
+9099 - Phục Hi chiến vũ
+        Gia tăng 20% công kích cùng phòng ngự
+
+
+9101 - Ma viên huyết
+        Gia tăng 20% công kích cùng phòng ngự
+
+
+20001 - Sát phạt quả đoán
+        Gia tăng gấp đôi bạo kích tổn thương, gia tăng 10% công kích
+
+
+20002 - Vận rủi quấn thân
+        Giảm bớt 10 điểm may mắn
+
+
+8730221 - Sảng Khẩu Khinh Thực
+Tinh lực tối đa +10, thể chất tối đa +10, cước lực +50
+
+
+8730222 - Ăn nhầm độc vật
+Tinh lực tối đa -10, thể chất tối đa -10, cước lực -50
+
+
+8800211 - Đau lưng
+        Không cách nào tiến hành tu luyện, song tu
+
+
+Checking 2
+5015 - Hồ truy
+        Ngươi luôn luôn cảm giác có người theo ngươi.
+
+
+5016 - Hồ oán
+        Tất cả hồ yêu phảng phất đều tại dùng cừu thị ánh mắt nhìn ngươi.
+
+
+5017 - Đồng tang cầm tặc 
+        May mắn +10. Duy trì 12 tháng
+
+
+5018 - Tội phạm hành vi
+        May mắn -20, duy trì 6 tháng
+
+
+5019 - Thử Thiết Cẩu Đạo
+        May mắn -10, duy trì 12 tháng
+
+
+5020 - Sợ mạnh lấn yếu
+        May mắn -10, duy trì 6 tháng
+
+
+5021 - Thị Dũng Khinh Địch
+        May mắn -15, mỗi tháng tâm tình -20, duy trì 6 tháng
+
+
+5022 - Hậu phát chế nhân
+        Mỗi tháng tâm tình +20, duy trì 6 tháng
+
+
+5025 - Dĩ bạo chế bạo
+        May mắn +10, mỗi tháng tâm tình +20, duy trì 6 tháng
+
+
+5026 - Phục cừu giả
+        Mỗi tháng tâm tình +20, duy trì 6 tháng
+
+
+5027 - Dĩ huyết tẩy huyết
+        May mắn -20, mỗi tháng tâm tình +50, duy trì 12 tháng
+
+
+5028 - Tâm ngoan thủ lạt
+        May mắn -10, duy trì 12 tháng
+
+
+5029 - Giơ cao đánh khẽ
+        May mắn +10. Duy trì 6 tháng
+
+
+5030 - Chạy trối chết
+        May mắn -30, duy trì 6 tháng
+
+
+5031 - Co được dãn được
+        May mắn +20. Duy trì 6 tháng
+
+
+5032 - Thủ hữu dư hương
+        May mắn +20, mỗi tháng tâm tình +10, duy trì 12 tháng
+
+
+5033 - Lừa đảo
+        May mắn -10, duy trì 6 tháng
+
+
+5045 - Khu Lôi Xế Điện
+        Lôi Linh căn +10, duy trì 12 tháng
+
+
+5046 - Lôi Kích Giả
+        Lôi linh căn -10, duy trì 12 tháng
+
+
+5047 - Kẻ phá trận
+        Công kích +5%, toàn linh căn +5, duy trì 12 tháng
+
+
+5012 - Quyến rũ
+        Mị lực +300
+
+
+5013 - Hồ kiều
+        Mị lực +200
+
+
+5014 - Hồ diễm
+        Mị lực +100
+
+
+5080 - Nhìn thấy tiên thần
+        Gia tăng 30 Ngộ tính, duy trì 3 tháng
+
+
+5081 - Co được dãn được
+        Lực phòng ngự +5, mị lực -300, duy trì 3 tháng.
+
+
+8805358 - Kiệt quệ
+        Linh lực tối đa giảm xuống 10%
+
+
+8805359 - Khô kiệt
+Sinh lực tối đa giảm xuống 25%, linh lực tối đa giảm xuống 35%
+
+
+Khí vận ẩn hoặc chưa rõ / bị khóa
+103 - Phụ trọng tiến lên
+Cước lực khóa chặt vì 300 Lại không cách nào sử dụng truyền tống hiệu quả
+
+
+105 - Nội thương
+        Giảm xuống 30% linh lực tối đa của người chơi
+
+
+106 - Nguyên thần tan rã
+        Lớn nhất niệm lực tối đa giảm xuống 50%
+
+
+107 - Thi độc
+        Người chơi phòng ngự giảm xuống 30%
+
+
+108 - Âm độc
+        Người chơi tất cả linh căn giảm xuống 30%
+
+
+109 - Khí tức hỗn loạn
+        Công kích -10%, trước mắt trạng thái không cách nào tiến hành đột phá
+
+
+110 - Cảnh giới bất ổn
+Tất cả công pháp tư chất -10%, trước mắt trạng thái không cách nào tiến hành đột phá
+
+
+111 - Kinh mạch bị ngăn trở
+Tất cả linh căn tư chất -10%, trước mắt trạng thái không cách nào tiến hành đột phá
+
+
+112 - Tâm thần rối loạn
+Tất cả công pháp và linh căn tư chất -15%, trước mắt trạng thái không cách nào tiến hành đột phá
+
+
+113 - Đạo căn bị ngăn trở
+Công kích -20%, tất cả công pháp và linh căn tư chất -20%, trước mắt trạng thái không cách nào tiến hành đột phá
+
+
+115 - Ẩn tàng đơn vị
+        Đơn vị ẩn tàng, không cách nào bị cái khác đơn vị chọn trúng
+
+
+116 - Cố định đơn vị
+        Mỗi tháng kết thúc cố định đơn vị đến tăng thêm khí vận lúc địa điểm
+
+
+117 - Đình chỉ AI
+        Đình chỉ AI Vận chuyển
+114 - Bế môn hối lỗi
+        Cấm chỉ rời đi tông môn
+
+
+5001 - Võ thần gia trì
+        Gia tăng 10% công kích
+
+
+5002 - Linh Châu Tử
+        Gia tăng 10% Lớn nhất linh lực
+
+
+5003 - Chiến thần gia trì
+        Gia tăng 10% Phòng ngự
+
+
+5004 - Luyện thể cao nhân
+        Gia tăng 10% sinh lực
+
+
+5005 - Truyền thừa chi đao
+        Gia tăng 10% tư chất đao pháp
+
+
+5006 - Đạp phong thể
+        Gia tăng 10% tốc độ di chuyển
+
+
+5007 - Chiến hồn gia trì
+        Gia tăng 10 điểm vật lý miễn tổn thương
+
+
+5008 - Thủy linh châu
+        Giảm bớt 20 điểm Hỏa Linh Căn, gia tăng 20 Lướt nước linh căn
+
+
+5009 - Phá trận chi thế
+        Giảm bớt 30 điểm phòng ngự, gia tăng 30 điểm công kích
+
+
+5034 - Tiên nhân che chở
+Sinh lực, linh lực, niệm lực +10%, tất cả linh căn tư chất +10, duy trì 12 tháng
+
+
+5035 - Hung hãn
+        Công kích +10%, sinh lực tối đa -10%, duy trì 12 tháng
+
+
+5036 - Kim cương thể
+        Sinh lực tối đa +10%, duy trì 12 tháng
+
+
+5037 - Ngưng thần tĩnh khí
+        Linh lực tối đa +10%, duy trì 12 tháng
+
+
+5038 - Thanh Long che chở
+        Công kích +10%, duy trì 12 tháng
+
+
+5039 - Bạch Hổ che chở
+        Hội tâm +20, duy trì 12 tháng
+
+
+5040 - Chu Tước che chở
+        Toàn linh căn +10, duy trì 12 tháng
+
+
+5041 - Huyền Vũ che chở
+        Phòng ngự +10%, duy trì 12 tháng
+
+
+5042 - Cùng Nhi Sạ Phú
+        Linh thạch +5000. May mắn +10, duy trì 12 tháng
+
+
+5043 - Lâm Lang Mãn Mục
+        Ngẫu nhiên thu hoạch được dược liệu. May mắn +10, duy trì 12 tháng
+
+
+5044 – Nội vân cung khuyết
+Ngẫu nhiên công pháp, đan dược, pháp bảo. May mắn +10, duy trì 12 tháng
+5048 - Kiếm khí tung hoành
+        Kiếm pháp tư chất +5, duy trì 12 tháng
+
+
+5049 - Tu La Tuyệt Đao
+        Đao pháp tư chất +5, duy trì 12 tháng
+
+
+5050 - Phiên vân phúc vũ thương
+        Thương pháp tư chất +5, duy trì 12 tháng
+
+
+5051 - Tuyết hầm băng thiên
+        Thủy linh căn +5, duy trì 12 tháng
+
+
+5052 - Băng Hồn Tuyết Phách
+        Thủy linh căn +10, duy trì 12 tháng
+
+
+5053 - Uẩn nghiễn tranh thổ
+        Thổ linh căn +5, duy trì 12 tháng
+
+
+5054 - Khẩn Trần Minh Thổ
+        Thổ linh căn +10, duy trì 12 tháng
+
+
+5055 - Thương đằng cổ mộc
+        Mộc linh căn +5, duy trì 12 tháng
+
+
+5056 - Sâm La Vạn Tượng
+        Mộc linh căn +10, duy trì 12 tháng
+
+
+5057 - Tinh Tinh Chi Hỏa
+        Hỏa Linh Căn +5, duy trì 12 tháng
+
+
+5058 - Tinh Hỏa Liêu Nguyên
+        Hỏa Linh Căn +10, duy trì 12 tháng
+
+
+5059 - Lôi Kinh Điện Nhiễu
+        Lôi linh căn +5, duy trì 12 tháng
+
+
+5060 - Lôi cuồng điện nộ
+        Lôi linh căn +10, duy trì 12 tháng
+
+
+5061 - Gió nổi mây phun
+        Phong linh căn +5, duy trì 12 tháng
+
+
+5062 - Mây tản gió rít
+        Phong linh căn +10, duy trì 12 tháng
+
+
+5063 - Hỗn độn thân thể
+Có được hỗn độn chi lực thân thể, có thể cảm giác được viễn cổ Hỗn Độn khí tức, nhưng là mỗi tháng sẽ tổn thất 3 năm thọ mệnh.
+
+
+5064 - Đấu khí tổn ích
+Đấu khí tiên tinh ở đây khu vực sẽ bị kích phát, dẫn đến mang theo người đấu khí bị hao tổn, trước mắt mang theo 1 đấu khí tiên tinh, giảm 10% công kích cùng phòng ngự.
+
+
+5065 - Đấu khí tổn ích
+Đấu khí tiên tinh ở đây khu vực sẽ bị kích phát, dẫn đến mang theo người đấu khí bị hao tổn, trước mắt mang theo 1 đấu khí tiên tinh, giảm 20% công kích cùng phòng ngự.
+
+
+5066 - Đấu khí tổn ích
+Đấu khí tiên tinh ở đây khu vực sẽ bị kích phát, dẫn đến mang theo người đấu khí bị hao tổn, trước mắt mang theo 1 đấu khí tiên tinh, giảm 30% công kích cùng phòng ngự.
+
+
+5067 - Đấu khí tổn ích
+Đấu khí tiên tinh ở đây khu vực sẽ bị kích phát, dẫn đến mang theo người đấu khí bị hao tổn, trước mắt mang theo 1 đấu khí tiên tinh, giảm 40% công kích cùng phòng ngự.
+
+
+5068 - Đấu khí tổn ích
+Đấu khí tiên tinh ở đây khu vực sẽ bị kích phát, dẫn đến mang theo người đấu khí bị hao tổn, trước mắt mang theo 1 đấu khí tiên tinh, giảm 50% công kích cùng phòng ngự.
+
+
+5069 - Đấu khí tổn ích
+Đấu khí tiên tinh ở đây khu vực sẽ bị kích phát, dẫn đến mang theo người đấu khí bị hao tổn, trước mắt mang theo 1 đấu khí tiên tinh, giảm 60% công kích cùng phòng ngự.
+
+
+5070 - Đấu khí tổn ích
+Đấu khí tiên tinh ở đây khu vực sẽ bị kích phát, dẫn đến mang theo người đấu khí bị hao tổn, trước mắt mang theo 1 đấu khí tiên tinh, giảm 70% công kích cùng phòng ngự.
+
+
+5071 - Đấu khí tổn ích
+Đấu khí tiên tinh ở đây khu vực sẽ bị kích phát, dẫn đến mang theo người đấu khí bị hao tổn, trước mắt mang theo 1 đấu khí tiên tinh, giảm 80% công kích cùng phòng ngự.
+
+
+5072 - Đấu khí tổn ích
+Đấu khí tiên tinh ở đây khu vực sẽ bị kích phát, dẫn đến mang theo người đấu khí bị hao tổn, trước mắt mang theo 1 đấu khí tiên tinh, giảm 90% công kích cùng phòng ngự.
+
+
+5073 - Đấu khí tổn ích
+Đấu khí tiên tinh ở đây khu vực sẽ bị kích phát, dẫn đến mang theo người đấu khí bị hao tổn, trước mắt mang theo 1 đấu khí tiên tinh, giảm 100% công kích cùng phòng ngự.
+
+
+5074 - Hỏa linh luyện hóa
+Đem thể nội Hỏa Linh Căn toàn bộ bức ra bên ngoài cơ thể, tiến hành luyện hóa thành châu, bức ra linh căn sau, sinh lực, linh lực, niệm lực phân biệt giảm xuống 15%.
+
+
+5075 - Thủy linh luyện hóa
+Đem thể nội Thủy linh căn toàn bộ bức ra bên ngoài cơ thể, tiến hành luyện hóa thành châu, bức ra linh căn sau, sinh lực, linh lực, niệm lực phân biệt giảm xuống 15%.
+
+
+5076 - Lôi linh luyện hóa
+Đem thể nội Lôi linh căn toàn bộ bức ra bên ngoài cơ thể, tiến hành luyện hóa thành châu, bức ra linh căn sau, sinh lực, linh lực, niệm lực phân biệt giảm xuống 15%.
+
+
+5077 - Phong linh luyện hóa
+Đem thể nội Phong linh căn toàn bộ bức ra bên ngoài cơ thể, tiến hành luyện hóa thành châu, bức ra linh căn sau, sinh lực, linh lực, niệm lực phân biệt giảm xuống 15%.
+
+
+5078 - Thổ linh luyện hóa
+Đem thể nội thổ linh căn toàn bộ bức ra bên ngoài cơ thể, tiến hành luyện hóa thành châu, bức ra linh căn sau, sinh lực, linh lực, niệm lực phân biệt giảm xuống 15%.
+
+
+5079 - Mộc linh luyện hóa
+Đem thể nội mộc linh căn toàn bộ bức ra bên ngoài cơ thể, tiến hành luyện hóa thành châu, bức ra linh căn sau, sinh lực, linh lực, niệm lực phân biệt giảm xuống 15%.
+5086 - Kịch bản ẩn tàng khí vận
+        Chạy trốn luôn thành công
+
+
+8805360 - Dị hương chấn thể
+Sinh lực tối đa gia tăng 5%, linh lực tối đa gia tăng 10%
+
+
+8805361 - Trong ngoài vinh vệ
+Sinh lực tối đa gia tăng 5%, linh lực tối đa gia tăng 3%
+
+
+8805362 - Long hổ giao hối
+Sinh lực tối đa gia tăng 3%, linh lực tối đa gia tăng 2%
+
+
+8805363 - Linh quả thông khí
+Giống như đào không phải đào, giống như Lý Phi lý, sáng bóng sáng như kính, gần như có thể giám người. Mà quả chung quanh linh khí lượn lờ, nói là tiên quả, cũng không quá phận.
+8502=8502
+Đối đạo tâm khí tức cực kì mẫn cảm, có khi có thể vì chủ nhân tìm tới đạo tâm quả (1 Năm bên trong nhiều nhất chỉ có thể phát động 1 Lần )
+
+
+8503=8503
+Có nhất định tỉ lệ đem bị chủ nhân giết chết tu tiên giả chuyển hóa thành đạo tâm quả (1 Năm bên trong nhiều nhất chỉ có thể phát động 1 Lần )
+
+
+8504=8504
+        Tiên pháp tổn thương tăng lên 10%
+
+
+9105 - Chủ cửa hàng áy náy
+        Mua sắm giảm 20%
+
+
+9106 - Phường thị sổ đen
+Ngươi trộm đi trong tiệm bảo vật sự tình truyền khắp phố lớn ngõ nhỏ, rất khó mua được đồ vật, sẽ còn bị thu nhiều lấy 25% Giá cao
+
+
+8812111 - Thêm tông môn vinh dự
+        0
+
+
+8812121 - Pháp bảo không hư hao
+        0
+
+
+8813021 - Không nổ lò luyện đan
+        0
+
+
+8813091 - Độc đan
+        0
+
+
+9128 - Cứu trợ chim non
+        tips_9128
+
+
+9129 - Đoàn tụ sum vầy
+        tips_9129
+
+
+9130 - Vách đá hang động
+        tips_9130
+
+
+9131 - Đan tu ban thưởng đan
+        tips_9131
+
+
+9132 - Ngẫu nhiên gặp linh tuyền
+        tips_9132
+
+
+9133 - Tiên nhân ban rượu
+        tips_9133
+
+
+9134 - Dưới cây bị tập kích
+        tips_9134
+
+
+9135 - Không biết tế đàn
+        tips_9135
+
+
+9136 - Thân hữu không hợp
+        tips_9136
+
+
+9137 - Linh thạch mất trộm
+        tips_9137
+
+
+9138 - Đạo lữ bất trung
+        tips_9138
+
+
+8805353 - Nhập thần
+        Sinh lực tối đa +15%; Linh lực tối đa +10%
+
+
+8805354 – Tọa chiếu
+        Sinh lực tối đa +15%; Niệm lực tối đa +10%
+
+
+8805355 - Chân thị Linh Yên
+Minh chủ Hướng Lệnh Quân cho ngươi thực hiện có thể tích trừ minh khí hộ thể linh yên. Sinh lực tối đa +10%
+
+
+8805356 - Linh cốc thấu phủ
+        Sinh lực tối đa +5%
+
+
+8805357 - Đan chì tẩy mạch
+        Sinh lực tối đa +6%, linh lực tối đa +5%
+
+
+9107 - Người đưa đò kêu gọi
+Gia tăng tất cả linh căn 20 điểm, giảm xuống linh căn kháng tính 10 điểm
+
+
+6104001 - Vênh váo trùng thiên
+        May mắn +20
+
+
+8805218 - Uống rượu di tình
+Gia tăng sinh lực 5% sinh lực tối đa, 5% Niệm lực tối đa
+
+
+8805219 - Thoải mái uống
+Gia tăng 10% sinh lực tối đa, 10% Niệm lực tối đa
+
+
+8805220 - Ngàn chén không say
+Gia tăng 15% sinh lực tối đa, 15% Niệm lực tối đa
+
+
+8800311 - Ngự lực chi đạo
+Quyền pháp tư chất +100, chưởng pháp tư chất +100, chỉ pháp tư chất +100
+
+
+8805211 - Đan độc
+        Linh lực tối đa -10%, linh căn kháng tính +10
+
+
+8805551 - Đình chỉ AI
+        tips_8805551
+
+
+8805552 - Ẩn tàng đơn vị
+        Ẩn tàng đơn vị
+
+
+[BUFF đa cấp]
+
+
+9001 - Tượng thần ân điển
+        Tại tượng thần bên trong hối đoái đạo cụ lúc, giá cả -10%
+
+
+9002 - Tượng thần ân điển
+        Tại tượng thần bên trong hối đoái đạo cụ lúc, giá cả -20%
+
+
+9003 - Tượng thần ân điển
+        Tại tượng thần bên trong hối đoái đạo cụ lúc, giá cả -30%
+
+
+9004 - Tượng thần ân điển
+        Tại tượng thần bên trong hối đoái đạo cụ lúc, giá cả -40%
+
+
+9005 - Tượng thần ân điển
+        Tại tượng thần bên trong hối đoái đạo cụ lúc, giá cả -50%
+
+
+9006 - Tượng thần ân điển
+        Tại tượng thần bên trong hối đoái đạo cụ lúc, giá cả -60%
+
+
+9011 - Thánh Thú chi linh
+Mỗi cái đại quan có tỉ lệ 15% làm tượng thần ngoài định mức xuất hiện một lần
+
+
+9012 - Thánh Thú chi linh
+Mỗi cái đại quan có tỉ lệ 30% làm tượng thần ngoài định mức xuất hiện một lần
+
+
+9013 - Thánh Thú chi linh
+Mỗi cái đại quan có tỉ lệ 45% làm tượng thần ngoài định mức xuất hiện một lần
+
+
+9014 - Thánh Thú chi linh
+Mỗi cái đại quan có tỉ lệ 60% làm tượng thần ngoài định mức xuất hiện một lần
+
+
+9015 - Thánh Thú chi linh
+Mỗi cái đại quan có tỉ lệ 75% làm tượng thần ngoài định mức xuất hiện một lần
+
+
+9016 - Thánh Thú chi linh
+Mỗi cái đại quan có tỉ lệ 90% làm tượng thần ngoài định mức xuất hiện một lần
+
+
+9021 - Tụ nguyên tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 400 Một ít sinh lực linh quả
+
+
+9022 - Tụ nguyên tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 800 Một ít sinh lực linh quả
+
+
+9023 - Tụ nguyên tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 1200 Một ít sinh lực linh quả
+
+
+9024 - Tụ nguyên tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 1600 Một ít sinh lực linh quả
+
+
+9025 - Tụ nguyên tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 2000 Một ít sinh lực linh quả
+
+
+9026 - Tụ nguyên tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 2400 Một ít sinh lực linh quả
+
+
+9031 - Tụ linh tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 200 điểm linh lực linh quả
+
+
+9032 - Tụ linh tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 400 điểm linh lực linh quả
+
+
+9033 - Tụ linh tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 600 điểm linh lực linh quả
+
+
+9034 - Tụ linh tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 800 điểm linh lực linh quả
+
+
+9035 - Tụ linh tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 1000 điểm linh lực linh quả
+
+
+9036 - Tụ linh tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 1200 điểm linh lực linh quả
+
+
+9041 - Tụ khí tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 100 điểm niệm lực linh quả
+
+
+9042 - Tụ khí tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 200 điểm niệm lực linh quả
+
+
+9043 - Tụ khí tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 300 điểm niệm lực linh quả
+
+
+9044 - Tụ khí tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 400 điểm niệm lực linh quả
+
+
+9045 - Tụ khí tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 500 điểm niệm lực linh quả
+
+
+9046 - Tụ khí tinh hoa
+Mỗi cái quái vật tại tử vong lúc, có tỉ lệ 2% ngẫu nhiên rơi xuống một cái nhưng hồi phục 600 điểm niệm lực linh quả
+
+
+9051 - Thiên ân linh uẩn
+Mỗi lần thu hoạch được mới ban ân lúc, đem hồi phục 250 điểm sinh lực, linh lực, niệm lực
+
+
+9052 - Thiên ân linh uẩn
+Mỗi lần thu hoạch được mới ban ân lúc, đem hồi phục 500 điểm sinh lực, linh lực, niệm lực
+
+
+9053 - Thiên ân linh uẩn
+Mỗi lần thu hoạch được mới ban ân lúc, đem hồi phục 750 điểm sinh lực, linh lực, niệm lực
+
+
+9054 - Thiên ân linh uẩn
+Mỗi lần thu hoạch được mới ban ân lúc, đem hồi phục 1000 điểm sinh lực, linh lực, niệm lực
+
+
+9055 - Thiên ân linh uẩn
+Mỗi lần thu hoạch được mới ban ân lúc, đem hồi phục 1250 điểm sinh lực, linh lực, niệm lực
+
+
+9056 - Thiên ân linh uẩn
+Mỗi lần thu hoạch được mới ban ân lúc, đem hồi phục 1500 điểm sinh lực, linh lực, niệm lực
+
+
+9061 - Hậu phát chế nhân
+Mỗi lần tiến vào đại quan lúc, giảm xuống 50 điểm công kích, mỗi thông quan một tầng, tăng lên 10 điểm công kích
+
+
+9062 - Hậu phát chế nhân
+Mỗi lần tiến vào đại quan lúc, giảm xuống 75 điểm công kích, mỗi thông quan một tầng, tăng lên 15 điểm công kích
+
+
+9063 - Hậu phát chế nhân
+Mỗi lần tiến vào đại quan lúc, giảm xuống 100 điểm công kích, mỗi thông quan một tầng, tăng lên 20 điểm công kích
+
+
+9064 - Hậu phát chế nhân
+Mỗi lần tiến vào đại quan lúc, giảm xuống 125 điểm công kích, mỗi thông quan một tầng, tăng lên 25 điểm công kích
+
+
+9065 - Hậu phát chế nhân
+Mỗi lần tiến vào đại quan lúc, giảm xuống 150 điểm công kích, mỗi thông quan một tầng, tăng lên 30 điểm công kích
+
+
+9066 - Hậu phát chế nhân
+Mỗi lần tiến vào đại quan lúc, giảm xuống 200 điểm công kích, mỗi thông quan một tầng, tăng lên 40 điểm công kích
+
+
+9071 - Tìm trân kiếm bảo
+Mỗi một tầng thông quan lúc, có tỉ lệ 5% có thể ngoài định mức lựa chọn một lần thông quan ban thưởng
+
+
+9072 - Tìm trân kiếm bảo
+Mỗi một tầng thông quan lúc, có tỉ lệ 7% có thể ngoài định mức lựa chọn một lần thông quan ban thưởng
+
+
+9073 - Tìm trân kiếm bảo
+Mỗi một tầng thông quan lúc, có tỉ lệ 9% có thể ngoài định mức lựa chọn một lần thông quan ban thưởng
+
+
+9074 - Tìm trân kiếm bảo
+Mỗi một tầng thông quan lúc, có tỉ lệ 11% có thể ngoài định mức lựa chọn một lần thông quan ban thưởng
+
+
+9075 - Tìm trân kiếm bảo
+Mỗi một tầng thông quan lúc, có tỉ lệ 13% có thể ngoài định mức lựa chọn một lần thông quan ban thưởng
+
+
+9076 - Tìm trân kiếm bảo
+Mỗi một tầng thông quan lúc, có tỉ lệ 15% có thể ngoài định mức lựa chọn một lần thông quan ban thưởng
+
+
+9081 - Phong táp hộ thuẫn
+Mỗi lần sử dụng thân pháp lúc, có thể đạt được 200 điểm hộ thuẫn, duy trì 5 giây
+
+
+9082 - Phong táp hộ thuẫn
+Mỗi lần sử dụng thân pháp lúc, có thể đạt được 400 điểm hộ thuẫn, duy trì 5 giây
+
+
+9083 - Phong táp hộ thuẫn
+Mỗi lần sử dụng thân pháp lúc, có thể đạt được 600 điểm hộ thuẫn, duy trì 5 giây
+
+
+9084 - Phong táp hộ thuẫn
+Mỗi lần sử dụng thân pháp lúc, có thể đạt được 800 điểm hộ thuẫn, duy trì 5 giây
+
+
+9085 - Phong táp hộ thuẫn
+Mỗi lần sử dụng thân pháp lúc, có thể đạt được 1000 điểm hộ thuẫn, duy trì 5 giây
+
+
+9086 - Phong táp hộ thuẫn
+Mỗi lần sử dụng thân pháp lúc, có thể đạt được 1200 điểm hộ thuẫn, duy trì 5 giây
+
+
+9091 - Luyện hồn thợ săn
+Mỗi cái tinh anh quái vật tại tử vong lúc, có tỉ lệ 5% rơi xuống chính đạo chi khí hoặc ma đạo chi khí
+
+
+9092 - Luyện hồn thợ săn
+Mỗi cái tinh anh quái vật tại tử vong lúc, có tỉ lệ 7% rơi xuống chính đạo chi khí hoặc ma đạo chi khí
+
+
+9093 - Luyện hồn thợ săn
+Mỗi cái tinh anh quái vật tại tử vong lúc, có tỉ lệ 9% rơi xuống chính đạo chi khí hoặc ma đạo chi khí
+
+
+9094 - Luyện hồn thợ săn
+Mỗi cái tinh anh quái vật tại tử vong lúc, có tỉ lệ 11% rơi xuống chính đạo chi khí hoặc ma đạo chi khí
+
+
+9095 - Luyện hồn thợ săn
+Mỗi cái tinh anh quái vật tại tử vong lúc, có tỉ lệ 13% rơi xuống chính đạo chi khí hoặc ma đạo chi khí
+
+
+9096 - Luyện hồn thợ săn
+Mỗi cái tinh anh quái vật tại tử vong lúc, có tỉ lệ 15% rơi xuống chính đạo chi khí hoặc ma đạo chi khí
+
+
+[BUFF + DEBUFF đa trọng]
+
+
+8101 - Công kích uy hiếp
+Nhận người khác uy hiếp, lần này chiến đấu bên trong, tự thân tạo thành tổn thương giảm xuống 10%.
+
+
+8102 - Phòng ngự uy hiếp
+Nhận người khác uy hiếp, lần này chiến đấu bên trong, tự thân nhận tổn thương gia tăng 10%.
+
+
+8103 - Sinh lực uy hiếp
+Nhận người khác uy hiếp, lần này chiến đấu bên trong, tự thân sinh lực tối đa giảm bớt 10%.
+
+
+8104 - Linh lực uy hiếp
+Nhận người khác uy hiếp, lần này chiến đấu bên trong, tự thân linh lực tối đa giảm bớt 10%.
+
+
+8105 - Sinh lực xói mòn
+Nhận người khác uy hiếp, lần này chiến đấu bên trong, mỗi 5 giây giảm bớt 2% Trước mắt sinh lực.
+
+
+8106 - Linh lực xói mòn
+Nhận người khác uy hiếp, lần này chiến đấu bên trong, mỗi 5 giây giảm bớt 4% Trước mắt linh lực.
+
+
+8107 - Niệm lực uy hiếp
+Nhận người khác uy hiếp, lần này chiến đấu bên trong, sử dụng đan dược khôi phục hiệu quả hạ xuống 20%.
+
+
+8201 - Công kích trợ trận
+Nhận người khác trợ trận, lần này chiến đấu bên trong, tự thân tạo thành tổn thương gia tăng 10%.
+
+
+8202 - Phòng ngự trợ trận
+Nhận người khác trợ trận, lần này chiến đấu bên trong, tự thân nhận tổn thương giảm xuống 10%.
+
+
+8203 - Sinh lực trợ trận
+Nhận người khác trợ trận, lần này chiến đấu bên trong, tự thân sinh lực tối đa gia tăng 10%.
+
+
+8204 - Linh lực trợ trận
+Nhận người khác trợ trận, lần này chiến đấu bên trong, tự thân linh lực tối đa gia tăng 10%.
+
+
+8205 - Sinh lực bổ sung
+Nhận người khác trợ trận, lần này chiến đấu bên trong, mỗi 5 giây khôi phục 2% Cơ bản nhất lực.
+
+
+8206 - Linh lực bổ sung
+Nhận người khác trợ trận, lần này chiến đấu bên trong, mỗi 5 giây khôi phục 4% Lớn nhất linh lực.
+
+
+8207 - Niệm lực trợ trận
+Nhận người khác trợ trận, lần này chiến đấu bên trong, sử dụng đan dược khôi phục hiệu quả tăng lên 20%.

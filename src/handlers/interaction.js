@@ -26,7 +26,7 @@ function getPlayer(discordId) {
 function loadHandlers() {
   const { showMainMenu } = require('../menus/main-menu');
   const { showProfileMenu, showDetailedStats, showEquipment, showSkills, showPets } = require('../menus/profile-menu');
-  const { showCultivationMenu, handleCultivation, handleBreakthrough } = require('../menus/cultivation-menu');
+  const { showCultivationMenu, handleCultivation, handleBreakthrough, handleInteractiveCultivation } = require('../menus/cultivation-menu');
   const { showCombatMenu, startHunt } = require('../menus/combat-menu');
   const { showWorldMenu, handleMining } = require('../menus/world-menu');
   const { showInventoryMenu, showItemsByType } = require('../menus/inventory-menu');
@@ -34,7 +34,7 @@ function loadHandlers() {
   const { showSectMenu } = require('../menus/sect-menu');
   const { showPetMenu, handleCatchPet } = require('../menus/pet-menu');
   const { showLeaderboardMenu, showLeaderboard } = require('../menus/leaderboard-menu');
-  const { handleDaoPathSelect, handleNameSubmit, handleRootSelect, confirmCreation, handleReincarnate } = require('../systems/character-creation');
+  const { handleDaoPathSelect, handleNameSubmit, handleRootSelect, handleWeaponSelect, confirmCreation, handleReincarnate } = require('../systems/character-creation');
 
   // ══════════════════════════════════
   // MENU: Main menu navigation
@@ -161,8 +161,37 @@ function loadHandlers() {
           const { showSkillsMenu } = require('../systems/skills');
           return showSkillsMenu(interaction, player);
         }
+        case 'dao_tam': {
+          const { showDaoTamMenu } = require('../systems/dao-tam');
+          return showDaoTamMenu(interaction, player);
+        }
+        case 'be_quan': {
+          const { startBeQuan } = require('../systems/afk-cultivation');
+          return startBeQuan(interaction, player);
+        }
+        case 'xuat_quan': {
+          const { endBeQuan } = require('../systems/afk-cultivation');
+          return endBeQuan(interaction, player);
+        }
+        case 'khi_van': {
+          const { showKhiVanMenu } = require('../systems/khi-van');
+          return showKhiVanMenu(interaction, player);
+        }
         default: return showCultivationMenu(interaction, player);
       }
+    },
+  });
+
+  // ══════════════════════════════════
+  // ICULTIVATION: Tu Luyện Interactive (mini-game)
+  // ══════════════════════════════════
+  registerHandler('icultivation', {
+    async handleButton(interaction, action) {
+      const player = getPlayer(interaction.user.id);
+      if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+
+      // action format: r1:element, r2:choice, r3:eventId:type:index, next:N, finish
+      return handleInteractiveCultivation(interaction, player, action);
     },
   });
 
@@ -580,25 +609,31 @@ function loadHandlers() {
   // ══════════════════════════════════
   registerHandler('create', {
     async handleButton(interaction, action) {
-      // Parse customId: create:confirm:name:rootId:rootType:constitutionId:daoPath
-      // or: create:name:daoPath (from modal)
-      // or: create:reroll:name:rootId:rootType:daoPath
+      // Parse customId formats:
+      // create:confirm:name:rootId:rootType:constitutionId:daoPath:weaponTypeId:ngoTinh:vanKhi:traitIds
+      // create:reroll_all:name:rootId:rootType:daoPath
+      // create:reroll:name:rootId:rootType:daoPath (legacy)
       const parts = interaction.customId.split(':');
 
-      if (parts[1] === 'confirm' && parts.length >= 7) {
-        let [, , name, rootId, rootType, constitutionId, daoPath] = parts;
+      if (parts[1] === 'confirm' && parts.length >= 11) {
+        // Mới: có weapon type + stats
+        let [, , name, rootId, rootType, constitutionId, daoPath, weaponTypeId, ngoTinh, vanKhi, ...traitParts] = parts;
+        const traitIds = traitParts.join(':'); // Trait ids có thể chứa dấu phẩy
         try { name = decodeURIComponent(name); } catch (_e) { /* already decoded */ }
-        return confirmCreation(interaction, name, rootId, rootType, constitutionId, daoPath);
+        return confirmCreation(interaction, name, rootId, rootType, constitutionId, daoPath, weaponTypeId, ngoTinh, vanKhi, traitIds);
       }
 
-      if (parts[1] === 'reroll') {
-        // Re-roll constitution — show root select again with same data
-        const { createSpiritualRootSelect } = require('../ui/select-menus');
-        const roots = require('../../config/spiritual-roots');
+      if (parts[1] === 'confirm' && parts.length >= 7) {
+        // Legacy: không có weapon type
+        let [, , name, rootId, rootType, constitutionId, daoPath] = parts;
+        try { name = decodeURIComponent(name); } catch (_e) { /* already decoded */ }
+        return confirmCreation(interaction, name, rootId, rootType, constitutionId, daoPath, null, '100', '80', '');
+      }
+
+      if (parts[1] === 'reroll' || parts[1] === 'reroll_all') {
+        // Re-roll: quay lại chọn root → weapon → roll lại
         let [, , name, rootId, rootType, daoPath] = parts;
         try { name = decodeURIComponent(name); } catch (_e) { /* already decoded */ }
-
-        // Re-select same root to re-roll constitution
         return handleRootSelect(interaction, rootId, daoPath, name);
       }
     },
@@ -608,6 +643,17 @@ function loadHandlers() {
       const parts = interaction.customId.split(':');
       if (parts[1] === 'name' && parts[2]) {
         return handleNameSubmit(interaction, parts[2]);
+      }
+    },
+
+    async handleSelect(interaction, action, values) {
+      // Select menu: create:weapon:name:rootId:rootType:constitutionId:daoPath
+      const parts = interaction.customId.split(':');
+      if (parts[1] === 'weapon' && parts.length >= 7) {
+        const { handleWeaponSelect } = require('../systems/character-creation');
+        let [, , name, rootId, rootType, constitutionId, daoPath] = parts;
+        try { name = decodeURIComponent(name); } catch (_e) { /* already decoded */ }
+        return handleWeaponSelect(interaction, values[0], name, rootId, rootType, constitutionId, daoPath);
       }
     },
   });
@@ -767,8 +813,118 @@ function loadHandlers() {
           const slot = parseInt(values[0]);
           return handleUnequipSkill(interaction, player, slot);
         }
+        case 'qcbh_equip': {
+          // Trang bị chiến kỹ — value = "slotType:skillId"
+          if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+          const { equipQcbhSkill } = require('../menus/qcbh-skill-menu');
+          const [qcbhSlotType, qcbhSkillId] = values[0].split(':');
+          return equipQcbhSkill(interaction, player, qcbhSlotType, qcbhSkillId);
+        }
+        case 'nghich_thien_equip': {
+          // Trang bị Nghịch Thiên — value = "slot:traitId"
+          if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+          const { equipNghichThien } = require('../menus/nghich-thien-menu');
+          const [ntSlot, ntTraitId] = values[0].split(':');
+          return equipNghichThien(interaction, player, parseInt(ntSlot), ntTraitId);
+        }
+        case 'tam_phap_equip': {
+          // Trang bị Tâm Pháp — value = "slotType:tamPhapId"
+          if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+          const { equipTamPhap } = require('../menus/tam-phap-menu');
+          const [tpSlotType, tpId] = values[0].split(':');
+          return equipTamPhap(interaction, player, tpSlotType, tpId);
+        }
+        case 'ngu_kiem_travel': {
+          if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+          const { setPlayerLocation, LOCATIONS, getPlayerLocation, calculateTravelTime } = require('../systems/ngu-kiem');
+          const { EmbedBuilder: TravelEmbed, ActionRowBuilder: TravelRow, ButtonBuilder: TravelBtn, ButtonStyle: TravelStyle } = require('discord.js');
+          const destId = values[0];
+          const dest = LOCATIONS.find(l => l.id === destId);
+          if (!dest) return interaction.reply({ embeds: [createErrorEmbed('Địa điểm không tồn tại.')], ephemeral: true });
+
+          const currentLoc = getPlayerLocation(player.id);
+          const travelTime = calculateTravelTime(player, currentLoc, dest);
+          setPlayerLocation(player.id, destId);
+
+          const embed = new TravelEmbed()
+            .setColor('#2ecc71')
+            .setTitle(`🗡️ Ngự Kiếm — Di chuyển`)
+            .setDescription(
+              `**${player.name}** ngự kiếm bay từ ${currentLoc.emoji} **${currentLoc.name}** đến ${dest.emoji} **${dest.name}**!\n\n` +
+              `⏱️ Thời gian: **${travelTime} phút**\n` +
+              `📍 Vị trí mới: **${dest.name}**\n\n` +
+              `*${dest.description}*`
+            )
+            .setTimestamp();
+
+          const row = new TravelRow().addComponents(
+            new TravelBtn().setCustomId('ngu_kiem:map').setLabel('🗺️ Xem Bản Đồ').setStyle(TravelStyle.Primary),
+            new TravelBtn().setCustomId('menu:main').setLabel('🔙 Menu').setStyle(TravelStyle.Secondary),
+          );
+          return interaction.update({ embeds: [embed], components: [row] });
+        }
+        case 'dao_tam': {
+          if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+          const { selectDaoTam } = require('../systems/dao-tam');
+          return selectDaoTam(interaction, player, values[0]);
+        }
+        case 'change_dao_tam': {
+          if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+          const { confirmChangeDaoTam } = require('../systems/dao-tam');
+          return confirmChangeDaoTam(interaction, player, values[0]);
+        }
         default:
           return interaction.reply({ embeds: [createErrorEmbed('Lựa chọn không hợp lệ.')], ephemeral: true });
+      }
+    },
+  });
+
+  // ══════════════════════════════════
+  // CHIẾN_KỸ: Kỹ năng chiến đấu nâng cao
+  // ══════════════════════════════════
+  registerHandler('qcbh_skill', {
+    async handleButton(interaction, action) {
+      const player = getPlayer(interaction.user.id);
+      if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+
+      const { showQcbhSkillMenu, showSlotSkills } = require('../menus/qcbh-skill-menu');
+      const { showNghichThienMenu } = require('../menus/nghich-thien-menu');
+      const { showTamPhapMenu, showTamPhapSlot } = require('../menus/tam-phap-menu');
+
+      switch (action) {
+        case 'menu': return showQcbhSkillMenu(interaction, player);
+        case 'vo_ky': return showSlotSkills(interaction, player, 'vo_ky');
+        case 'than_phap': return showSlotSkills(interaction, player, 'than_phap');
+        case 'tuyet_ky': return showSlotSkills(interaction, player, 'tuyet_ky');
+        case 'than_thong': return showSlotSkills(interaction, player, 'than_thong');
+        case 'nghich_thien': return showNghichThienMenu(interaction, player);
+        case 'tam_phap': return showTamPhapMenu(interaction, player);
+        // Tâm pháp slot types
+        case 'tp_than_cong': return showTamPhapSlot(interaction, player, 'than_cong');
+        case 'tp_dai_phap': return showTamPhapSlot(interaction, player, 'dai_phap');
+        case 'tp_bi_quyen': return showTamPhapSlot(interaction, player, 'bi_quyen');
+        case 'tp_quyet': return showTamPhapSlot(interaction, player, 'quyet');
+        case 'tp_ngang': return showTamPhapSlot(interaction, player, 'ngang');
+        case 'tp_luc': return showTamPhapSlot(interaction, player, 'luc');
+        default: return showQcbhSkillMenu(interaction, player);
+      }
+    },
+  });
+
+  // ══════════════════════════════════
+  // ĐẠO TÂM: Hệ thống đạo tâm
+  // ══════════════════════════════════
+  registerHandler('dao_tam', {
+    async handleButton(interaction, action) {
+      const player = getPlayer(interaction.user.id);
+      if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+
+      const daoTamSystem = require('../systems/dao-tam');
+      switch (action) {
+        case 'menu': return daoTamSystem.showDaoTamMenu(interaction, player);
+        case 'meditate': return daoTamSystem.handleMeditate(interaction, player);
+        case 'change': return daoTamSystem.handleChangeDaoTam(interaction, player);
+        default: return daoTamSystem.showDaoTamMenu(interaction, player);
       }
     },
   });
@@ -1074,7 +1230,7 @@ function loadHandlers() {
           // Back to action buttons
           const embed = buildInteractiveEmbed(state);
           const buttons = buildActionButtons(state);
-          return interaction.update({ embeds: [embed], components: [buttons] });
+          return interaction.update({ embeds: [embed], components: Array.isArray(buttons) ? buttons : [buttons] });
         }
 
         case 'flee': {
@@ -1082,8 +1238,15 @@ function loadHandlers() {
           return _handleTurnResult(interaction, state, result, combatMap, player);
         }
 
-        default:
+        default: {
+          // Handle chiến kỹ skill buttons: icombat:qcbh:vo_ky, icombat:qcbh:than_phap, etc.
+          if (action.startsWith('qcbh:')) {
+            const qcbhSlot = action.replace('qcbh:', '');
+            const result = executePlayerTurn(state, 'qcbh', qcbhSlot);
+            return _handleTurnResult(interaction, state, result, combatMap, player);
+          }
           return interaction.reply({ embeds: [createErrorEmbed('Hành động không hợp lệ.')], ephemeral: true });
+        }
       }
     },
 
@@ -1125,7 +1288,7 @@ function loadHandlers() {
     const db = require('../database/connection');
     const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
     const { COLORS } = require('../utils/constants');
-    const { formatNumber } = require('../utils/helpers');
+    const { formatNumber, randomInt } = require('../utils/helpers');
 
     const isOver = result.playerDead || result.enemyDead || result.fled || state.turn >= state.maxTurns;
 
@@ -1133,7 +1296,7 @@ function loadHandlers() {
       // Continue combat
       const embed = buildInteractiveEmbed(state);
       const buttons = buildActionButtons(state);
-      return interaction.update({ embeds: [embed], components: [buttons] });
+      return interaction.update({ embeds: [embed], components: Array.isArray(buttons) ? buttons : [buttons] });
     }
 
     // ═══ COMBAT END ═══
@@ -1165,12 +1328,19 @@ function loadHandlers() {
 
     if (result.enemyDead) {
       // Victory!
-      const expReward = monster.exp_reward || 0;
-      const linhThachReward = Math.floor(expReward * 0.3);
+      const expReward = (monster.exp_reward || 0) + randomInt(0, Math.floor((monster.exp_reward || 0) * 0.2));
+      const linhThachReward = randomInt(5, 20) * ((player.realm_index || 0) + 1);
 
-      // Update player
-      db.prepare('UPDATE players SET exp = exp + ?, linh_thach = linh_thach + ? WHERE id = ?')
-        .run(expReward, linhThachReward, player.id);
+      // Update player: add rewards + update HP
+      const finalHp = Math.max(1, state.player.hp);
+      db.prepare('UPDATE players SET exp = exp + ?, linh_thach = linh_thach + ?, hp = ? WHERE id = ?')
+        .run(expReward, linhThachReward, finalHp, player.id);
+
+      // Cập nhật tiến trình nhiệm vụ
+      try {
+        const { updateQuestProgress } = require('../systems/quests');
+        updateQuestProgress(player.id, 'hunt', monster.id, 1);
+      } catch (_err) { /* ignore */ }
 
       // Drop items
       let dropsText = '';
@@ -1179,9 +1349,12 @@ function loadHandlers() {
         for (const drop of monster.drops) {
           if (Math.random() < drop.chance) {
             try {
-              db.prepare(
-                'INSERT INTO player_inventory (player_id, item_id, quantity) VALUES (?, ?, 1) ON CONFLICT(player_id, item_id) DO UPDATE SET quantity = quantity + 1'
-              ).run(player.id, drop.item_id);
+              const existing = db.prepare('SELECT quantity FROM inventory WHERE player_id = ? AND item_id = ?').get(player.id, drop.item_id);
+              if (existing) {
+                db.prepare('UPDATE inventory SET quantity = quantity + 1 WHERE player_id = ? AND item_id = ?').run(player.id, drop.item_id);
+              } else {
+                db.prepare('INSERT INTO inventory (player_id, item_id, quantity) VALUES (?, ?, 1)').run(player.id, drop.item_id);
+              }
               const item = getItemById(drop.item_id);
               const itemName = item ? `${item.emoji || '📦'} ${item.name}` : drop.item_id;
               dropsText += `  • ${itemName}\n`;
@@ -1193,14 +1366,15 @@ function loadHandlers() {
 
       const embed = new EmbedBuilder()
         .setColor('#FFD700')
-        .setTitle(`🏆 CHIẾN THẮNG BOSS!`)
+        .setTitle(`🏆 CHIẾN THẮNG! — ${monster.emoji} ${monster.name}`)
         .setDescription(
           `**${player.name}** đã đánh bại **${monster.emoji} ${monster.name}**!\n\n` +
           `📜 **Nhật Ký Trận Đấu:**\n${recentLog}\n\n` +
           `🎁 **Phần Thưởng:**\n` +
           `  ✨ EXP: +**${formatNumber(expReward)}**\n` +
           `  💎 Linh Thạch: +**${formatNumber(linhThachReward)}**\n\n` +
-          `📦 **Vật Phẩm Rơi:**\n${dropsText}`
+          `📦 **Vật Phẩm Rơi:**\n${dropsText}\n` +
+          `❤️ HP còn lại: **${formatNumber(finalHp)}**/${formatNumber(state.player.maxHp)}`
         )
         .setTimestamp();
 
@@ -1212,26 +1386,21 @@ function loadHandlers() {
     }
 
     if (result.playerDead) {
-      // Defeat — HP penalty
-      const hpPenalty = Math.floor(player.max_hp * 0.2);
-      db.prepare('UPDATE players SET hp = MAX(1, hp - ?) WHERE id = ?').run(hpPenalty, player.id);
+      // Defeat — permadeath!
+      db.prepare('UPDATE players SET hp = 0, is_dead = 1 WHERE id = ?').run(player.id);
 
       const embed = new EmbedBuilder()
         .setColor('#E74C3C')
-        .setTitle('💀 THẤT BẠI!')
+        .setTitle('💀 THÂN TỬ ĐẠO TIÊU')
         .setDescription(
-          `**${player.name}** đã bại trận trước **${monster.emoji} ${monster.name}**!\n\n` +
+          `**${player.name}** đã bị ${monster.emoji} **${monster.name}** giết chết!\n\n` +
           `📜 **Nhật Ký:**\n${recentLog}\n\n` +
-          `💔 Mất **${hpPenalty}** HP. Hãy hồi phục rồi thử lại!`
+          `💀 **PERMADEATH** — Nhân vật đã mất vĩnh viễn.\n` +
+          `_Dùng /tutien để bắt đầu lại._`
         )
         .setTimestamp();
 
-      const row = new ActionRowBuilder().addComponents(
-        new ButtonBuilder().setCustomId('menu:rest').setLabel('🏕️ Nghỉ Ngơi').setStyle(ButtonStyle.Success),
-        new ButtonBuilder().setCustomId('combat:menu').setLabel('🔙 Chiến Trường').setStyle(ButtonStyle.Secondary),
-        new ButtonBuilder().setCustomId('menu:main').setLabel('🏠 Menu Chính').setStyle(ButtonStyle.Primary),
-      );
-      return interaction.update({ embeds: [embed], components: [row] });
+      return interaction.update({ embeds: [embed], components: [] });
     }
 
     // Timeout — draw
@@ -1375,6 +1544,256 @@ async function handleModal(interaction) {
     } catch (e) { /* ignore */ }
   }
 }
+
+  // ══════════════════════════════════
+  // LUẬN ĐẠO: Philosophical Debate
+  // ══════════════════════════════════
+  registerHandler('luan_dao', {
+    async handleButton(interaction, action) {
+      const player = getPlayer(interaction.user.id);
+      if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+
+      const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+      const { executeSoloLuanDao, applyLuanDaoRewards } = require('../systems/luan-dao-ti-vo');
+      const { formatNumber } = require('../utils/helpers');
+
+      if (action === 'menu') {
+        const embed = new EmbedBuilder()
+          .setColor('#9b59b6')
+          .setTitle('🗣️ Luận Đạo')
+          .setDescription(
+            `**${player.name}** — Đạo Tâm: **${formatNumber(player.dao_tam || 0)}** | Ngộ Tính: **${player.ngo_tinh || 100}**\n\n` +
+            `Luận đạo là hình thức tranh biện về đại đạo.\nThắng → nhận Đạo Tâm + EXP\nThua → vẫn nhận ít kinh nghiệm\n\n` +
+            `_So sánh dựa trên Đạo Tâm, Ngộ Tính, và Cảnh Giới._`
+          )
+          .setTimestamp();
+
+        const row = new ActionRowBuilder().addComponents(
+          new ButtonBuilder().setCustomId('luan_dao:solo').setLabel('🧘 Luận Đạo Solo (vs NPC)').setStyle(ButtonStyle.Primary),
+          new ButtonBuilder().setCustomId('menu:main').setLabel('🔙 Quay Lại').setStyle(ButtonStyle.Secondary),
+        );
+        return interaction.update({ embeds: [embed], components: [row] });
+      }
+
+      if (action === 'solo') {
+        const result = executeSoloLuanDao(player);
+        applyLuanDaoRewards(player.id, result.rewards);
+
+        const resultEmoji = result.won ? '🏆' : '😔';
+        const resultText = result.won ? 'CHIẾN THẮNG' : 'THẤT BẠI';
+        const embed = new EmbedBuilder()
+          .setColor(result.won ? '#2ecc71' : '#e74c3c')
+          .setTitle(`${resultEmoji} Luận Đạo — ${resultText}`)
+          .setDescription(
+            `**Chủ đề**: ${result.topic.name}\n*${result.topic.desc}*\n\n` +
+            `📊 Điểm bạn: **${result.playerScore}** vs NPC: **${result.npcScore}**\n` +
+            `Chênh lệch: **${result.diff}** điểm\n\n` +
+            `**Phần thưởng:**\n` +
+            `🧘 Đạo Tâm: +${result.rewards.dao_tam || 0}\n` +
+            `📈 EXP: +${Math.floor(result.rewards.exp || 0)}\n` +
+            (result.rewards.ngo_tinh ? `🧠 Ngộ Tính: +${result.rewards.ngo_tinh}\n` : '')
+          )
+          .setTimestamp();
+
+        const row = new ActionRowBuilder().addComponents(
+          new ButtonBuilder().setCustomId('luan_dao:solo').setLabel('🗣️ Luận Đạo Tiếp').setStyle(ButtonStyle.Primary),
+          new ButtonBuilder().setCustomId('menu:main').setLabel('🔙 Menu').setStyle(ButtonStyle.Secondary),
+        );
+        return interaction.update({ embeds: [embed], components: [row] });
+      }
+    },
+  });
+
+  // ══════════════════════════════════
+  // TỈ VÕ: Martial Tournament
+  // ══════════════════════════════════
+  registerHandler('ti_vo', {
+    async handleButton(interaction, action) {
+      const player = getPlayer(interaction.user.id);
+      if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+
+      const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+      const { getTiVoRank, getTiVoLeaderboard } = require('../systems/luan-dao-ti-vo');
+      const { formatNumber } = require('../utils/helpers');
+
+      if (action === 'menu') {
+        const rank = getTiVoRank(player.danh_vong || 0);
+        const leaderboard = getTiVoLeaderboard(5);
+        const lbText = leaderboard.map((p, i) =>
+          `${i + 1}. **${p.name}** — ${formatNumber(p.danh_vong)} DV`
+        ).join('\n') || '_Chưa có ai_';
+
+        const embed = new EmbedBuilder()
+          .setColor('#e67e22')
+          .setTitle('🏟️ Tỉ Võ Đài')
+          .setDescription(
+            `**${player.name}** — ${rank.name}\n` +
+            `🏆 Danh Vọng: **${formatNumber(player.danh_vong || 0)}**\n\n` +
+            `**🏅 Bảng Xếp Hạng:**\n${lbText}\n\n` +
+            `_Tỉ Võ sử dụng hệ thống chiến đấu nâng cao.\nKhông gây chết vĩnh viễn._`
+          )
+          .setTimestamp();
+
+        const row = new ActionRowBuilder().addComponents(
+          new ButtonBuilder().setCustomId('combat:pvp').setLabel('⚔️ Thách Đấu PvP').setStyle(ButtonStyle.Danger),
+          new ButtonBuilder().setCustomId('menu:main').setLabel('🔙 Quay Lại').setStyle(ButtonStyle.Secondary),
+        );
+        return interaction.update({ embeds: [embed], components: [row] });
+      }
+    },
+  });
+
+  // ══════════════════════════════════
+  // KỲ NGỘ: Random Events
+  // ══════════════════════════════════
+  registerHandler('ky_ngo', {
+    async handleButton(interaction, action) {
+      const player = getPlayer(interaction.user.id);
+      if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+
+      const { checkKyNgoTrigger, calculateRewards, applyRewards, buildKyNgoEmbed, buildKyNgoButtons } = require('../systems/ky-ngo');
+      const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
+
+      if (action === 'explore') {
+        const event = checkKyNgoTrigger(player);
+        if (!event) {
+          const embed = new EmbedBuilder()
+            .setColor('#808080')
+            .setTitle('✨ Kỳ Ngộ')
+            .setDescription(
+              `**${player.name}** ra ngoài tìm cơ duyên...\n\n` +
+              `😔 Lần này không gặp gì đặc biệt.\n` +
+              `_Vận khí hiện tại: ${player.van_khi || 80}. Vận khí cao sẽ tăng cơ hội kỳ ngộ!_`
+            )
+            .setTimestamp();
+
+          const row = new ActionRowBuilder().addComponents(
+            new ButtonBuilder().setCustomId('ky_ngo:explore').setLabel('✨ Thử Lại').setStyle(ButtonStyle.Primary),
+            new ButtonBuilder().setCustomId('menu:main').setLabel('🔙 Menu').setStyle(ButtonStyle.Secondary),
+          );
+          return interaction.update({ embeds: [embed], components: [row] });
+        }
+
+        // Cache event
+        if (!interaction.client._kyNgoCache) interaction.client._kyNgoCache = new Map();
+        interaction.client._kyNgoCache.set(interaction.user.id, event);
+
+        const embed = buildKyNgoEmbed(event, player);
+        const buttons = buildKyNgoButtons(event);
+        return interaction.update({ embeds: [embed], components: [buttons] });
+      }
+
+      if (action === 'skip') {
+        interaction.client._kyNgoCache?.delete(interaction.user.id);
+        const { showMainMenu } = require('../menus/main-menu');
+        return showMainMenu(interaction, player);
+      }
+
+      // Handle choices: ky_ngo:choose:eventId:choiceIndex
+      if (action.startsWith('choose:')) {
+        const parts = action.split(':');
+        const eventId = parts[1];
+        const choiceIndex = parseInt(parts[2]) || 0;
+
+        const event = interaction.client._kyNgoCache?.get(interaction.user.id);
+        if (!event || event.id !== eventId) {
+          return interaction.reply({ embeds: [createErrorEmbed('Kỳ ngộ đã hết hạn.')], ephemeral: true });
+        }
+
+        interaction.client._kyNgoCache.delete(interaction.user.id);
+
+        const result = calculateRewards(event, player, choiceIndex);
+        applyRewards(player.id, result.rewards);
+
+        const embed = new EmbedBuilder()
+          .setColor(result.risk_failed ? '#e74c3c' : '#2ecc71')
+          .setTitle(`${event.emoji} ${event.name} — ${result.risk_failed ? 'THẤT BẠI' : 'KẾT QUẢ'}`)
+          .setDescription(result.log.join('\n'))
+          .setTimestamp();
+
+        const row = new ActionRowBuilder().addComponents(
+          new ButtonBuilder().setCustomId('ky_ngo:explore').setLabel('✨ Tìm Kỳ Ngộ Tiếp').setStyle(ButtonStyle.Primary),
+          new ButtonBuilder().setCustomId('menu:main').setLabel('🔙 Menu').setStyle(ButtonStyle.Secondary),
+        );
+        return interaction.update({ embeds: [embed], components: [row] });
+      }
+    },
+  });
+
+  // ══════════════════════════════════
+  // NGỰ KIẾM: Sword Riding / Map
+  // ══════════════════════════════════
+  registerHandler('ngu_kiem', {
+    async handleButton(interaction, action) {
+      const player = getPlayer(interaction.user.id);
+      if (!player) return interaction.reply({ embeds: [createErrorEmbed('Chưa có nhân vật.')], ephemeral: true });
+
+      const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, StringSelectMenuBuilder } = require('discord.js');
+      const { LOCATIONS, getAvailableLocations, getPlayerLocation, setPlayerLocation, calculateTravelTime } = require('../systems/ngu-kiem');
+      const { formatNumber } = require('../utils/helpers');
+
+      if (action === 'map') {
+        const currentLoc = getPlayerLocation(player.id);
+        const available = getAvailableLocations(player);
+
+        const locList = available.map(loc => {
+          const isCurrent = loc.id === currentLoc.id;
+          const prefix = isCurrent ? '📍' : loc.emoji;
+          const features = loc.features.map(f => {
+            const names = { shop: '🛒', hunt: '⚔️', boss: '💀', gather: '🌿', npc: '👤',
+              ky_ngo: '✨', sect: '🏯', luan_dao: '🗣️', ti_vo: '🏟️', tribulation: '⛈️',
+              sword_treasure: '🗡️', legendary_treasure: '💎', ascension: '☁️' };
+            return names[f] || f;
+          }).join('');
+          return `${prefix} **${loc.name}** ${isCurrent ? '← _Đang ở đây_' : ''}\n  ${features} | ${loc.description.slice(0, 60)}...`;
+        }).join('\n\n');
+
+        const embed = new EmbedBuilder()
+          .setColor('#3498db')
+          .setTitle('🗡️ Ngự Kiếm — Bản Đồ')
+          .setDescription(
+            `📍 Vị trí: **${currentLoc.name}**\n` +
+            `⚔️ Chiến lực: **${formatNumber((player.atk || 0) + (player.def || 0) + (player.speed || 0))}**\n\n` +
+            `**Các địa điểm:**\n\n${locList}`
+          )
+          .setFooter({ text: `Võ khí: ${player.weapon_type || 'Chưa có'} | Cảnh giới: ${player.realm_index || 0}` })
+          .setTimestamp();
+
+        // Select menu to travel
+        const travelOptions = available
+          .filter(loc => loc.id !== currentLoc.id)
+          .slice(0, 25)
+          .map(loc => ({
+            label: loc.name.replace(/[^\w\s]/g, '').trim(),
+            value: loc.id,
+            emoji: loc.emoji,
+            description: `${calculateTravelTime(player, currentLoc, loc)} phút bay`,
+          }));
+
+        const components = [];
+        if (travelOptions.length > 0) {
+          components.push(new ActionRowBuilder().addComponents(
+            new StringSelectMenuBuilder()
+              .setCustomId('select:ngu_kiem_travel')
+              .setPlaceholder('🗡️ Chọn nơi muốn đến...')
+              .addOptions(travelOptions)
+          ));
+        }
+        components.push(new ActionRowBuilder().addComponents(
+          new ButtonBuilder().setCustomId('menu:main').setLabel('🔙 Quay Lại').setStyle(ButtonStyle.Secondary),
+        ));
+
+        return interaction.update({ embeds: [embed], components });
+      }
+    },
+
+    async handleSelect(interaction, action, values) {
+      // Travel handled in select handler below
+    },
+  });
+
+  // Wire ngu_kiem travel in select handler
+  // Add to existing 'select' handler or handle via prefix routing
 
 module.exports = {
   registerHandler,

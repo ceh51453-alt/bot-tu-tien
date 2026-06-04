@@ -15,6 +15,7 @@ const daoLawsConfig = require('../../config/dao-laws');
 const techniquesConfig = require('../../config/techniques');
 const petsConfig = require('../../config/pets');
 const { randomInt, chance, clamp } = require('../utils/helpers');
+const qcbhCombat = require('./qcbh-combat');
 
 // ═══════════════════════════════════════════
 //  CONSTANTS
@@ -1685,6 +1686,30 @@ function simulateCombat(combatState) {
       }
     }
 
+    // ═══ Chiến Kỹ: Xử lý sau lượt player đi trước ═══
+    if (first === player && player._qcbhState) {
+      const qState = player._qcbhState;
+      const summonDmg = qcbhCombat.processSummons(qState, player, enemy, turnLog);
+      if (summonDmg > 0) {
+        enemy.hp -= summonDmg;
+        if (enemy.hp <= 0) {
+          enemy.hp = 0;
+          turnLog.push(`💀 ${enemy.name} bị summon hạ gục!`);
+          combatState.winner = 'player';
+          break;
+        }
+      }
+      const { damageToEnemy } = qcbhCombat.processBuffsDebuffs(qState, player, enemy, turnLog);
+      if (damageToEnemy > 0) {
+        enemy.hp -= damageToEnemy;
+        if (enemy.hp <= 0) {
+          enemy.hp = 0;
+          combatState.winner = 'player';
+          break;
+        }
+      }
+    }
+
     // ── LƯỢT BÊN ĐI SAU ──
     applyStartOfTurnEffects(second, turnLog);
     if (second.hp <= 0) {
@@ -1732,6 +1757,29 @@ function simulateCombat(combatState) {
           turnLog.push(`💀 ${enemy.name} đã bị linh thú hạ gục!`);
           combatState.winner = 'player';
           applyKillHeal(player, turnLog);
+          break;
+        }
+      }
+    }
+
+    // ═══ Chiến Kỹ: Xử lý sau lượt enemy ═══
+    if (second === player && player._qcbhState) {
+      const qState = player._qcbhState;
+      const summonDmg = qcbhCombat.processSummons(qState, player, enemy, turnLog);
+      if (summonDmg > 0) {
+        enemy.hp -= summonDmg;
+        if (enemy.hp <= 0) {
+          enemy.hp = 0;
+          combatState.winner = 'player';
+          break;
+        }
+      }
+      const { damageToEnemy } = qcbhCombat.processBuffsDebuffs(qState, player, enemy, turnLog);
+      if (damageToEnemy > 0) {
+        enemy.hp -= damageToEnemy;
+        if (enemy.hp <= 0) {
+          enemy.hp = 0;
+          combatState.winner = 'player';
           break;
         }
       }
@@ -1869,6 +1917,25 @@ function createPvECombat(player, monster, dbInstance) {
     daoLaws: daoLaws,
     isPlayer: true,
   });
+
+  // ═══ CHIẾN KỸ STATE ═══
+  try {
+    playerState._qcbhState = qcbhCombat.buildQcbhState(player);
+    // Áp dụng Nghịch Thiên passive stat bonuses
+    const ntFx = playerState._qcbhState.nghichThienEffects;
+    if (ntFx.atk_bonus_percent) playerState.atk = Math.floor(playerState.atk * (1 + ntFx.atk_bonus_percent / 100));
+    if (ntFx.hp_bonus_percent) {
+      const hpBonus = Math.floor(playerState.maxHp * ntFx.hp_bonus_percent / 100);
+      playerState.maxHp += hpBonus;
+      playerState.hp += hpBonus;
+    }
+    if (ntFx.speed_bonus_percent) playerState.speed = Math.floor(playerState.speed * (1 + ntFx.speed_bonus_percent / 100));
+    if (ntFx.def_bonus_percent) playerState.def = Math.floor(playerState.def * (1 + ntFx.def_bonus_percent / 100));
+    if (ntFx.crit_rate_bonus) playerState.critRate += ntFx.crit_rate_bonus;
+  } catch (_e) {
+    // Chiến Kỹ not configured for this player, skip
+    playerState._qcbhState = null;
+  }
 
   // Build enemy state
   let enemySkills = (monster.skills || []).map(skillId => {

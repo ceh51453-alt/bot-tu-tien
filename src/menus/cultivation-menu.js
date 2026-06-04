@@ -4,7 +4,7 @@ const { progressBar, formatNumber, formatTime } = require('../utils/helpers');
 const { getMenuImage } = require('../utils/image-helper');
 
 /**
- * Cultivation Menu — Tu Luyện, Lĩnh Ngộ, Đột Phá, Vượt Kiếp
+ * Cultivation Menu — Tu Luyện, Lĩnh Ngộ, Đột Phá, Vượt Kiếp, Bế Quan
  */
 async function showCultivationMenu(interaction, player) {
   const realms = require('../../config/realms');
@@ -22,6 +22,12 @@ async function showCultivationMenu(interaction, player) {
   ).get(player.id);
   const onCooldown = cooldown && Date.now() < cooldown.expires_at;
 
+  // Check bế quan status
+  const afkStatus = db.prepare(
+    "SELECT * FROM player_afk_cultivation WHERE player_id = ? AND status = 'active'"
+  ).get(player.id);
+  const isAfk = !!afkStatus;
+
   const embed = new EmbedBuilder()
     .setColor(COLORS.cultivation)
     .setTitle('🧘 Tu Luyện Các')
@@ -31,9 +37,11 @@ async function showCultivationMenu(interaction, player) {
       `📈 EXP Bonus: **+${technique ? technique.exp_bonus : 0}%**\n\n` +
       `**Tu Vi Tiến Độ**:\n` +
       `${progressBar(player.exp, expNeeded)} ${formatNumber(player.exp)}/${formatNumber(expNeeded)}\n\n` +
-      (onCooldown
-        ? `⏳ Thời gian hồi: **${formatTime(cooldown.expires_at - Date.now())}**`
-        : '✅ Có thể tu luyện!')
+      (isAfk
+        ? `🏔️ Đang **Bế Quan Tu Luyện**! Nhấn "Xuất Quan" để nhận EXP.`
+        : (onCooldown
+          ? `⏳ Thời gian hồi: **${formatTime(cooldown.expires_at - Date.now())}**`
+          : '✅ Có thể tu luyện!'))
     );
 
   const img = getMenuImage('cultivation');
@@ -60,7 +68,7 @@ async function showCultivationMenu(interaction, player) {
       .setCustomId('cultivation:train')
       .setLabel('🧘 Tu Luyện')
       .setStyle(ButtonStyle.Success)
-      .setDisabled(onCooldown),
+      .setDisabled(onCooldown || isAfk),
     new ButtonBuilder()
       .setCustomId('cultivation:comprehend')
       .setLabel('📖 Lĩnh Ngộ Pháp Tắc')
@@ -87,6 +95,19 @@ async function showCultivationMenu(interaction, player) {
       .setCustomId('technique:menu')
       .setLabel('📜 Đổi Công Pháp')
       .setStyle(ButtonStyle.Primary),
+    new ButtonBuilder()
+      .setCustomId('cultivation:dao_tam')
+      .setLabel('🧘 Đạo Tâm')
+      .setStyle(ButtonStyle.Primary)
+      .setDisabled(player.realm_index < 1),
+    new ButtonBuilder()
+      .setCustomId(isAfk ? 'cultivation:xuat_quan' : 'cultivation:be_quan')
+      .setLabel(isAfk ? '🏔️ Xuất Quan' : '🏔️ Bế Quan')
+      .setStyle(isAfk ? ButtonStyle.Danger : ButtonStyle.Success),
+    new ButtonBuilder()
+      .setCustomId('cultivation:khi_van')
+      .setLabel('🌟 Khí Vận')
+      .setStyle(ButtonStyle.Secondary),
   );
 
   const imgData = getMenuImage('cultivation');
@@ -96,13 +117,11 @@ async function showCultivationMenu(interaction, player) {
 }
 
 /**
- * Handle cultivation (tu luyện) action
+ * Handle cultivation (tu luyện) action — Bắt đầu interactive session
  */
 async function handleCultivation(interaction, player) {
   const db = require('../database/connection');
-  const realms = require('../../config/realms');
-  const techniques = require('../../config/techniques');
-  const { chance } = require('../utils/helpers');
+  const { formatTime } = require('../utils/helpers');
 
   // Check cooldown
   const cooldown = db.prepare(
@@ -121,83 +140,231 @@ async function handleCultivation(interaction, player) {
     ]});
   }
 
-  const realm = realms.list[player.realm_index];
-  const technique = techniques.list.find(t => t.id === player.technique_id);
-  const expBonus = technique ? technique.exp_bonus / 100 : 0;
+  // Bắt đầu interactive cultivation session
+  const { startSession, buildRound1 } = require('../systems/interactive-cultivation');
+  const session = startSession(player);
+  session.round = 1;
 
-  // Base EXP = 10-20 per cultivation session
-  const baseExp = Math.floor(Math.random() * 11) + 10;
-  const bonusExp = Math.floor(baseExp * expBonus);
-  const totalExp = baseExp + bonusExp;
+  const { embed, components } = buildRound1(session);
 
-  // Ma Đạo: 20% more EXP but 5% chance of tẩu hỏa
-  let tauHoa = false;
-  let tauHoaDamage = 0;
-  if (player.dao_path === 'ma') {
-    const maBonus = Math.floor(totalExp * 0.2);
-    const finalExp = totalExp + maBonus;
+  await interaction.update({ embeds: [embed], components });
+}
 
-    if (chance(5)) {
-      tauHoa = true;
-      tauHoaDamage = Math.floor(player.max_hp * 0.15);
-      const newHp = Math.max(1, player.hp - tauHoaDamage);
+/**
+ * Handle interactive cultivation round responses
+ */
+async function handleInteractiveCultivation(interaction, player, roundData) {
+  const {
+    getSession, endSession,
+    processRound1, processRound2, processRandomEvent,
+    buildRound2, buildRandomEventRound,
+    calculateFinalResults,
+  } = require('../systems/interactive-cultivation');
 
-      db.prepare('UPDATE players SET exp = exp + ?, hp = ? WHERE id = ?').run(
-        Math.floor(finalExp * 0.5), // Only get half EXP when tẩu hỏa
-        newHp,
-        player.id
-      );
-
-      // Check if player dies from tẩu hỏa
-      if (newHp <= Math.floor(player.max_hp * 0.2) && chance(30)) {
-        db.prepare('UPDATE players SET is_dead = 1 WHERE id = ?').run(player.id);
-        const embed = new EmbedBuilder()
-          .setColor(COLORS.error)
-          .setTitle('💀 TẨU HỎA NHẬP MA — THÂN TỬ ĐẠO TIÊU')
-          .setDescription(
-            `**${player.name}** tẩu hỏa nhập ma khi tu luyện ma đạo công pháp!\n\n` +
-            `Kinh mạch đứt hết, đan điền vỡ nát...\n` +
-            `Nhân vật đã **CHẾT VĨNH VIỄN**.\n\n` +
-            `_Dùng /tutien để tạo nhân vật mới._`
-          );
-        return interaction.update({ embeds: [embed], components: [] });
-      }
-    } else {
-      db.prepare('UPDATE players SET exp = exp + ? WHERE id = ?').run(finalExp, player.id);
-    }
-  } else {
-    db.prepare('UPDATE players SET exp = exp + ? WHERE id = ?').run(totalExp, player.id);
+  const session = getSession(interaction.user.id);
+  if (!session) {
+    return interaction.update({
+      embeds: [new EmbedBuilder().setColor(COLORS.error).setTitle('❌ Phiên tu luyện đã hết hạn').setDescription('Hãy bắt đầu tu luyện lại.')],
+      components: [new ActionRowBuilder().addComponents(
+        new ButtonBuilder().setCustomId('cultivation:menu').setLabel('🔙 Quay Lại').setStyle(ButtonStyle.Secondary)
+      )]
+    });
   }
 
-  // Set cooldown (30 minutes)
-  const expiresAt = Date.now() + COOLDOWNS.cultivate;
+  const parts = roundData.split(':');
+  const roundType = parts[0]; // r1, r2, r3
+
+  let result;
+
+  // ── Xử lý từng vòng ──
+  if (roundType === 'r1') {
+    const chosenElement = parts[1];
+    result = processRound1(session, chosenElement);
+
+    // Hiển thị kết quả vòng 1 + chuyển sang vòng 2
+    const resultEmbed = new EmbedBuilder()
+      .setColor(result.color)
+      .setTitle('🧘 Vòng 1 — Kết Quả')
+      .setDescription(`${result.text}\n\n📊 Điểm: **+${result.score}** (Tổng: ${session.score})`)
+      .setTimestamp();
+
+    session.round = 2;
+    const round2 = buildRound2(session);
+
+    const row = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setCustomId('icultivation:next:2')
+        .setLabel('▶️ Tiếp Tục Vòng 2')
+        .setStyle(ButtonStyle.Primary)
+    );
+
+    return interaction.update({ embeds: [resultEmbed], components: [row] });
+  }
+
+  if (roundType === 'r2') {
+    const choice = parts[1];
+    result = processRound2(session, choice, player);
+
+    session.round = 3;
+
+    const resultEmbed = new EmbedBuilder()
+      .setColor(result.color)
+      .setTitle('🧘 Vòng 2 — Kết Quả')
+      .setDescription(
+        `${result.text}\n\n` +
+        `📊 Điểm: **${result.score >= 0 ? '+' : ''}${result.score}** (Tổng: ${session.score})` +
+        (result.tauHoa ? '\n\n🔥 **CẢNH BÁO: Đã bị tẩu hỏa!** EXP sẽ bị giảm 50%.' : '')
+      )
+      .setTimestamp();
+
+    const row = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setCustomId('icultivation:next:3')
+        .setLabel(`▶️ Tiếp Tục Vòng 3`)
+        .setStyle(ButtonStyle.Primary)
+    );
+
+    return interaction.update({ embeds: [resultEmbed], components: [row] });
+  }
+
+  if (roundType === 'r3') {
+    // parts: eventId, answerType, answerIndex
+    const answerType = parts[2];
+    result = processRandomEvent(session, answerType);
+
+    session.round++;
+
+    const resultEmbed = new EmbedBuilder()
+      .setColor(result.color)
+      .setTitle(`🧘 Vòng ${session.round - 1} — Kết Quả`)
+      .setDescription(
+        `${result.text}\n\n` +
+        `_${result.flavorText}_\n\n` +
+        `📊 Điểm: **${result.score >= 0 ? '+' : ''}${result.score}** (Tổng: ${session.score})`
+      )
+      .setTimestamp();
+
+    // Kiểm tra còn vòng tiếp không
+    if (session.round <= session.maxRounds) {
+      const row = new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+          .setCustomId(`icultivation:next:${session.round}`)
+          .setLabel(`▶️ Tiếp Tục Vòng ${session.round}`)
+          .setStyle(ButtonStyle.Primary)
+      );
+      return interaction.update({ embeds: [resultEmbed], components: [row] });
+    }
+
+    // Hết vòng → tính kết quả cuối
+    const row = new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
+        .setCustomId('icultivation:finish')
+        .setLabel('📊 Xem Kết Quả')
+        .setStyle(ButtonStyle.Success)
+    );
+    return interaction.update({ embeds: [resultEmbed], components: [row] });
+  }
+
+  if (roundType === 'next') {
+    // Chuyển sang vòng tiếp theo
+    const nextRound = parseInt(parts[1]);
+
+    if (nextRound === 2) {
+      const round2 = buildRound2(session);
+      return interaction.update({ embeds: [round2.embed], components: round2.components });
+    }
+
+    // Vòng 3+: Random event
+    const eventRound = buildRandomEventRound(session, nextRound);
+    return interaction.update({ embeds: [eventRound.embed], components: eventRound.components });
+  }
+
+  if (roundType === 'finish') {
+    // Tính kết quả cuối cùng và cập nhật DB
+    return finishCultivation(interaction, player, session);
+  }
+}
+
+/**
+ * Hoàn thành session tu luyện — tính EXP, cập nhật DB
+ */
+async function finishCultivation(interaction, player, session) {
+  const db = require('../database/connection');
+  const { calculateFinalResults, endSession } = require('../systems/interactive-cultivation');
+
+  const results = calculateFinalResults(session, player);
+
+  // Cập nhật EXP
+  db.prepare('UPDATE players SET exp = exp + ? WHERE id = ?').run(results.finalExp, player.id);
+
+  // Tẩu hỏa damage (Ma Đạo, tẩu hỏa rate đã giảm: 3% thay vì 5%)
+  let tauHoaDamage = 0;
+  if (results.tauHoa) {
+    tauHoaDamage = Math.floor(player.max_hp * 0.10); // Giảm từ 15% xuống 10%
+    const newHp = Math.max(1, player.hp - tauHoaDamage);
+    db.prepare('UPDATE players SET hp = ? WHERE id = ?').run(newHp, player.id);
+  }
+
+  // Set cooldown: 15 phút thay vì 30 phút
+  const cultivateCooldown = 15 * 60 * 1000; // 15 phút
+  const expiresAt = Date.now() + cultivateCooldown;
   db.prepare(
     "INSERT OR REPLACE INTO cooldowns (player_id, action_type, expires_at) VALUES (?, 'cultivate', ?)"
   ).run(player.id, expiresAt);
 
-  // Build result embed
+  // Roll Hậu Thiên Khí Vận
+  let khiVanText = '';
+  if (results.khiVanRoll) {
+    try {
+      const { rollRandomKhiVan, applyKhiVan } = require('./khi-van');
+      const rolledKhiVan = rollRandomKhiVan('cultivation', player);
+      if (rolledKhiVan) {
+        applyKhiVan(player.id, rolledKhiVan.id);
+        khiVanText = `\n\n🌟 **Khí Vận mới!** ${rolledKhiVan.name}\n_${rolledKhiVan.description}_`;
+      }
+    } catch (e) {
+      // Khí vận system chưa sẵn sàng, bỏ qua
+    }
+  }
+
+  // Build embed kết quả
+  const gradeBar = '⭐'.repeat(
+    results.grade === 'perfect' ? 5 :
+    results.grade === 'excellent' ? 4 :
+    results.grade === 'good' ? 3 :
+    results.grade === 'normal' ? 2 : 1
+  );
+
   const embed = new EmbedBuilder()
-    .setColor(tauHoa ? COLORS.error : COLORS.success)
-    .setTitle(tauHoa ? '🔥 Tẩu Hỏa Nhập Ma!' : '🧘 Tu Luyện Thành Công!')
+    .setColor(
+      results.grade === 'perfect' ? 0xFFD700 :
+      results.grade === 'excellent' ? 0x2ecc71 :
+      results.grade === 'good' ? 0x3498db :
+      results.tauHoa ? COLORS.ERROR :
+      COLORS.INFO
+    )
+    .setTitle(`${results.gradeEmoji} Tu Luyện Hoàn Tất — ${results.gradeText}!`)
     .setDescription(
-      tauHoa
-        ? `**${player.name}** bị tẩu hỏa khi tu luyện!\n\n` +
-          `💔 Mất **${formatNumber(tauHoaDamage)}** HP\n` +
-          `📈 Chỉ nhận được **${formatNumber(Math.floor((totalExp + Math.floor(totalExp * 0.2)) * 0.5))}** EXP\n\n` +
-          `⚠️ Tu luyện Ma Đạo mạnh mẽ nhưng đầy nguy hiểm!`
-        : `**${player.name}** thiền định thành công!\n\n` +
-          `📈 +**${formatNumber(totalExp)}** Tu Vi\n` +
-          (bonusExp > 0 ? `📜 Bonus từ ${technique.name}: +**${formatNumber(bonusExp)}**\n` : '') +
-          (player.dao_path === 'ma' ? `😈 Ma Đạo bonus: +**${formatNumber(Math.floor(totalExp * 0.2))}**\n` : '') +
-          `\n⏳ Cooldown: **${formatTime(COOLDOWNS.cultivate)}**`
+      `**${player.name}** hoàn thành ${session.maxRounds} vòng thiền định!\n\n` +
+      `📊 **Đánh giá:** ${gradeBar} (${results.score} điểm)\n` +
+      `📈 **EXP nhận được:** +**${formatNumber(results.finalExp)}**\n` +
+      (results.bonusExp > 0 ? `📜 Bonus từ ${results.technique.name}: +**${formatNumber(results.bonusExp)}**\n` : '') +
+      (results.maBonus > 0 ? `😈 Ma Đạo bonus: +**${formatNumber(results.maBonus)}**\n` : '') +
+      `🎯 Hệ số: **x${results.multiplier}**\n` +
+      (results.tauHoa ? `\n🔥 **Tẩu Hỏa!** Mất **${formatNumber(tauHoaDamage)}** HP\n` : '') +
+      `\n⏳ Cooldown: **${formatTime(cultivateCooldown)}**` +
+      khiVanText
     )
     .setTimestamp();
+
+  // Cleanup session
+  endSession(interaction.user.id);
 
   const row = new ActionRowBuilder().addComponents(
     new ButtonBuilder()
       .setCustomId('cultivation:menu')
-      .setLabel('🔙 Quay Lại Tu Luyện')
-      .setStyle(ButtonStyle.Secondary),
+      .setLabel('🧘 Tu Luyện Các')
+      .setStyle(ButtonStyle.Primary),
     new ButtonBuilder()
       .setCustomId('menu:main')
       .setLabel('🏠 Menu Chính')
@@ -208,7 +375,7 @@ async function handleCultivation(interaction, player) {
 }
 
 /**
- * Handle breakthrough (đột phá)
+ * Handle breakthrough (đột phá) — giữ nguyên logic cũ
  */
 async function handleBreakthrough(interaction, player) {
   const db = require('../database/connection');
@@ -347,4 +514,5 @@ module.exports = {
   showCultivationMenu,
   handleCultivation,
   handleBreakthrough,
+  handleInteractiveCultivation,
 };

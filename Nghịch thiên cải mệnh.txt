@@ -1,0 +1,1100 @@
+﻿Nghịch thiên cải mệnh chuyên dụng của đan tu
+
+
+700205 - Linh đan diệu dược – (Trúc Cơ)
+        Hiệu quả của đan dược hồi phục sinh lực cùng linh lực tăng 100%.
+
+
+700206 - Đan tinh dược tủy – (Trúc Cơ)
+        Thời gian hiệu lực của các loại đan dược tăng 50%.
+
+
+700208 - Ngọc dịch quy nguyên – (Trúc Cơ)
+Mỗi khi sử dụng tuyệt kỹ, thời gian hồi chiêu của đan dược -5s. Cách mỗi 8s mới có thể phát động hiệu quả một lần
+
+
+Nghịch thiên cải mệnh cho phép bỏ điều kiện thần thông
+
+
+700034 - Đồ thủ chuyên tinh – (Kết Tinh)
+Sử dụng thần thông của các hệ Quyền / Chưởng / Chỉ không cần đạt đủ điều kiện.
+(Đối với các thần thông cần dẫn bạo đơn vị đặc thù trên sân, sẽ bỏ qua yêu cầu mà không tạo ra đơn vị đặc thù mới)
+
+
+700035 - Binh nhận chuyên tinh – (Kết Tinh)
+Sử dụng thần thông của các hệ Đao / Kiếm / Thương không cần đạt đủ điều kiện.
+(Đối với các thần thông cần dẫn bạo đơn vị đặc thù trên sân, sẽ bỏ qua yêu cầu mà không tạo ra đơn vị đặc thù mới)
+
+
+700036 - Phong lôi kình thiên – (Kết Tinh)
+Sử dụng thần thông của các hệ Phong / Lôi không cần đạt đủ điều kiện.
+(Đối với các thần thông cần dẫn bạo đơn vị đặc thù trên sân, sẽ bỏ qua yêu cầu mà không tạo ra đơn vị đặc thù mới)
+
+
+700037 - Địa hỏa minh di – (Kết Tinh)
+Sử dụng thần thông của các hệ Thổ / Hỏa không cần đạt đủ điều kiện.
+(Đối với các thần thông cần dẫn bạo đơn vị đặc thù trên sân, sẽ bỏ qua yêu cầu mà không tạo ra đơn vị đặc thù mới)
+
+
+700038 - Thủy mộc trường sinh – (Kết Tinh)
+Sử dụng thần thông của các hệ Thủy / Mộc không cần đạt đủ điều kiện.
+(Đối với các thần thông cần dẫn bạo đơn vị đặc thù trên sân, sẽ bỏ qua yêu cầu mà không tạo ra đơn vị đặc thù mới)
+
+
+Nghịch thiên cải mệnh có cơ chế chuỗi
+
+
+Yêu Thuật
+
+
+700001 - Yêu Thuật Nhập Môn - (Trúc Cơ)
+Công kích đi kèm yêu pháp, mỗi khi gây ra sát thương, có tỷ lệ 10% có thể biến mục tiêu thành một con tiểu kê vô hại, duy trì 10s.
+Vô hiệu với đại yêu thú cùng tu tiên giả
+Có thể thăng cấp làm Yêu Thuật Tiến Giai
+
+
+700002 - Yêu Thuật Tiến Giai – (Kết tinh)
+Công kích đi kèm yêu thuật mạnh mẽ, mỗi khi gây ra sát thương, có tỷ lệ 10% có thể biến mục tiêu thành tiểu kê cuồng bạo, duy trì 10s.
+Vô hiệu với đại yêu thú cùng tu tiên giả
+NTCM này là bản tiến giai của Yêu Thuật Nhập Môn.
+Có thể thăng cấp làm Yêu Thuật Tinh Thông
+Cuồng bạo: Công kích tất cả đối tượng xung quanh không phân địch ta
+
+
+700003 - Yêu Thuật Tinh Thông - (Cụ Linh)
+Công kích đi kèm yêu thuật chi lực cực kỳ đáng sợ, Mỗi khi gây ra sát thương, có tỷ lệ 10% có thể biến mục tiêu cùng đối tượng xung quanh thành tiểu kê cuồng bạo, duy trì 10s.
+Vô hiệu với đại yêu thú cùng tu tiên giả
+NTCM này là bàn tiến giai của Yêu Thuật Tiến Giai.
+Cuồng bạo: Công kích tất cả đối tượng xung quanh không phân địch ta
+
+
+Cúc Hoa
+
+
+700004 - Cúc Hoa Năng - (Trúc Cơ)
+Đít của ngươi bốc khói, khiến tốc độ di chuyển nhanh hơn. Tăng 15% tốc độ di chuyển trong trận. Tăng 10% sát thương tới từ mặt sau.
+Có thể thăng cấp thành Cúc Hoa Hồng
+
+
+700005 - Cúc Hoa Hồng – (Kết Tinh)
+Mông của ngươi đã nóng đỏ lên, khiến tốc độ di chuyển nhanh hơn. Tăng 20% tốc độ di chuyển trong trận. Tăng 10% sát thương tới từ mặt sau. Ngoài ra có 10% thả ra một đoàn liệt diễm phục thù vào kẻ gây ra sát thương cho ngươi (Cùng với một mùi thú vị)
+NTCM này là bản tiến giai của Cúc Hoa Năng.
+Có thể thăng cấp thành Cúc Hoa Tàn 
+
+
+700006 - Cúc Hoa Tàn – (Kim Đan)
+Mông của ngươi đã mất đi cảm giác, trở nên đao thương bất nhập, thủy hỏa bất xâm. Tăng 20% tốc độ di chuyển trong trận. Giảm 50% sát thương tới từ mặt sau. Ngoài ra có 10% thả ra một đoàn liệt diễm phục thù vào kẻ gây ra sát thương cho ngươi. Hỏa diễm cũng to hơn, dài hơn
+NTCM này là bản tiến giai của Cúc Hoa Hồng.
+
+
+Cân Thí Trùng
+
+
+700007 – Tiểu Cân Thí Trùng - (Trúc Cơ)
+        Ngươi thu được một con sâu kỳ quái.
+Có thể thăng cấp thành Trung Cân Thí Trùng
+
+
+700008 - Trung Cân Thí Trùng – (Kết Tinh)
+        Con sâu có vẻ to hơn.
+NTCM này là bản tiến giai của Tiểu Cân Thí Trùng.
+        Có thể thăng cấp thành Đại Cân Thí Trùng
+
+
+700009 - Đại Cân Thí Trùng – (Kim Đan)
+        Con sâu có vẻ lại to ra nữa
+        NTCM này là bản tiến giai của Trung Cân Thí Trùng
+
+
+700126 - Tiểu Cùng Thí Long – (Cụ Linh)
+        Cân thí trùng của ngươi dường như có thể bay lên.
+Trong chiến đấu, nó sẽ giúp ngươi công kích địch nhân. Nó sẽ luôn bám sát ngươi. Nếu như ngươi đột nhiên thay đổi vị trí do sử dụng kỹ năng đột tiến hoặc dịch chuyển, cân thí trùng sẽ trở nên cuồng bạo do không bắt kịp ngươi. Tăng mạnh tần suất công kích và sát thương, duy trì 3.5s, có thể cộng dồn nhiều lần.
+NTCM này là bản tiến giai của Đại Cân Thí Trùng
+
+
+Ngự Long Sơn Trang
+
+
+700188 - Tiềm Long Thức Tỉnh – (Nguyên Anh)
+Có khí vận này gia trì, tiểu long có hể tại trong Thanh Lân Trì tiến hành hóa hình. 
+NTCM này là bản tiến giai của Tiểu Cùng Thí Long
+
+
+700189 – Kháng Long Hóa Sinh – (Nguyên Anh)
+Tiểu Cùng Thí Long hóa thành nhân hình (Đực). Ngoại trừ hiệu quả ban đầu của tiểu long, còn có thể cùng người chơi tiến hành hợp thể.
+Bấm chuột trái vào nút bấm mới xuất hiện trên thanh trạng thái, có thể lựa chọn hình thái hợp thể Thanh Long / Xích Long / Hoàng Long
+Giữ chuột trên biểu tượng có thể xem hiệu quả biến thân.
+Sau khi vào trận, khi trị số tụ lực đạt tối đa, thần thông sẽ được thay thế thành kỹ năng hợp thể.
+
+
+700190 - Nhu Long Tụ Hợp – (Nguyên Anh)
+Tiểu Cùng Thí Long hóa thành nhân hình (Cái). Ngoại trừ hiệu quả ban đầu của tiểu long, còn có thể cùng người chơi tiến hành hợp thể.
+Bấm chuột trái vào nút bấm mới xuất hiện trên thanh trạng thái, có thể lựa chọn hình thái hợp thể Thanh Long / Xích Long / Hoàng Long
+Giữ chuột trên biểu tượng có thể xem hiệu quả biến thân.
+Sau khi vào trận, khi trị số tụ lực đạt tối đa, thần thông sẽ được thay thế thành kỹ năng hợp thể.
+
+
+Bảo Đích Thuẫn
+
+
+700010 - Tiểu Bảo Đích Thuẫn - (Trúc Cơ)
+Linh lực của ngươi ngưng kết thành một tấm thuẫn, có thể ngăn cản công kích dạng đường đạn của địch nhân. Khi có địch nhân sử dụng kỹ năng, tấm thuẫn có thể phát xạ một đạo hỏa diễm về đối phương, tạo thành xxx tổn thương.
+Mỗi 2s, tấm thuẫn mới có thể phát ra hỏa diễm một lần.
+Sát thương hỏa diễm phụ thuộc vào cảnh giới của người sở hữu
+Có thể thăng cấp thành Trung Bảo Đích Thuẫn
+
+
+700011 - Trung Bảo Đích Thuẫn – (Kết Tinh)
+Thuẫn của ngươi mỗi khi ngăn cản 5 lần công kích, sẽ phát ra một đợt rung chấn, gây xxx sát thương thổ thuộc tính, cũng làm tốc độ di chuyển của địch nhân -30%, duy trì 3s.
+Khi tấm thuẫn phát xạ hỏa diễm, sẽ tấn công thêm 3 địch nhân ngẫu nhiên trên sân.
+Sát thương hỏa diễm cùng rung chấn phụ thuộc vào cảnh giới của người sở hữu
+        NTCM này là bản thăng cấp của Tiểu Bảo Đích Thuẫn
+Có thể thăng cấp thành Đại Bảo Đích Thuẫn
+
+
+700012 - Đại Bảo Đích Thuẫn – (Kim Đan)
+Thuẫn của ngươi sẽ phát ra một đợt chấn động lớn, đẩy lui địch nhân, đồng thời gây debuff, giảm 25% sát thương của đối thủ. Kéo dài 8s.
+Khi tấm thuẫn phát xạ hỏa diễm, sẽ tấn công thêm 1 địch nhân ngẫu nhiên trên sân.
+NTCM này là bản thăng cấp của Trung Bảo Đích Thuẫn
+
+
+Phi kiếm
+
+
+700013 - Tiểu Lý Phi Kiếm - (Trúc Cơ)
+Linh lực của ngươi ngưng kết thành một thanh phi kiếm. Khi ngươi phát động công kích, phi kiếm sẽ tự động công kích đối phương, tạo thành uy lực xxx sát thương.
+Sát thương phi kiếm phụ thuộc vào cảnh giới của người sở hữu
+Có thể thăng cấp thành Trung Lý Phi Kiếm
+
+
+700014 - Trung Lý Phi Kiếm – (Kết Tinh)
+Phi kiếm khi gây sát thương sẽ ngẫu nhiên phát động một trong những hiệu ứng: Trúng độc, Vựng huyễn, Giảm tốc, Thiêu đốt, Đóng băng, Tê liệt, Hấp huyết, Đẩy lùi, Linh lực tổn thất, Trói chân, Câm lặng
+        NTCM này là bản thăng cấp của Tiểu Lý Phi Kiếm
+Có thể thăng cấp thành Đại Lý Phi Kiếm
+
+
+700015 - Đại Lý Phi Kiếm – (Kim Đan)
+Mỗi khi phi kiếm công kích 10 lần, người chơi sẽ phóng thích một lần Vạn Kiếm Xuất Sào, bắn ra đại lượng phi kiếm về tứ phía, gây sát thương và hiệu ứng ngẫu nhiên lên kẻ địch trúng phải.
+NTCM này là bản thăng cấp của Trung Lý Phi Kiếm
+
+
+Quỷ tu
+
+
+700022 - Quỷ Tu Nhập Môn – (Kết Tinh)
+Khi ngươi tiêu diệt địch nhân, có 10% có thể chuyển hóa xác đối phương trở thành Thi Khôi Chiến Sĩ
+        Tối đa có thể chuyển hóa 2 Thi Khôi
+        Có thể thăng cấp thành Quỷ Tu Tiến Giai
+
+
+700023 - Quỷ Tu Tiến Giai – (Kim Đan)
+Khi ngươi tiêu diệt địch nhân, có 10% có thể chuyển hóa xác đối phương trở thành Thi Khôi Chiến Sĩ
+        Tối đa có thể chuyển hóa 4 Thi Khôi
+NTCM này là bản thăng cấp của Quỷ Tu Nhập Môn
+        Có thể thăng cấp thành Quỷ Tu Tinh Thông
+
+
+700024 - Quỷ Tu Tinh Thông – (Cụ Linh)
+Khi ngươi tiêu diệt địch nhân, có 10% có thể chuyển hóa xác đối phương trở thành Thi Khôi Chiến Sĩ
+        Tối đa có thể chuyển hóa 6 Thi Khôi
+NTCM này là bản thăng cấp của Quỷ Tu Tiến Giai
+
+
+Huyết ma, sát, yểm
+
+
+700028 - Huyết Ma Đại Pháp - (Trúc Cơ)
+Mỗi khi gây ra sát thương cho địch nhân trong phạm vi 300, chuyển hóa 7% sát thương gây ra thành sinh lực, hồi phục cho bản thân.
+Có thể thăng cấp thành Huyết Sát Đại Pháp
+
+
+700055 - Huyết Sát Đại Pháp – (Kết Tinh)
+Mỗi khi gây ra sát thương cho địch nhân trong phạm vi 350, chuyển hóa 14% sát thương gây ra thành sinh lực, hồi phục cho bản thân.
+NTCM này là bản thăng cấp của Huyết Ma Đại Pháp
+Có thể thăng cấp thành Huyết Yểm Đại Pháp
+
+
+700056 - Huyết Yểm Đại Pháp – (Cụ Linh)
+Mỗi khi gây ra sát thương cho địch nhân trong phạm vi 400, chuyển hóa 21% sát thương gây ra thành sinh lực, hồi phục cho bản thân.
+NTCM này là bản thăng cấp của Huyết Sát Đại Pháp
+
+
+Song, tam, tứ linh
+
+
+700050 - Song Linh Cộng Sinh – (Kết Tinh)
+Lúc người chơi phóng ra tuyệt kỹ và thần thông, có 25% phát ra một lần nữa, tiêu hao linh lực và gây sát thương tương đương 30% kỹ năng ban đầu.
+        Vô hiệu với các kỹ năng duy trì hoặc chuyển vị hay biến hình.
+Có thể thăng cấp thành Tam Linh Cộng Sinh
+
+
+700060 - Tam Linh Cộng Sinh – (Cụ Linh)
+Lúc người chơi phóng ra tuyệt kỹ và thần thông, có 25% phát ra hai lần nữa, tiêu hao linh lực và gây sát thương tương đương 30% kỹ năng ban đầu.
+        Vô hiệu với các kỹ năng duy trì hoặc chuyển vị hay biến hình.
+NTCM này là bản thăng cấp của Song Linh Cộng Sinh
+Có thể thăng cấp thành Tứ Linh Cộng Sinh
+
+
+700061 - Tứ Linh Cộng Sinh – (Hóa Thần)
+Lúc người chơi phóng ra tuyệt kỹ và thần thông, có 25% phát ra ba lần nữa, tiêu hao linh lực và gây sát thương tương đương 30% kỹ năng ban đầu.
+        Vô hiệu với các kỹ năng duy trì hoặc chuyển vị hay biến hình.
+NTCM này là bản thăng cấp của Tam Linh Cộng Sinh
+
+
+Ma linh
+
+
+700053 - Ma Linh Tiên Lực – (Trúc Cơ)
+Trong chiến đấu, thời điểm sắp hẹo sẽ hóa thân thành dược linh, hồi phục 30% sinh lực, duy trì 15s.
+Có thể thăng cấp thành Ma Linh Thần Lực
+
+
+700054 - Ma Linh Thần Lực – (Kết Tinh)
+Trong chiến đấu, mỗi 10-20 giây sẽ đẻ ra một cây nấm nhỏ để người chơi có thể ăn vào. Tùy thuộc vào thứ tự đặt nấm mà sẽ nhận được hiệu quả khác nhau.
+        Nhỏ lại, tăng tốc di chuyển
+        To ra, giảm tốc di chuyển, tăng lượng lớn sát thương
+        …
+Thời điểm sắp hẹo sẽ hóa thân thành dược linh, hồi phục 50% sinh lực, duy trì 15s.
+NTCM này là bản thăng cấp của Ma Linh Tiên Lực
+
+
+Hồng trần
+
+
+700039 - Hồng Trần Kiếm Hạp – (Kết Tinh)
+Trong chiến đấu, mỗi khi gây ra 200 lần sát thương, khi sử dụng thần thông sẽ triệu hoán ra 6 kiếm ảnh, tự động công kích kẻ địch trong trận, kéo dài 15s.
+        Mỗi trận chỉ có thể phát động 1 lần.
+        Có thể thăng cấp thành Hồng Trần Kiếm Hồn
+
+
+700057 - Hồng Trần Kiếm Hồn – (Kim Đan)
+Trong chiến đấu, mỗi khi gây ra 400 lần sát thương, khi sử dụng thần thông sẽ triệu hoán ra 12 kiếm ảnh, tự động công kích kẻ địch trong trận, kéo dài 30s.
+        Mỗi trận chỉ có thể phát động 1 lần.
+NTCM này là bản thăng cấp của Hồng Trần Kiếm Hạp
+
+
+Thuẫn linh 
+
+
+700080 - Thuẫn Linh Nhập Môn - (Trúc Cơ)
+Trong chiến đấu, thời điểm sắp tử vong có thể nhận được hộ thuẫn tương đương 30% sinh lực tối đa.
+        Mỗi trận chỉ có thể phát động 1 lần.
+        Có thể thăng cấp thành Thuẫn Linh Tiến Giai
+
+
+700081 - Thuẫn Linh Tiến Giai – (Kết Tinh)
+Trong chiến đấu, thời điểm sắp tử vong có thể nhận được hộ thuẫn tương đương 50% sinh lực tối đa.
+Trong 10s tiếp theo, có khả năng phản lại 200% sát thương
+        Mỗi trận chỉ có thể phát động 1 lần.
+NTCM này là bản thăng cấp của Thuẫn Linh Nhập Môn
+        Có thể thăng cấp thành Thuẫn Linh Tinh Thông
+
+
+700082 - Thuẫn Linh Tinh Thông – (Kim Đan)
+Trong chiến đấu, thời điểm sắp tử vong có thể nhận được hộ thuẫn tương đương 50% sinh lực tối đa.
+Trong 10s tiếp theo, có khả năng phản lại 200% sát thương
+Khi hộ thuẫn bị vỡ, sẽ phát nổ, tạo thành sát thương xxx trong phạm vi 400.
+Sát thương gây ra sẽ phụ thuộc vào cảnh giới của người sở hữu.
+        Mỗi trận chỉ có thể phát động 1 lần.
+NTCM này là bản thăng cấp của Thuẫn Linh Tiến Giai
+
+
+Kim thiền
+
+
+700086 - Kim Thiền Vô Ảnh - (Trúc Cơ)
+Trong chiến đấu, thời điểm sắp tử vong sẽ lập tức độn thổ, mỗi giây hồi phục 5% sinh mệnh, kéo dài 5s.
+Mỗi trận chỉ có thể phát động 1 lần
+Có thể thăng cấp thành Kim Thiền Giả Ảnh
+
+
+700087 - Kim Thiền Giả Ảnh – (Kết Tinh)
+Trong chiến đấu, thời điểm sắp tử vong sẽ lập tức độn thổ, mỗi giây hồi phục 10% sinh mệnh, kéo dài 5s. Đồng thời sẽ tạo ra một huyễn ảnh có khả năng gây 60 sát thương, duy trì 60s
+Mỗi trận chỉ có thể phát động 1 lần
+NTCM này là bản thăng cấp của Kim Thiền Vô Ảnh
+        Có thể thăng cấp thành Kim Thiền Huyết Ảnh
+
+
+700088 - Kim Thiền Huyết Ảnh – (Kim Đan)
+Trong chiến đấu, thời điểm sắp tử vong sẽ lập tức độn thổ, mỗi giây hồi phục 10% sinh mệnh, kéo dài 5s. Đồng thời sẽ tạo ra một huyễn ảnh có khả năng gây 100 sát thương, duy trì 60s. Thời điểm huyễn ảnh tử vong, sẽ gây xxx sát thương thủy thuộc tính.
+Sát thương huyễn ảnh tự bạo phụ thuộc vào cảnh giới của người chơi.
+Mỗi trận chỉ có thể phát động 1 lần
+NTCM này là bản thăng cấp của Kim Thiền Giả Ảnh
+
+
+Linh pháp
+
+
+700111 - Linh Pháp Nhập Môn - (Trúc Cơ)
+        Tầm bắn linh kỹ tăng 10%
+        Có thể thăng cấp thành Linh Pháp Tiến Giai
+
+
+700112 – Linh Pháp Tiến Giai – (Kết Tinh)
+        Tầm bắn linh kỹ tăng 20%
+NTCM này là bản thăng cấp của Linh Pháp Nhập Môn
+        Có thể thăng cấp thành Linh Pháp Tinh Thông
+
+
+700113 - Linh Pháp Tinh Thông – (Kim Đan)
+        Tầm bắn linh kỹ tăng 30%
+NTCM này là bản thăng cấp của Linh Pháp Tiến Giai
+
+
+Vũ pháp
+
+
+700114 - Vũ Pháp Nhập Môn - (Trúc Cơ)
+        Thời gian hồi chiêu của võ kỹ -15%
+        Có thể thăng cấp thành Vũ Pháp Tiến Giai
+
+
+700115 - Vũ Pháp Tiến Giai – (Kết Tinh)
+        Thời gian hồi chiêu của võ kỹ -25%
+NTCM này là bản thăng cấp của Linh Pháp Nhập Môn
+        Có thể thăng cấp thành Vũ Pháp Tinh Thông
+
+
+700116 - Vũ Pháp Tinh Thông – (Kim Đan)
+        Thời gian hồi chiêu của võ kỹ -40%
+NTCM này là bản thăng cấp của Vũ Pháp Tiến Giai
+
+
+Tiềm năng
+
+
+700083 - Tiềm Năng Nhập Môn - (Trúc Cơ)
+Trong chiến đấu, thời điểm sắp tử vong, hồi lại 30% sinh lực, đồng thời tăng 25% tốc độ di chuyển, kéo dài 10 giây
+                Có thể thăng cấp thành Tiềm Năng Tiến Giai
+
+
+700084 - Tiềm Năng Tiến Giai – (Kết Tinh)
+Trong chiến đấu, thời điểm sắp tử vong, hồi lại 50% sinh lực, đồng thời tăng 25% tốc độ di chuyển, +15% công kích, kéo dài 10 giây
+NTCM này là bản thăng cấp của Tiềm Năng Nhập Môn
+                Có thể thăng cấp thành Tiềm Năng Tinh Thông
+
+
+700085 - Tiềm Năng Tinh Thông – (Kim Đan)
+Trong chiến đấu, thời điểm sắp tử vong, hồi lại 80% sinh lực, đồng thời tăng 25% tốc độ di chuyển, +15% công kích, thời gian hồi chiêu -20% kéo dài 5 giây
+NTCM này là bản thăng cấp của Tiềm Năng Tiến Giai
+
+
+Huyết linh
+
+
+700092 - Huyết Linh Nhập Môn - (Trúc Cơ)
+Trong chiến đấu, thời điểm không còn đủ linh lực, có thể tiêu hao sinh lực để phát động kỹ năng. Sinh lực tiêu hao gấp 5 lần so với linh lực
+NTCM này là bản thăng cấp của Huyết Linh Nhập Môn
+                Có thể thăng cấp thành Huyết Linh Tiến Giai
+
+
+700093 - Huyết Linh Tiến Giai – (Kết Tinh)
+Trong chiến đấu, thời điểm không còn đủ linh lực, có thể tiêu hao sinh lực để phát động kỹ năng. Sinh lực tiêu hao gấp 4 lần so với linh lực. Sử dụng sinh lực để phát động kỹ năng có thể tăng 20% sát thương.
+NTCM này là bản thăng cấp của Huyết Linh Nhập Môn
+                Có thể thăng cấp thành Huyết Linh Tinh Thông
+
+
+700094 - Huyết Linh Tinh Thông – (Kim Đan)
+Trong chiến đấu, thời điểm không còn đủ linh lực, có thể tiêu hao sinh lực để phát động kỹ năng. Sinh lực tiêu hao gấp 3 lần so với linh lực. Sử dụng sinh lực để phát động kỹ năng có thể tăng 25% sát thương, thời gian hồi chiêu -20%
+NTCM này là bản thăng cấp của Huyết Linh Tiến Giai
+
+
+Kiếm linh
+
+
+700101 - Kiếm Linh Nhập Môn - (Trúc Cơ)
+Trong chiến đấu, có thể phát tán linh lực, thao túng một thanh ma kiếm, công kích địch nhân trong phạm vi 600, gây xxx sát thương linh căn, cũng hấp thụ xxx công kích của đối phương. Mỗi lần ma kiếm công kích, tiêu hao xxx linh lực. Khi linh lực không đủ, ma kiếm không cách nào hành động
+Sát thương, hiệu quả cũng như linh lực tiêu hao của ma kiếm phụ thuộc vào cảnh giới của người chơi
+                Có thể thăng cấp thành Kiếm Linh Tiến Giai
+
+
+700102 - Kiếm Linh Tiến Giai – (Kết Tinh)
+Trong chiến đấu, có thể phát tán linh lực, thao túng một thanh ma kiếm, công kích địch nhân trong phạm vi 800, gây xxx sát thương linh căn, cũng hấp thụ xxx công kích của đối phương. Mỗi lần ma kiếm công kích, tiêu hao xxx linh lực. Khi linh lực không đủ, ma kiếm không cách nào hành động
+Mỗi khi người chơi sử dụng kỹ năng tiêu hao linh lực, trong 7s tiếp theo, ma kiếm sẽ có thể tăng xxx sát thương theo mỗi điểm linh lực tiêu hao.
+Sát thương, hiệu quả cũng như linh lực tiêu hao của ma kiếm phụ thuộc vào cảnh giới của người chơi
+NTCM này là bản thăng cấp của Kiếm Linh Nhập Môn
+                Có thể thăng cấp thành Kiếm Linh Tinh Thông
+
+
+700103 - Kiếm Linh Tinh Thông – (Kim Đan)
+Trong chiến đấu, có thể phát tán linh lực, thao túng một thanh ma kiếm, công kích địch nhân trong phạm vi 800, gây xxx sát thương linh căn, cũng hấp thụ xxx công kích của đối phương. Mỗi lần ma kiếm công kích, tiêu hao xxx linh lực. Khi linh lực không đủ, ma kiếm không cách nào hành động
+Mỗi khi người chơi sử dụng kỹ năng tiêu hao linh lực, trong 7s tiếp theo, ma kiếm sẽ có thể tăng xxx sát thương theo mỗi điểm linh lực tiêu hao.
+Khi ma kiếm tạo thành tổn thương, sẽ hấp thụ 5% linh lực của đối phương, hổi phục cho chủ nhân của nó.
+Sát thương, hiệu quả cũng như linh lực tiêu hao của ma kiếm phụ thuộc vào cảnh giới của người chơi
+NTCM này là bản thăng cấp của Kiếm Linh Tiến Giai
+
+
+Huyết tế
+
+
+700104 - Huyết Tế Nhập Môn - (Trúc Cơ)
+Trong chiến đấu, có thể tiêu hao sinh mệnh lực ngưng tụ ra một huyết trảo. Mất 5s để huyết trảo có thể ngưng tụ thành công. Vào lần tấn công tiếp theo, huyết trảo sẽ được thả ra.
+Khi va chạm với địch nhân, huyết trảo sẽ gây sát thương AOE trong khoảng cách 250 với xxx sát thương công pháp. Đồng thời cũng làm sinh lực bản thân tăng lên xxx. Tối đa có thể tăng thêm xxx điểm sinh lực.
+Mỗi lần ngưng tụ huyết trảo cần tiêu hao xxx điểm sinh lực. Khi sinh lực nhỏ hơn 20% sẽ không tiếp tục ngưng tụ huyết trảo
+Sát thương cùng hiệu quả của huyết trảo phụ thuộc vào cảnh giới của người chơi
+        Có thể thăng cấp thành Huyết Tế Tiến Giai
+
+
+700105 - Huyết Tế Tiến Giai – (Kết Tinh)
+Trong chiến đấu, có thể tiêu hao sinh mệnh lực ngưng tụ ra một huyết trảo. Mất 5s để huyết trảo có thể ngưng tụ thành công. Vào lần tấn công tiếp theo, huyết trảo sẽ được thả ra.
+Khi va chạm với địch nhân, huyết trảo sẽ gây sát thương AOE trong khoảng cách 300 với xxx sát thương công pháp. Đồng thời cũng làm sinh lực bản thân tăng lên xxx. Tối đa có thể tăng thêm xxx điểm sinh lực.
+Khi huyết trảo bộc phát, sẽ để lại 1 huyết trận, gây sát thương liên tục với địch nhân, kéo dài 10 giây
+Mỗi lần ngưng tụ huyết trảo cần tiêu hao xxx điểm sinh lực. Khi sinh lực nhỏ hơn 20% sẽ không tiếp tục ngưng tụ huyết trảo
+Sát thương cùng hiệu quả của huyết trảo phụ thuộc vào cảnh giới của người chơi
+NTCM này là bản thăng cấp của Huyết Tế Nhập Môn
+        Có thể thăng cấp thành Huyết Tế Tinh Thông
+
+
+700106 - Huyết Tế Tinh Thông – (Kim Đan)
+Trong chiến đấu, có thể tiêu hao sinh mệnh lực ngưng tụ ra một huyết trảo. Mất 5s để huyết trảo có thể ngưng tụ thành công. Vào lần tấn công tiếp theo, huyết trảo sẽ được thả ra.
+Khi va chạm với địch nhân, huyết trảo sẽ gây sát thương AOE trong khoảng cách 350 với xxx sát thương công pháp. Đồng thời cũng làm sinh lực bản thân tăng lên xxx. Tối đa có thể tăng thêm xxx điểm sinh lực.
+Khi huyết trảo bộc phát, sẽ để lại 1 huyết trận, gây sát thương liên tục với địch nhân, cũng hồi phục lại sinh lực cho người chơi, kéo dài 10 giây
+Mỗi lần ngưng tụ huyết trảo cần tiêu hao xxx điểm sinh lực. Khi sinh lực nhỏ hơn 20% sẽ không tiếp tục ngưng tụ huyết trảo
+Sát thương cùng hiệu quả của huyết trảo phụ thuộc vào cảnh giới của người chơi
+NTCM này là bản thăng cấp của Huyết Tế Tiến Giai
+
+
+Thị linh
+
+
+700107 - Thị Linh - (Trúc Cơ)
+Trong chiến đấu, mỗi khi tiêu diệt địch nhân có tỉ lệ 15% có thể rơi ra linh phách. Nhặt linh phách có thể hồi phục 1% linh lực.
+Có thể thăng cấp thành Liệp Linh
+
+
+700108 - Liệp Linh – (Kết Tinh)
+Trong chiến đấu, mỗi khi tiêu diệt địch nhân có tỉ lệ 20% có thể rơi ra linh phách. Nhặt linh phách có thể hồi phục 1% linh lực, đồng thời -1s thời gian hồi chiêu của tuyệt kỹ.
+NTCM này là bản thăng cấp của Thị Linh
+
+
+Thị tinh
+
+
+700109 - Thị Tinh - (Trúc Cơ)
+Trong chiến đấu, mỗi khi tiêu diệt địch nhân có tỉ lệ 15% có thể rơi ra linh phách. Nhặt linh phách có thể hồi phục 1% sinh lực.
+Có thể thăng cấp thành Liệp Tinh
+
+
+700110 - Liệp Tinh – (Kết Tinh)
+Trong chiến đấu, mỗi khi tiêu diệt địch nhân có tỉ lệ 15% có thể rơi ra linh phách. Nhặt linh phách có thể hồi phục 1% sinh lực, Đồng thời, tăng 30% tốc độ di chuyển trong 10s tiếp theo.
+NTCM này là bản thăng cấp của Thị Tinh
+
+
+Luyện khí
+
+
+700134 - Luyện Khí Học Đồ - (Trúc Cơ)
+        Tư chất luyện khí tăng 20 điểm, niệm lực +500
+        Có thể thăng cấp thành Luyện Khí Tượng Nhân
+
+
+700135 – Luyện Khí Tượng Nhân – (Kết Tinh)
+        Tư chất luyện khí tăng 50 điểm, niệm lực +2000
+NTCM này là bản thăng cấp của Luyện Khí Học Đồ
+        Có thể thăng cấp thành Luyện Khí Tông Sư
+
+
+700136 - Luyện Khí Tông Sư – (Kim Đan)
+        Tư chất luyện khí tăng 100 điểm, niệm lực +5000
+NTCM này là bản thăng cấp của Luyện Khí Tượng Nhân
+
+
+Huyễn Linh Oa
+
+
+700130 - Huyễn Linh Oa - (Trúc Cơ)
+Tăng xác suất luyện đan thành công, đồng thời có thể sử dụng linh oa để luyện đan.
+Trong chiến đấu, tốc độ di chuyển -15%, tổn thương từ mặt sau   -15%
+Mỗi 12s, úp nồi cho một đồng minh chưa có nồi trên trận. Đồng minh cũng nhận được hiểu quả giảm 15% sát thương từ sau lưng. Cũng căn cứ vào hình thể của đồng minh mà nhận thêm hiểu quả tăng sát thương. Cỡ nhỏ tăng 10%, cỡ trung tăng 20%, cỡ lớn tăng 30%. Sau 10s, bản thân người chơi cũng sẽ nhận được hiệu ứng tăng sát thương này trong 10 giây tiếp theo.
+Có thể thăng cấp thành Thiên Cấp Huyễn Linh Oa
+
+
+700204 - Thiên Cấp Huyễn Linh Oa – (Kim Đan)
+        Giảm 30% sát thương nhận vào từ sau lưng.
+        Số lượng đan dược có thể mang theo +10
+        Thời gian hồi chiêu đan dược +30%
+NTCM này là bản thăng cấp của Huyễn Linh Oa
+
+
+Linh năng
+
+
+700089 - Linh Năng Chi Vũ - (Trúc Cơ)
+Trong chiến đấu, khi linh lực nhỏ hơn 20%, lập tức hồi phục 60% linh lực.
+        Mỗi trận chỉ có thể phát động 1 lần.
+        Có thể thăng cấp thành Linh Măng Chi Tuyền
+
+
+700090 - Linh Măng Chi Tuyền – (Kết Tinh)
+Trong chiến đấu, khi linh lực nhỏ hơn 20%, lập tức hồi phục 80% linh lực cùng thời gian chờ của toàn bộ kỵ năng.
+        Mỗi trận chỉ có thể phát động 1 lần.
+NTCM này là bản thăng cấp của Linh Năng Chi Vũ
+        Có thể thăng cấp thành Linh Năng Chi Triều
+
+
+700091 - Linh Năng Chi Triều – (Kim Đan)
+Trong chiến đấu, khi linh lực nhỏ hơn 20%, lập tức hồi phục 100% linh lực. Cũng làm mới toàn bộ kỹ năng còn đang trong quá trình làm lạnh. Trong 10 giây tiếp theo, thời gian hồi chiêu -50%
+Mỗi trận chỉ có thể phát động 1 lần.
+NTCM này là bản thăng cấp của Linh Măng Chi Tuyền
+
+
+Quy nhất
+
+
+700040 - Quy Nhất Quyết – (Kết Tinh)
+Trong chiến đấu, sau khi người chơi nhận tổn thương 50 lần, thời điểm thi triển thần thông, sẽ tạo ra một vòng bảo hộ có khả năng chặn 80% sát thương nhận vào, duy trì 15 giây
+Mỗi trận chiến chỉ có thể phát động 1 lần
+Có thể thăng cấp thành Quy Nhất Chân Quyết
+
+
+700058 - Quy nhất chân quyết – (Kim Đan)
+Trong chiến đấu, sau khi người chơi nhận tổn thương 100 lần, thời điểm thi triển thần thông, sẽ tạo ra một vòng bảo hộ có khả năng chặn 90% sát thương nhận vào, duy trì 30 giây
+Mỗi trận chiến chỉ có thể phát động 1 lần
+NTCM này là bản thăng cấp của Quy Nhất Quyết
+
+
+Tinh diệu
+
+
+700041 - Tinh Diệu Tần Hoàn – (Kết Tinh)
+Trong chiến đấu, sau khi người chơi tiêu diệt 25 kẻ địch, thời điểm thi triển thần thông sẽ sinh ra Tinh Diệu Chi Quang, có khả năng đâm mù kẻ địch trong bán kính 350, gây ra sát thương lôi hệ, duy trì 15 giây
+Mỗi trận chiến chỉ có thể phát động 1 lần
+Có thể thăng cấp thành Tinh Diệu Cửu Tiêu
+
+
+700059 - Tinh Diệu Cửu Tiêu – (Kim Đan)
+Trong chiến đấu, sau khi người chơi tiêu diệt 50 kẻ địch, thời điểm thi triển thần thông sẽ sinh ra Tinh Diệu Chi Quang, có khả năng đâm mù kẻ địch trong bán kính 400, gây ra sát thương lôi hệ, duy trì 30 giây
+Mỗi trận chiến chỉ có thể phát động 1 lần
+NTCM này là bản thăng cấp của Tinh Diệu Tần Hoàn
+
+
+Nghịch thiên cải mệnh tông
+
+
+700140 - Thiên đồng chi nhận
+        Công kích gây sát thương thấp nhất là xxx. 
+        Sát thương tối thiểu sẽ tăng theo cảnh giới
+
+
+700144 - Đạp tuyết vô ngân
+        Tốc độ di chuyển +20%
+        Mỗi 10 giây, miễn nhiễm sát thương một lần.
+
+
+700152 - Xuyên vân điện thiểm
+        Mỗi 30 điểm tốc độ di chuyển, sẽ tăng 1% sát thương.
+        Nhiều nhất có thể tăng 30%
+
+
+700153 - Tái vật vô cương
+Mỗi 15 giây, bản thân sẽ bước vào trạng thái tái vật một lần. Trong trạng thái này, người chơi có thể hấp thu toàn bộ sát thương, tích tụ trong 3 giây. Khi thời gian tích tụ kết thúc, sẽ đem toàn bộ sát thương vừa nhận bạo phát ra ngoài, gây sát thương lên toàn bộ đơn vị đối địch xung quanh bán kính 350
+
+
+700154 - Liệt hỏa liệu nguyên
+Uy lực thần thông tăng 50%. Ngoài tiêu hao linh lực, sẽ tiêu hao thêm 10% sinh lực tối đa
+
+
+700155 - Hổ phách long hồn
+Mỗi khi tuyệt kỹ trúng địch nhân, có 40% phát ra hiệu ứng Hổ phách hoặc Long hồn.
+Long hồn: Gây ra sát thương tương đương 250% tổng tư chất công pháp.
+Hổ phách: Gây ra sát thương tương đương 250% tổng tư chất linh căn
+Tối đa mỗi 2 giây có thể phát động 1 lần.
+--------------
+<Nói thêm>
+Dòng mỗi 2 giây có thể phát động 1 lần chỉ tính trên các kỹ năng sát thương kéo dài như phong sa hay liệt diễm của đạp hỏa thuật. Các loại tuyệt kỹ có khả năng bạo hiệu ứng trên người đối thủ để gây sát thương đều được tính mỗi lần dẫn bạo sẽ tính một lần Hổ phách hoặc Long hồn
+Mặc dù cùng phát động bằng cách sử dụng tuyệt kỹ nhưng lôi hoàn từ NTCM Lôi Lực Tứ Xạ có khả năng dẫn nổ trigger trên Hổ phách long hồn nhưng Thất tinh kiếm bộc lại không thể.
+Liệt diễm từ thân pháp hệ hỏa cũng có thể gây ra hiệu ứng của NTCM sau khi sử dụng tuyệt kỹ.
+Một số kỹ năng của Hạo Thiên Nhãn cũng có khả năng tương tự.
+Nói chung đây là một NTCM rất rất rất rất lỗi!
+
+
+700156 - Ngưng nguyên tịch diệt
+Khi nhận sát thương vượt qua 15% sinh lực tối đa sẽ chuyển hóa thành sinh lực tối đa. Đồng thời đóng băng tất cả địch nhân trong 5 giây. Tối đa mỗi 50 giây có thể phát động 1 lần. 
+
+
+700157 - Bài sơn đảo hải
+        Sau 100 lần gây sát thương, 5 giây tiếp theo nhất định sẽ bạo kích.
+        Thời gian hồi chiêu 20 giây.
+
+
+700158 - Sát tâm sậu khởi
+Sau 50 lần gây sát thương, trong 5s tiếp theo, đòn tấn công nhất định sẽ bạo kích. Bạo kích bội suất +100%. Bạo kích bội suất thấp nhất là 2 lần. 
+        Thời gian hồi chiêu 15 giây
+
+
+700159 - Lô hỏa thuần thanh
+        Tổn thương võ kỹ / linh kỹ đề thăng 25%
+
+
+700160 - Thiên ngoại hữu thiên
+Mỗi lần kích hoạt thần thông sẽ nhận được một tầng Thiên Ngoại Hữu Thiên. Sát thương tăng 15%, giảm 10% tổn thương nhận vào. Tối đa 2 tầng.
+
+
+700162 - Nhiếp thần hàn quang
+Mỗi lần thi triển thần thông, toàn bộ địch nhân trên sân sẽ nhận sát thương và bị gây mê muội. Kéo dài 5 giây. Thời gian hồi chiêu 40 giây
+
+
+700182 - Thiên nhân hợp nhất
+Mỗi lần sử dụng võ kỹ sẽ tích lũy một tầng Thiên Nhân Ấn. Lần thi triển tuyệt kỹ tiếp theo, mỗi tầng Thiên Nhân Ấn có thể tăng sát thương tuyệt kỹ lên 1%. Tối đa có thể tích lũy 50 tầng Thiên Nhân Ấn
+
+
+700183 - Thiên cương bộ pháp
+Sau khi sử dụng thân pháp, 5 giây tiếp theo, tổn thương nhận vào -50%.
+
+
+700184 - Chấn thiên nộ khiếu
+Mỗi khi nhận sát thương tương đương với 10% sinh lực tối đa, người chơi sẽ phát ra một tiếng thét, khiến toàn bộ đơn vị trên trận rơi vào sợ hãi, sát thương gây ra giảm 20%. Tối đa 60%. Mỗi tầng duy trì 10 giây
+
+
+700185 - Tụ lôi tiêm kích
+Mỗi 2 giây, tự thân nhận được một tầng tụ lôi, nhiều nhất 50 tầng. Khi bản thân bị thương, tiêu hao 1 tầng tụ lôi, phát ra lôi điện công kích toàn bộ địch nhân trong bán kính 500 với xxx sát thương.
+        Sát thương lôi điện phụ thuộc vào cảnh giới người chơi.
+
+
+700186 - Túc mệnh chi dẫn
+Mỗi 30 giây, một liên kết sẽ được xuất hiện. Liên kết sẽ kết nối với kẻ địch nhiều máu nhất trên sân, miễn giảm 50% tổn thương phải nhận, đồng thời đem số tổn thương này truyền cho mục tiêu bị kết nối.
+        Liên kết kéo dài 10 giây
+
+
+700137 - Thiên địa đồng thọ
+Thời điểm sắp chết, đạt được trạng thái vô địch trong 2 giây, sẽ gây ra sát thương chuẩn đối với toàn bộ địch nhân trên trận, tương đương với 15% sinh lực tối đa của mục tiêu.
+        Mỗi tràng chiến đấu chỉ có thể phát động 1 lần.
+
+
+Nghịch thiên cải mệnh lẻ
+
+
+700016 - Hỏa lực tứ xạ - (Trúc Cơ)
+Khi công kích, sở hữu 15% xác suất ném ra một hỏa cầu về phía địch nhân ngẫu nhiên trên trận, gây xxx sát thương Hỏa thuộc tính.
+Sát thương hỏa cầu phụ thuộc vào sát thương của kỹ năng phát ra. Tính cả võ kỹ, tuyệt kỹ cùng thần thông.
+
+
+700017 - Thủy lực tứ xạ - (Trúc Cơ)
+Khi công kích, sở hữu 10% xác suất ném ra một cột nước về phía địch nhân ngẫu nhiên trên trận, gây xxx sát thương Thủy thuộc tính trên giây. Kéo dài 5 giây.
+Sát thương cột nước phụ thuộc vào sát thương của kỹ năng phát ra. Tính cả võ kỹ, tuyệt kỹ cùng thần thông.
+
+
+700119 - Lôi lực tứ xạ - (Trúc Cơ)
+Khi sử dụng tuyệt kỹ, có tỷ lệ 50% có thể phát ra một vòng 6 lôi cầu xoay xung quanh bản thân.
+Sát thương lôi cầu phụ thuộc vào sát thương của tuyệt kỹ.
+
+
+700121 - Phong lực tứ xạ - (Trúc Cơ)
+Mỗi lần sử dụng tuyệt kỹ, có tỷ lệ 30% có thể tạo ra một dẫn dắt quang hoàn, lôi kéo địch nhân trong bán kính 500 tới gần mình. Duy trì 5 giây
+
+
+700123 - Mộc lực tứ xạ - (Trúc Cơ)
+Trong chiến đấu, mỗi 12 giây sẽ triệu hoán ra một tiểu hoa yêu. Duy trì 7 giây
+Sát thương tiểu hoa yêu tăng theo cấp độ người chơi.
+
+
+700018 - Hàm trư thủ – (Kết Tinh)
+Khi ăn trộm đồ của tu tiên giả có cảnh giới ngang bằng hoặc thấp hơn sẽ chắc chắn thành công. Tuy nhiên sẽ luôn bị phát hiện.
+
+
+700019 - Mị cốt - (Trúc Cơ)
+        Dễ thân mật với tu tiên giả khác hơn.
+
+
+700020 - Cước để mạt du – (Kim Đan)
+        Chạy trốn thành công 100%.
+
+
+700021 - Bào đắc ngận soái - (Trúc Cơ)
+Khi ngươi chạy trốn thành công, sẽ để đối phương sinh ra hảo cảm.
+
+
+700025 - Hoàng cân thiên sư - (Trúc Cơ)
+Trong trận đấu, khi lần đầu sử dụng thần thông, có thể triệu hoán ra Hoàng Cân Thiên Sư cùng chiến đấu.
+Chỉ số của Hoàng Cân Thiên Sư tăng theo cảnh giới người chơi.
+
+
+700026 - Võ thần tàn quyết – (Kim Đan)
+Khi bước vào trận chiến, sinh lực chỉ lưu lại 10 điểm, số còn lại được chuyển hết thành Hộ thuẫn. Cho dù không đủ máu, hộ thuẫn ít nhất đạt 30%.
+Sau khi kết thúc trận chiến, hộ thuẫn sẽ được chuyển lại hành sinh lực.
+
+
+700027 - Thanh đế di lục – (Kim Đan)
+Lúc sắp hẹo, huyễn hóa thành 12 tiểu hoa yêu. Sau một thời gian, nếu còn bất kỳ hoa yêu nào còn sống, người chơi sẽ được hồi phục. Nhiều nhất 90 giây mới có thể phát động một lần.
+
+
+700030 - Nhục bác chi giao - (Trúc Cơ)
+Sau khi cùng tu tiên giả luận bàn, nếu có thể giành chiến thắng, sẽ nhận được hảo cảm từ đối phương.
+
+
+700031 - Sát khí - (Trúc Cơ)
+        Khi giao lưu cùng người khác có tỷ lệ bị đối phương chán ghét.
+        Giảm tỷ lệ bị quái vật phục kích.
+
+
+700032 - Song tu đại pháp - (Trúc Cơ)
+Thời điểm cùng tu tiên giả khác song tu sẽ nhận thêm được 30% kinh nghiệm. Sau khi song tu kết thúc, đối phương sẽ cho ngươi một món đồ.
+
+
+700033 - Tiên thụ hậu công – (Kết Tinh)
+Trong chiến đấu, mỗi khi tổn thương nhận vào tương đương 6% sinh lực, người chơi sẽ được tăng 1% sát thương. Tối đa tăng 100%
+
+
+700042 - Đố hỏa trung thiêu - (Trúc Cơ)
+Sát thương đối với tu tiên giả có đạo lữ hoặc thê tử/trượng phu +30%.
+
+
+700043 - Linh quả quỹ tặng - (Trúc Cơ)
+        Hàng năm ngươi đều được tặng 1 linh quả.
+
+
+700044 - Lão nhi di kiên - (Trúc Cơ)
+        Mỗi 1 tuổi có thể tăng 1 điểm phòng ngự.
+
+
+700045 - Vật tận kỳ dụng - (Trúc Cơ)
+Khi tiêu hao linh thạch, có thể từ trong linh thạnh hấp thu được linh khí, tới đề thăng tu vi.
+
+
+700046 - Tật tốc đại tạ - (Trúc Cơ)
+Trong trận, mỗi khi sử dụng đan dược, có 60% sẽ trong 10s tiếp theo ị ra viên đan dược kia. Nhặt lên có thể dùng lại được.
+
+
+700047 - Thông thiên chi nhãn – (Cụ Linh)
+Khi cùng tu tiên giả chiến đấu hoặc luận bàn, có 20% học được kỹ năng của đối phương. Mỗi 6 tháng mới có thể phát động một lần.
+Không học được kỹ năng cao hơn cấp bậc của bản thân.
+
+
+700049 - Thiên địa tinh hoa - (Trúc Cơ)
+Khi tu luyện trên bản đồ lớn, có khả năng hồi phục một phần sinh lực, linh lực, niệm lực.
+
+
+700062 - Tốc độc bí pháp - (Trúc Cơ)
+        Khi học tập bí tịch, yêu cầu tiêu hao giảm 10 ngày.
+
+
+700063 - Toản nghiên bí thuật - (Trúc Cơ)
+        Khi học tập bí tịch, linh thạch cần tiêu hao -80%
+
+
+700064 - Khổ trung tầm nhạc - (Trúc Cơ)
+        Khi học tập bí tịch, tâm tình tiêu hao -80%.
+
+
+700065 - Linh quang nhất thiểm - (Trúc Cơ)
+        Khi học tập bí tịch, nhận thêm 100% kinh nghiệm.
+
+
+700075 - Khai tâm quả - (Trúc Cơ)
+        Tâm tình tối đa +50 điểm.
+
+
+700077 - Sinh long hoạt hổ - (Trúc Cơ)
+        Tinh lực tối đa +50 điểm.
+
+
+700078 - Cơ linh quỷ - (Trúc Cơ)
+        Ngộ tính đề thăng 50 điểm.
+
+
+700095 - Linh lực chi chủng - (Trúc Cơ)
+        Linh lực tối đa +10%.
+
+
+700096 - Linh lực chi nha – (Kết Tinh)
+        Linh lực tối đa +20%.
+
+
+700097 - Linh lực chi thụ – (Kim Đan)
+        Linh lực tối đa +30%.
+
+
+700098 - Thể lực chi chủng - (Trúc Cơ)
+        Sinh lực tối đa +10%.
+
+
+700099 - Thể lực chi nha – (Kết Tinh)
+        Sinh lực tối đa +20%.
+
+
+700100 - Thể lực chi thụ – (Kim Đan)
+        Sinh lực tối đa +30%.
+
+
+700117 - Lý tứ lai dã – (Kết Tinh)
+Trong trận, khi sinh lực thấp hơn 30%, có tỉ lệ được Lý Tứ xuất hiện tương trợ.
+        Mỗi trận chỉ có thể xuất hiện 1 lần.
+
+
+700118 - Kê trung bá vương – (Kết Tinh)
+Trong trận, khi sinh lực thấp hơn 30%, có thể được Kê Vương xuất thủ tương trợ.
+        Mỗi trận chỉ có thể xuất hiện 1 lần.
+
+
+700131 - Chấn phấn cổ vũ – (Kim Đan)
+Trong chiến đấu, mỗi 10 giây, tại trên người mục tiêu có thể lực cao nhất trong trận sẽ xuất hiện một mặt chiến cổ. Chiến cổ duy trì 5 giây. Mỗi giây sẽ tạo ra 7 lần xung kích ra xung quanh.
+Sát thương xung kích phụ thuộc vào cảnh giới của người chơi.        
+Địch nhân xung quanh chiến cổ bị giảm 25% sát thương.
+
+
+700132 - Hóa vật – (Kết Tinh)
+        Mỗi khi trang bị một pháp bảo, sinh lực tối đa đề thăng 7%
+
+
+700133 - Tùy tâm nhi ngự – (Kim Đan)
+        Sử dụng kỹ năng bản mệnh của khí linh mà không cần điều kiện.
+
+
+700194 - Địa yểm quỷ trảm – (Vũ Hóa)
+Mỗi lần sử dụng võ kỹ, có tỷ lệ 5% sẽ phát ra một đạo khí nhận khổng lồ về phía trước, gây xxx sát thương.
+        Thời gian cooldown 20 giây
+Sát thương khí nhận phụ thuộc vào sát thương võ kỹ được sử dụng. 
+
+
+700195 - Thiên vũ phong sát – (Vũ Hóa)
+Mỗi lần sử dụng thần thông sẽ từ dưới chân sinh ra 12 đạo gió lốc. Gió lốc sẽ tự động truy tung mục tiêu gần nhất, gây sát thương liên tục, kéo dài 15 giây.
+        Thời gian cooldown 15 giây
+        Sát thương lốc phụ thuộc vào cảnh giới người sở hữu
+
+
+700196 - Vi nhân vi kỷ – (Vũ Hóa)
+Khi vật triệu hồi của bản thân bị địch nhân công kích, có tỷ lệ 30% sẽ khiến địch nhân phải chịu xxx sát thương. Tối đa mỗi 0,1s có thể phát động 1 lần.
+
+
+700197 - Bắc minh phi sương – (Vũ Hóa)
+Mỗi khi sử dụng tuyệt kỹ 5 lần, trong phòng sẽ rơi xuống từng khối băng sương, gây sát thương xxx lên đối phương. Sau một thời gian, những khối băng này phát nổ, gây ra hiệu ứng đóng băng lên địch nhân.
+        Tối đa 15 giây có thể phát động một lần.
+
+
+700198 - Yên la huyễn chướng – (Vũ Hóa)
+Mỗi khi vật triệu hồi của mình gây sát thương cho kẻ địch sẽ làm địch nhân rơi vào trạng thái trúng độc trong 10 giây. Khi số tầng trúng độc lên đến 30 tầng, ấn ký sẽ tự động kích nổ, gây xxx sát thương, cũng làm đối phương nhận thêm 20% tổn thương trong 8 giây kế tiếp.
+Mỗi địch nhân chỉ có thể kích nổ ấn ký 1 lần trong 8 giây. 
+
+
+700199 - Thần hỏa thiên tinh – (Vũ Hóa)
+Khi bản thân phát động các kỹ năng dạng thi pháp, sẽ liên tục bắn ra hỏa cầu về phía trước, sau khi va chạm với mục tiêu sẽ gây xxx sát thương hỏa thuộc tính.
+        <NTCM này bị lỗi!>
+Thần hỏa thiên tinh chỉ hoạt động bình thường trên tuyệt kỹ thi pháp của phong hệ.
+Đối với hỏa hệ, có một lỗi nhỏ trên Nghiệp Hỏa Thuật, hỏa cầu sẽ kết thúc trước khi nghiệp hỏa kết thúc, đại khái có thể phun khoảng 5 giây. Các tuyệt kỹ khác tương đối bình thường.
+Linh Ảnh Chỉ của hệ Chỉ bị lỗi rất nặng, sau khi phun ra 1 hỏa cầu duy nhất liền tịt ngòi.
+
+
+700200 - Thần tiêu tịnh trần – (Vũ Hóa)
+Khi sử dụng thần thông, sẽ triệu hoán 12 đạo sấm sét, đả kích địch thủ ngẫu nhiên trên sân. Mỗi đạo sấm sét gây xxx sát thương.
+        Hồi chiêu 15 giây        
+
+
+700201 - Hào viêm chước nhật – (Vũ Hóa)
+Sau khi tạo thành 50 lần tổn thương, sẽ dẫn bạo ấn ký trên mục tiêu gây xxx sát thương đồng thơi lưu xuống một đoàn Liệt diễm với phạm vi 300.
+        Hồi chiêu 8 giây.
+
+
+700202 - Chưởng nội càn khôn – (Vũ Hóa)
+        Khi sử dụng lĩnh vực, -90% đạo lực tiêu hao
+
+
+
+
+Nghịch thiên cải mệnh về đạo điểm
+        
+Cái của nợ này mỗi cấp nó tự nâng theo cảnh giới chứ không theo chuỗi. Chọn một cái rồi thì lần sau không ra cái cấp tiếp theo nữa. Vì khá đặc thù nên cho ra nhóm riêng. 
+
+
+700066 - Nhược hữu đạo tâm - (Trúc Cơ)
+        Thu hoạch được 30 đạo điểm.
+
+
+700067 - Tự hữu đạo tâm – (Kết Tinh)
+        Thu hoạch được 50 đạo điểm.
+
+
+700068 - Lược hữu đạo tâm – (Kim Đan)
+Thu hoạch được 80 đạo điểm.
+
+
+700069 - Tiểu hữu đạo tâm – (Cụ Linh)
+Thu hoạch được 140 đạo điểm.
+
+
+700070 - Cảm thụ đạo tâm – (Nguyên Anh)
+Thu hoạch được 200 đạo điểm.
+
+
+700071 - Lĩnh ngộ đạo tâm – (Hóa Thần)
+Thu hoạch được 300 đạo điểm.
+
+
+700072 - Thông hiểu đạo tâm – (Ngộ Đạo)
+Thu hoạch được 450 đạo điểm.
+
+
+700073 - Tâm hữu đạo tâm – (Vũ Hóa)
+Thu hoạch được 700 đạo điểm.
+
+
+700074 – Truyện thừa đạo tâm – (Đăng Tiên)
+Thu hoạch được 1000 đạo điểm.
+
+
+Nghịch thiên cải mệnh theo đạo tâm
+
+
+700181 - Phong khởi linh động – Bất Tức, Vô Định
+Trong chiến đấu, nếu có nhiều hơn một tu tiên giả sẽ có tỉ lệ phát động. Khi tu tiên giả phe mình bị đánh bại, có thể sẽ xuất hiện một đội cứu thương tới cứu người. Sau 10 giây, người bị thương sẽ quay trở lại chiến trường, hồi phục sinh lực 100%. 
+
+
+700168 - Thấu thể hóa kình – Tể Ngự, Trường Hằng
+Trong chiến đấu, nếu có nhiều hơn một tu tiên giả sẽ có tỉ lệ phát động. Khi phe mình có tu tiên giả sinh lực thấp hơn 30%, liền sẽ tiêu hao 50% sinh lực hiện tại, khiến tất quả địch quân -15% sát thương, đồng thời phải nhận thêm 15% tổn thương. Hiệu quả kéo dài 20 giây.
+Thời gian hồi chiêu 120 giây
+
+
+700176 - Viêm hỏa cương liệp – Vạn Tượng, Phúc Sinh
+Khi tiến vào chiến đấu sẽ có tỉ lệ phát động. Người sở hữu sẽ triệu hoán một ổ heo. Ổ heo sẽ duy trì trong 30 giây, có thể liên tục triệu hồi ra man trư tham chiến. Cũng có xác suất nhỏ triệu hồi ra một con Đương Khang cái.
+Kỹ năng này hồi chiêu 120 giây.
+Man trư có thể duy trì 10 giây.
+Đương Khang cái sẽ ôm lấy một tu tiên giả ngẫu nhiên, đem vào ổ, sau đó ném ra, gây ra lượng sát thương lớn. Kỹ năng này có thể ngắt thân pháp. 
+
+
+700169 - Kim châm thứ huyệt – Tuần Thiên, Bách Hiểu
+Trong chiến đấu, nếu có nhiều hơn một tu tiên giả sẽ có tỉ lệ phát động. Sát thương bản thân gây ra sẽ giảm 50%. Sát thương toàn bộ đồng minh trên chiến trường đề cao 15%. Hiệu quả duy trì 30 giây.
+Thời gian hồi chiêu 120 giây.
+
+
+700167 - Quy kình phân nguyên – Thượng Thiện
+Trong chiến đấu, nếu có nhiều hơn một tu tiên giả sẽ có tỉ lệ phát động. Bằng cách hi sinh 20% sinh lực hiện tại của bản thân, gia trì hộ thuẫn cho tất cả đồng minh trên mặt trận. Giá trị hộ thuẫn tương đương với giá trị sinh mệnh đã tiêu hao. Trước khi hộ thuẫn bị phá, sẽ không chịu ảnh hưởng từ bất kỳ kỹ năng khống chế nào.
+Hiệu quả kéo dài 20 giây. Thời gian hồi chiêu 60 giây
+
+
+700178 - Phù sinh phao ảnh – Hóa Ngại
+Sau khi tiến vào chiến đấu sẽ có xác suất phóng thích. Nếu phe đối thủ có tu tiên giả, mỗi 5 giây, sẽ sinh ra một bong bóng, từ trên trời rơi xuống một vị trí ngẫu nhiên. Khi tu tiên giả chạm vào, sẽ bị bong bóng này bao bọc trong 3 giây. Kỹ năng kéo dài 30 giây. Thời gian hồi chiêu 120 giây.
+
+
+700180 - Thiên lôi cuồn cuộn – Kế Minh
+Khi chiến vào chiến đấu, có xác suất khiến trong chiến trường xuất hiện một cơn mưa kéo dài 30 giây. Trong thời gian mưa to, tốc độ di chuyển của địch nhân -10%. Mỗi 2 giây sẽ có sét đánh xuống đồng minh có sinh lực cao nhất(kể cả mình), gây ra sát thương xxx lên người trúng. Đồng thời sẽ gây một đợt sát thương AOE bán kín 400 ra xung quanh với sát thương xxx*10. 
+        Sát thương phụ thuộc vào cấp độ của người sở hữu.
+        Thời gian hồi chiêu 120 giây
+
+
+700174 - Hậu đức tái vật – Khô Nhiên
+Trong chiến đấu, khi có nhiều hơn 1 tu tiên giả đồng đội sẽ có khả năng phát động. Sát thương nhận vào -60%, đồng thời gánh 30% tổn thương cho toàn bộ đồng đội trên sân. Kéo dài 30 giây
+        Thời gian hồi chiêu 120 giây
+
+
+700177 - Thanh khâu chi chủ - Tu Tỉnh
+Mỗi khi tiến vào chiến đấu, có xác suất phóng thích kỹ năng triệu hoán một con mị hoặc hồ yêu. Hồ yêu có thể phóng thích ra nụ hôn mê hoặc. Đối tượng bị hôn trúng sẽ biến thành ếch xanh, tốc độ di chuyển  - 30%, kéo dài 3s.
+        Thời gian hồi chiêu 120 giây
+
+
+700164 - Đại mạc cuồng đao – Vô Cữu
+Mười giây sau khi tiếng vào phó bản sẽ có tỷ lệ phóng thích một cơn bão cát kéo dài 60 giây. Trong thời gian này, tất cả địch nhân trên toàn trường sẽ phải chịu sát thương tương đương 1% sinh lực tối đa trên giây. (Đại yêu thú cùng tu tiên giả chỉ có 0.3%) đồng thời cũng giảm 5% tốc độ di chuyển.
+        Một trận chỉ có thể phát động một lần
+
+
+700175 - Huyền hồ tế thế - Quy Tàng
+Trong chiến đấu, khi có nhiều hơn 1 tu tiên giả đồng đội sẽ có khả năng phát động. Sát thương gây ra sẽ giảm 50%. Mỗi khi sử dụng đan dược hồi phục, toàn bộ đồng đội sẽ nhận được hiệu quả tương tự. Kéo dài 60 giây. Thời gian hồi chiêu 120 giây.
+
+
+700179 - Truy ảnh kỳ hoàn – Chỉ Du
+Sau khi bước vào chiến đấu 30 giây sẽ có khả năng phát động. Mỗi khi di chuyển một khoảng cách 500, ngươi sẽ đặt xuống một quả trứng nổ. Khi địch nhân đụng phải, trứng nổ sẽ bị dẫn bạo, gây xxx sát thương.
+        Tối đa có thể đặt 12 quả trứng nổ.
+        Hồi chiêu 120 giây.
+
+
+Nghịch thiên cải mệnh Thiên Cơ – Quy Nhất
+
+
+700191 - Thất tinh kiếm bộc
+Khi sử dụng tuyệt kỹ sẽ triệu hồi ra 7 thanh phi kiếm, liên tục hướng địch nhân bắn ra kiếm khí. Kiếm khí sẽ gây xxx sát thương lên địch nhân. Chỉ cần tuyệt kỹ được sử dụng lần này tiếp tục gây ra sát thương, phi kiếm sẽ không biến mất.
+        Thời gian tồn tại tối thiểu của phi kiếm là 7 giây, tối đa 20 giây.
+        Thời gian hồi chiêu 20 giây.
+
+
+700193 - Minh hà chi chủ
+Khi sử dụng thần thông, nếu trên trận không có Ngọc Ngư Vương mà ngươi triệu hoán, sẽ hiến tế 50% sinh lực của tất cả triệu hoán vật của bản thân để triệu hoán Ngọc Ngư Vương.
+Tổng số lượng sinh lực đã hiến tế nhân lên ba lần sẽ trở thành sinh lực tối đa của Ngọc Ngư Vương.
+Khi Ngọc Ngư Vương trên sân, mỗi 3 giây sẽ hấp thụ xxx sinh lực của toàn bộ triệu hoán vật trên trận, biến 5% tổng số lượng sinh lực hút được hồi phục tự thân
+Trên trận tồn tại 1 triệu hoán vật của bản thân sẽ tăng 15% sát thương của Ngọc Ngư Vương. Tối đa tăng 225%
+
+
+Nghịch thiên cải mệnh quest con bé đa nhân cách
+
+
+700212 - Hoa uẩn lưu đan
+Trong chiến đấu, trên trận ngẫu nhiên sẽ xuất hiện một vài viên đan dược, tồn tại trong một khoảng thời gian nhất định. Địch ta đều có thể nhặt đan dược trên đất. Tuy nhiên quái vật sẽ không nhặt đan có ảnh hưởng trái chiều với mình.
+Thời gian hồi chiêu 25 giây
+
+
+        Bích nhị hàm linh
+Trong chiến đấu, mỗi 35 giây sẽ có một đóa hoa sen xuất hiện. Khi người chơi tiến đến gần, dùng E để tương tác, sẽ có thể từ trong khí linh sở hữu, chọn ngẫu nhiên ra một con, phát động kỹ năng bản mệnh.
+Hoa sen tồn tại 15 giây sẽ biến mất.
+
+
+Nghịch thiên cải mệnh cho Luyện Yêu Hồ
+
+
+700209 - Huyền hồ ngự yêu – (Nguyên Anh)
+Trong chiến đấu, thời gian hồi chiêu của Luyện Yêu Hồ -50%. Khi hồ yêu chưa huyễn hóa thân hình, mỗi giây hồi 1% sinh lực
+
+
+Nghịch thiên cải mệnh event truyền công
+
+
+700210 - Tiêu Dao Du
+        Cước lực +500
+Nếu ngươi không gia nhập tông môn, mỗi lần tu luyện tại khu vực có linh khí cao hơn 100, có tỉ lệ 50% đạt được linh quả.
+
+
+Nghịch thiên cải mệnh chưa mở hoặc đã bị lock
+
+
+700029 - Phong ma chiến ý
+Khi sinh lực thấp hơn 20%, ngươi sẽ điên cuồng chiến đấu.
+Sát thương nhận vào +50%, gây thêm 100% sát thương, tự hành truy tung kẻ địch, không thể khống chế
+
+
+700048 -Sát ngôn quan sắc – (Trúc Cơ)
+Khi cùng tu tiên giả giao tiếp hoặc luận đạo, có thể dự tri đáp án mà đối phương kỳ vọng.
+
+
+700051 - Linh điệp hóa kiển
+Trong quá trình chiến đấu, mỗi lần bạo kích đều có tỉ lệ tạo ra một con hồ điệp với màu sắc ngẫu nhiên, bay xung quanh nhân vật.
+Hồ điệp duy trì 10s, lúc biến mất sẽ hồi phục 5% sinh lực tối đa.
+Sau khi tử vong, sẽ hóa thành một cái kén. Mỗi con bướm sẽ tăng cho chủ nhân 5% sinh lực cùng phòng ngự, duy trì 5s, sau đó phục sinh nhân vật với số HP tương ứng.
+Mỗi trận chỉ có thể phát động 1 lần
+
+
+700052 - Bạn sinh ma linh
+Trên đầu ngươi mọc ra một cây nấm nhỏ với hình dáng ngẫu nhiên. Ngẫu nhiên đạt được một trong hai loại hậu thiên khí vận
+1. Điệu Phấn Ma Cô – Mị lực -500, Miễn tổn thương +5%
+2. Ám Hương Ma Cô – Mị lực -500, Linh lực +10%
+
+
+700076 - Cường kiện thể phách
+`                Thể chất tối đa +50 điểm.
+
+
+700079 - Hạnh vận tinh – (Kết Tinh)
+        May mắn +50 điểm.
+
+
+700138 - Cách sơn đả ngưu – (Trúc Cơ)
+Mỗi khi sử dụng võ kỹ 10 lần, sẽ phát động một đạo cương kình, gây sát thương lên đối phương tương đương 100% tổng tư chất công pháp
+
+
+700139 - Đoạt mệnh chân khí – (Trúc Cơ)
+Mỗi khi sử dụng linh kỹ 10 lần, sẽ phát động 3 đạo linh khí có khả năng truy tung, gây sát thương lên đối phương tương đương 100% tổng tư chất linh căn
+
+
+700141 - Tham ma thể – (Trúc Cơ)
+Mỗi khi nhận 6 lần công kích, sẽ miễn dịch với lần công kích tiếp theo
+
+
+700142 - Phệ ma thể – (Kết Tinh)
+Mỗi khi nhận 3 lần công kích, sẽ miễn dịch với lần công kích tiếp theo
+
+
+700143 - Quỷ ảnh mê tung
+        Di tốc tăng 15%
+
+
+700163 - Hàn linh băng mạch
+Sau khi nhận sát thương tương đương 15% sinh lực tối đa, sẽ triệu hồi ra một đoàn hào quang tại vị trí ngẫu nhiên xung quanh người chơi 400. Hào quang rộng 350. Đứng trong hào quang, sát thương tăng 15%, tổn thương nhận vào -15%. Kéo dài 60s
+
+
+700207 - Dược độc đồng nguyên – (Trúc Cơ)
+        Sát thương của đan dược đối với địch nhân tăng 30%.

@@ -25,6 +25,12 @@ function initSchema() {
             linh_thach INTEGER DEFAULT 100,
             tien_thach INTEGER DEFAULT 0,
             cong_duc INTEGER DEFAULT 0,
+            weapon_type TEXT DEFAULT NULL,
+            ngo_tinh INTEGER DEFAULT 100,
+            van_khi INTEGER DEFAULT 80,
+            age INTEGER DEFAULT 16,
+            danh_vong INTEGER DEFAULT 0,
+            dao_tam INTEGER DEFAULT 0,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
             last_cultivate DATETIME,
             last_mine DATETIME,
@@ -180,6 +186,115 @@ function initSchema() {
         CREATE INDEX IF NOT EXISTS idx_cooldowns_player ON cooldowns(player_id);
         CREATE INDEX IF NOT EXISTS idx_player_pets_player ON player_pets(player_id);
         CREATE INDEX IF NOT EXISTS idx_learned_skills_player ON learned_skills(player_id);
+
+        -- ═══════════════════════════════════════
+        -- Skill Slots (Võ Kỹ / Thân Pháp / Tuyệt Kỹ / Thần Thông)
+        -- ═══════════════════════════════════════
+        CREATE TABLE IF NOT EXISTS player_skill_slots (
+            player_id INTEGER NOT NULL,
+            slot_type TEXT NOT NULL CHECK(slot_type IN ('vo_ky','than_phap','tuyet_ky','than_thong')),
+            skill_id TEXT NOT NULL,
+            skill_level INTEGER DEFAULT 1,
+            options_json TEXT,
+            PRIMARY KEY (player_id, slot_type),
+            FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
+        );
+        CREATE INDEX IF NOT EXISTS idx_skill_slots_player ON player_skill_slots(player_id);
+
+        -- ═══════════════════════════════════════
+        -- Nghịch Thiên Cải Mệnh (Passive Traits)
+        -- ═══════════════════════════════════════
+        CREATE TABLE IF NOT EXISTS player_nghich_thien (
+            player_id INTEGER NOT NULL,
+            slot INTEGER NOT NULL CHECK(slot BETWEEN 1 AND 5),
+            trait_id TEXT NOT NULL,
+            PRIMARY KEY (player_id, slot),
+            FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
+        );
+        CREATE INDEX IF NOT EXISTS idx_nghich_thien_player ON player_nghich_thien(player_id);
+
+        -- ═══════════════════════════════════════
+        -- Tâm Pháp 6 Slots
+        -- ═══════════════════════════════════════
+        CREATE TABLE IF NOT EXISTS player_tam_phap (
+            player_id INTEGER NOT NULL,
+            slot_type TEXT NOT NULL CHECK(slot_type IN (
+                'than_cong','dai_phap','bi_quyen','quyet','ngang','luc'
+            )),
+            tam_phap_id TEXT NOT NULL,
+            level INTEGER DEFAULT 1,
+            options_json TEXT,
+            PRIMARY KEY (player_id, slot_type),
+            FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
+        );
+        CREATE INDEX IF NOT EXISTS idx_tam_phap_player ON player_tam_phap(player_id);
+
+        -- ═══════════════════════════════════════
+        -- Tiên Thiên Khí Vận (Birth Traits)
+        -- ═══════════════════════════════════════
+        CREATE TABLE IF NOT EXISTS player_tien_thien (
+            player_id INTEGER NOT NULL,
+            trait_id TEXT NOT NULL,
+            PRIMARY KEY (player_id, trait_id),
+            FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
+        );
+        CREATE INDEX IF NOT EXISTS idx_tien_thien_player ON player_tien_thien(player_id);
+
+        -- ═══════════════════════════════════════
+        -- Đạo Tâm (Dao Heart)
+        -- ═══════════════════════════════════════
+        CREATE TABLE IF NOT EXISTS player_dao_tam (
+            player_id INTEGER PRIMARY KEY,
+            dao_tam_id TEXT NOT NULL,
+            kien_dinh INTEGER DEFAULT 100,
+            trang_thai TEXT DEFAULT 'moi_sinh',
+            acquired_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
+        );
+
+        -- ═══════════════════════════════════════
+        -- Hậu Thiên Khí Vận (Temporary Buffs)
+        -- ═══════════════════════════════════════
+        CREATE TABLE IF NOT EXISTS player_hau_thien (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            player_id INTEGER NOT NULL,
+            khi_van_id TEXT NOT NULL,
+            stacks INTEGER DEFAULT 1,
+            expires_at DATETIME,
+            source TEXT,
+            FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
+        );
+        CREATE INDEX IF NOT EXISTS idx_hau_thien_player ON player_hau_thien(player_id);
+        CREATE INDEX IF NOT EXISTS idx_hau_thien_expires ON player_hau_thien(expires_at);
+
+        -- ═══════════════════════════════════════
+        -- Khí Vận Active (Interactive Cultivation buffs)
+        -- ═══════════════════════════════════════
+        CREATE TABLE IF NOT EXISTS player_khi_van (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            player_id INTEGER NOT NULL,
+            khi_van_id TEXT NOT NULL,
+            applied_at INTEGER NOT NULL,
+            expires_at INTEGER NOT NULL,
+            FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
+        );
+        CREATE INDEX IF NOT EXISTS idx_khi_van_player ON player_khi_van(player_id);
+        CREATE INDEX IF NOT EXISTS idx_khi_van_expires ON player_khi_van(expires_at);
+
+        -- ═══════════════════════════════════════
+        -- Bế Quan Tu Luyện (AFK Cultivation)
+        -- ═══════════════════════════════════════
+        CREATE TABLE IF NOT EXISTS player_afk_cultivation (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            player_id INTEGER NOT NULL,
+            started_at INTEGER NOT NULL,
+            ended_at INTEGER,
+            status TEXT DEFAULT 'active',
+            base_exp_rate INTEGER DEFAULT 1,
+            total_exp INTEGER DEFAULT 0,
+            FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
+        );
+        CREATE INDEX IF NOT EXISTS idx_afk_player ON player_afk_cultivation(player_id);
     `);
 }
 

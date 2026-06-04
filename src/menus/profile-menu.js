@@ -48,6 +48,18 @@ async function showProfileMenu(interaction, player) {
           `🌱 Linh Căn: **${root ? root.name : 'N/A'}** ${root ? root.emoji : ''}`,
           `💪 Thể Chất: **${constitution ? constitution.name : 'N/A'}**`,
           `📜 Công Pháp: **${technique ? technique.name : 'Cơ Bản Tâm Pháp'}**`,
+          player.weapon_type ? `⚔️ Võ Khí: **${player.weapon_type}**` : '',
+        ].filter(Boolean).join('\n'),
+        inline: true,
+      },
+      {
+        name: '🧠 Chỉ Số Ẩn',
+        value: [
+          `🧠 Ngộ Tính: **${player.ngo_tinh || 100}**`,
+          `🍀 Vận Khí: **${player.van_khi || 80}**`,
+          `📅 Tuổi: **${player.age || 16}**`,
+          `🏆 Danh Vọng: **${formatNumber(player.danh_vong || 0)}**`,
+          `🧘 Đạo Tâm: **${formatNumber(player.dao_tam || 0)}**`,
         ].join('\n'),
         inline: true,
       },

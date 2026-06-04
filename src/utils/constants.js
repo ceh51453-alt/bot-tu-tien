@@ -109,7 +109,7 @@ const EMOJIS = {
 // Cooldown (mili giây)
 // ═══════════════════════════════════════════
 const COOLDOWNS = {
-    CULTIVATE: 30 * 60 * 1000,      // 30 phút
+    CULTIVATE: 15 * 60 * 1000,      // 15 phút (giảm từ 30)
     MINE: 60 * 60 * 1000,           // 60 phút
     HUNT: 15 * 60 * 1000,           // 15 phút
     DAILY: 24 * 60 * 60 * 1000,     // 24 giờ

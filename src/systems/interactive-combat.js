@@ -19,6 +19,7 @@ const bossSkillsConfig = require('../../config/boss-skills');
 const techniquesConfig = require('../../config/techniques');
 const petsConfig = require('../../config/pets');
 const { randomInt, chance, clamp } = require('../utils/helpers');
+const qcbhCombat = require('./qcbh-combat');
 const {
   EmbedBuilder,
   ActionRowBuilder,
@@ -347,20 +348,30 @@ function initInteractiveCombat(player, monster) {
     enemySkills = [...enemySkills, ...normalSkills];
   }
 
+  // Apply equipment_bonus stats for monsters
+  const eqB = monster.equipment_bonus || {};
+  const monsterHp = (monster.hp || 100) + (eqB.hp || 0);
+  const monsterAtk = (monster.atk || 10) + (eqB.atk || 0);
+  const monsterDef = (monster.def || 5) + (eqB.def || 0);
+  const monsterSpeed = (monster.speed || 10) + (eqB.speed || 0);
+  const monsterCritRate = 5 + (eqB.crit_rate || 0);
+
   const enemyState = createFighter({
     id: monster.id,
     name: monster.name,
     emoji: monster.emoji || '👹',
-    hp: monster.hp,
-    maxHp: monster.hp,
+    hp: monsterHp,
+    maxHp: monsterHp,
     mana: 200,
     maxMana: 200,
-    atk: monster.atk,
-    def: monster.def,
-    speed: monster.speed || 10,
+    atk: monsterAtk,
+    def: monsterDef,
+    speed: monsterSpeed,
     skills: enemySkills,
     isPlayer: false,
     element: monster.element || 'neutral',
+    critRate: monsterCritRate,
+    critDamage: 50,
   });
 
   return {
@@ -372,6 +383,26 @@ function initInteractiveCombat(player, monster) {
     startTime: Date.now(),
     monsterData: monster, // Keep reference for rewards
   };
+
+  // ═══ CHIẾN KỸ STATE ═══
+  try {
+    combatState._qcbhState = qcbhCombat.buildQcbhState(player);
+    // Apply Nghịch Thiên passive stat bonuses
+    const ntFx = combatState._qcbhState.nghichThienEffects;
+    if (ntFx.atk_bonus_percent) combatState.player.atk = Math.floor(combatState.player.atk * (1 + ntFx.atk_bonus_percent / 100));
+    if (ntFx.hp_bonus_percent) {
+      const hpBonus = Math.floor(combatState.player.maxHp * ntFx.hp_bonus_percent / 100);
+      combatState.player.maxHp += hpBonus;
+      combatState.player.hp += hpBonus;
+    }
+    if (ntFx.speed_bonus_percent) combatState.player.speed = Math.floor(combatState.player.speed * (1 + ntFx.speed_bonus_percent / 100));
+    if (ntFx.def_bonus_percent) combatState.player.def = Math.floor(combatState.player.def * (1 + ntFx.def_bonus_percent / 100));
+    if (ntFx.crit_rate_bonus) combatState.player.critRate += ntFx.crit_rate_bonus;
+  } catch (_e) {
+    combatState._qcbhState = null;
+  }
+
+  return combatState;
 }
 
 // ═══════════════════════════════════════════
@@ -447,6 +478,44 @@ function executePlayerTurn(state, actionType, skillId = null) {
       _executeBasicAttack(player, enemy, log);
     } else if (actionType === 'skill' && skillId) {
       _executeSkillAction(player, enemy, skillId, log);
+    } else if (actionType === 'qcbh' && skillId) {
+      // ═══ CHIẾN KỸ SKILL ACTION ═══
+      const qState = state._qcbhState;
+      if (qState) {
+        let result = { damage: 0, log: [] };
+        switch (skillId) {
+          case 'vo_ky':
+            result = qcbhCombat.executeVoKy(qState, player, enemy, log);
+            break;
+          case 'than_phap':
+            result = qcbhCombat.executeThanPhap(qState, player, log);
+            break;
+          case 'tuyet_ky':
+            result = qcbhCombat.executeTuyetKy(qState, player, enemy, log);
+            break;
+          case 'than_thong':
+            result = qcbhCombat.executeThanThong(qState, player, enemy, log);
+            break;
+        }
+        if (result.log) log.push(...result.log);
+        if (result.damage > 0) {
+          const { actualDamage } = applyDamageToFighter(enemy, result.damage, log);
+          // Life steal from tâm pháp
+          const luc = qState.tamPhap?.luc;
+          if (luc && luc.config && luc.config.base_effects && luc.config.base_effects.lifesteal_percent) {
+            const heal = Math.floor(actualDamage * luc.config.base_effects.lifesteal_percent / 100);
+            if (heal > 0) {
+              player.hp = Math.min(player.maxHp, player.hp + heal);
+              log.push(`  📒 Hút ${heal} HP (Lục)`);
+            }
+          }
+        }
+        if (result.aoeDamage) {
+          const { actualDamage } = applyDamageToFighter(enemy, result.aoeDamage, log);
+        }
+      } else {
+        log.push('❌ Chưa có chiến kỹ nào!');
+      }
     }
   }
 
@@ -465,6 +534,33 @@ function executePlayerTurn(state, actionType, skillId = null) {
     log.push(`\n💀 **${enemy.name} đã bị tiêu diệt!**`);
     state.turnLog.push(...log);
     return { log, playerDead, enemyDead, fled };
+  }
+
+  // ═══ CHIẾN KỸ PER-TURN: summons + buffs/debuffs ═══
+  if (state._qcbhState) {
+    const qState = state._qcbhState;
+    const summonDmg = qcbhCombat.processSummons(qState, player, enemy, log);
+    if (summonDmg > 0) {
+      const { actualDamage } = applyDamageToFighter(enemy, summonDmg, log);
+    }
+    if (enemy.hp <= 0) {
+      enemy.hp = 0;
+      enemyDead = true;
+      log.push(`\n💀 **${enemy.name} bị summon hạ gục!**`);
+      state.turnLog.push(...log);
+      return { log, playerDead, enemyDead, fled };
+    }
+    const { damageToEnemy } = qcbhCombat.processBuffsDebuffs(qState, player, enemy, log);
+    if (damageToEnemy > 0) {
+      enemy.hp -= damageToEnemy;
+    }
+    if (enemy.hp <= 0) {
+      enemy.hp = 0;
+      enemyDead = true;
+      log.push(`\n💀 **${enemy.name} đã bị tiêu diệt!**`);
+      state.turnLog.push(...log);
+      return { log, playerDead, enemyDead, fled };
+    }
   }
 
   // ═══ ENEMY ACTION ═══
@@ -1043,8 +1139,25 @@ function buildInteractiveEmbed(state) {
     )
     .setTimestamp();
 
-  // Pet info
-  if (player.pet) {
+  // Chiến kỹ stack info
+  if (state._qcbhState) {
+    const q = state._qcbhState;
+    const stackParts = [];
+    for (const [type, count] of Object.entries(q.stacks)) {
+      if (count > 0) stackParts.push(`${type}: ${count}`);
+    }
+    const cloneCount = q.clones.length;
+    const summonCount = q.summons.length;
+    let qcbhInfo = '';
+    if (stackParts.length > 0) qcbhInfo += `\n📊 Stack: ${stackParts.join(' | ')}`;
+    if (cloneCount > 0) qcbhInfo += ` | 💧 Phân thân: ${cloneCount}`;
+    if (summonCount > 0) qcbhInfo += ` | 🗡️ Summon: ${summonCount}`;
+    if (qcbhInfo) {
+      embed.setFooter({ text: (player.pet ? `🐾 ${player.pet.petName} (ATK: ${player.pet.atk}) | ` : '') + qcbhInfo.trim() });
+    } else if (player.pet) {
+      embed.setFooter({ text: `🐾 ${player.pet.petName} (ATK: ${player.pet.atk}) đang hỗ trợ chiến đấu` });
+    }
+  } else if (player.pet) {
     embed.setFooter({ text: `🐾 ${player.pet.petName} (ATK: ${player.pet.atk}) đang hỗ trợ chiến đấu` });
   }
 
@@ -1060,7 +1173,9 @@ function buildActionButtons(state) {
   const stunned = isStunned(player);
   const hasActiveSkills = player.skills.filter(s => s.type !== 'passive').length > 0;
 
-  return new ActionRowBuilder().addComponents(
+  const rows = [];
+
+  rows.push(new ActionRowBuilder().addComponents(
     new ButtonBuilder()
       .setCustomId('icombat:basic')
       .setLabel('⚔️ Đánh Thường')
@@ -1080,7 +1195,35 @@ function buildActionButtons(state) {
       .setCustomId('icombat:flee')
       .setLabel('🏃 Bỏ Chạy')
       .setStyle(ButtonStyle.Danger),
-  );
+  ));
+
+  // Chiến kỹ skill buttons
+  if (state._qcbhState) {
+    const q = state._qcbhState;
+    const qcbhRow = new ActionRowBuilder();
+    const slots = [
+      { key: 'vo_ky', label: '⚔️ Võ Kỹ', cd: q.cooldowns.vo_ky },
+      { key: 'than_phap', label: '💨 Thân Pháp', cd: q.cooldowns.than_phap },
+      { key: 'tuyet_ky', label: '💫 Tuyệt Kỹ', cd: q.cooldowns.tuyet_ky },
+      { key: 'than_thong', label: '🌟 Thần Thông', cd: q.cooldowns.than_thong },
+    ];
+    for (const s of slots) {
+      if (q.skills[s.key]) {
+        const skillName = q.skills[s.key].config?.name || s.label;
+        const cdText = s.cd > 0 ? ` (${s.cd}T)` : '';
+        qcbhRow.addComponents(
+          new ButtonBuilder()
+            .setCustomId(`icombat:qcbh:${s.key}`)
+            .setLabel(`${s.label.split(' ')[0]} ${skillName}${cdText}`)
+            .setStyle(s.cd > 0 ? ButtonStyle.Secondary : ButtonStyle.Danger)
+            .setDisabled(s.cd > 0 || stunned)
+        );
+      }
+    }
+    if (qcbhRow.components.length > 0) rows.push(qcbhRow);
+  }
+
+  return rows;
 }
 
 /**

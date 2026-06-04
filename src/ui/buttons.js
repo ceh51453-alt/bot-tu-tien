@@ -69,7 +69,50 @@ function createMainMenuButtons() {
             .setStyle(ButtonStyle.Secondary),
     );
 
-    return [row1, row2, row3];
+    // Row 4: Chiến Kỹ Systems
+    const row4 = new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+            .setCustomId('qcbh_skill:menu')
+            .setLabel('Chiến Kỹ')
+            .setEmoji('📜')
+            .setStyle(ButtonStyle.Primary),
+        new ButtonBuilder()
+            .setCustomId('qcbh_skill:nghich_thien')
+            .setLabel('Nghịch Thiên')
+            .setEmoji('🔮')
+            .setStyle(ButtonStyle.Primary),
+        new ButtonBuilder()
+            .setCustomId('qcbh_skill:tam_phap')
+            .setLabel('Tâm Pháp')
+            .setEmoji('📚')
+            .setStyle(ButtonStyle.Primary),
+    );
+
+    // Row 5: Phase 8 Systems
+    const row5 = new ActionRowBuilder().addComponents(
+        new ButtonBuilder()
+            .setCustomId('luan_dao:menu')
+            .setLabel('Luận Đạo')
+            .setEmoji('🗣️')
+            .setStyle(ButtonStyle.Secondary),
+        new ButtonBuilder()
+            .setCustomId('ti_vo:menu')
+            .setLabel('Tỉ Võ')
+            .setEmoji('🏟️')
+            .setStyle(ButtonStyle.Secondary),
+        new ButtonBuilder()
+            .setCustomId('ky_ngo:explore')
+            .setLabel('Kỳ Ngộ')
+            .setEmoji('✨')
+            .setStyle(ButtonStyle.Secondary),
+        new ButtonBuilder()
+            .setCustomId('ngu_kiem:map')
+            .setLabel('Ngự Kiếm')
+            .setEmoji('🗡️')
+            .setStyle(ButtonStyle.Secondary),
+    );
+
+    return [row1, row2, row3, row4, row5];
 }
 
 /**

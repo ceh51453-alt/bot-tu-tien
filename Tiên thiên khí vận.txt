@@ -1,0 +1,755 @@
+﻿Đỏ
+
+
+1104 - Thiên đố anh tài – weight 200
+Ngộ tính +30
+Tốc độ tu luyện +20%
+Thọ mệnh -20
+Thể lực tối đa -20
+1418 - Vũ pháp linh đồng – weight 200
+Tư chất công pháp +18
+Công kích +5
+1426 - Vũ khí đại sư – weight 300
+Tư chất kiếm, đao, thương +20.
+Tốc độ thành thạo kỹ năng các hệ kiếm, đao, thương pháp tăng +30%
+1427 - Khai sơn song tuyệt – weight 200
+Tư chất quyền, chưởng +30
+Phòng ngự +5
+1428 - Bạch hồng quán nhật – weight 200
+Tư chất thương, chỉ +30
+Hội tâm +20
+1429 - Kiếm si – weight 200
+Tư chất kiếm pháp +30
+Tốc độ thành thạo kỹ năng hệ kiếm +50%
+1523 - Thiên tam tài – weight 200
+Linh căn các hệ phong, hỏa, lôi +25
+Công kích +3
+1524 - Địa tam tài – weight 200
+Linh căn các hệ thổ, mộc, thủy +25
+Phòng ngự +3
+1525 - Lục căn bất tịnh – weight 200
+Tư chất linh căn +20
+Niệm lực -80
+Tinh lực tối đa -20
+Công kích +3
+1526 - Lục căn thanh tịnh – weight 200
+Tư chất linh căn -10
+Tư chất công pháp +10
+Niệm lực +200
+Tinh lực tối đa +10
+1527 - Nguyên tố chi lực – weight 200
+Tư chất linh căn +20
+Tư chất công pháp -5
+1701 - Sỏa tử - weight 0
+Ngộ tính khóa chặt ở 20
+Thọ mệnh +30
+May mắn +30
+Xuất hiện công pháp người ngốc mới có thể tu luyện
+1714 - Nhạc thiên nhất phái – weight 100
+May mắn +30
+Mị lực +200
+Cước lực +100
+Tâm tình khôi phục đặc biệt nhanh
+1718 - Ma phách chi tôn – weight 100
+Công kích +5
+Ngộ tính +15
+Ma đạo +300
+Khi bắt đầu trò chơi, mang theo một bản tâm pháp trúc cơ màu cam
+1719 - Anh hùng truyền thừa – weight 100
+Phòng ngự +5
+Ngộ tính +15
+Chính đạo trị +300
+Khi bắt đầu trò chơi, mang theo một bản tâm pháp trúc cơ màu cam
+1720 - Quỷ cốc ngoại môn – weight 50
+Công kích+10
+Ngộ tính +30
+Danh vọng +150
+Mị lực +100
+1902 – Chơi bùn đạt đồ – weight 0
+Khi bắt đầu trò chơi, mang theo một pháp bảo màu tím
+1908 - Tuyệt thế kỳ ngộ – weight 0
+Khi bắt đầu trò chơi, mang theo một tài liệu đột phá Nguyên Anh Cảnh
+2001 - Thiên mệnh chi tử - weight 100
+May mắn +50
+Cước lực +100
+Mị lực +200
+2002 - Võ thánh chuyển thế - weight 100
+Công kích +10
+Phòng ngự +3
+Ngộ tính +20
+Danh vọng +100
+2003 - Nhân tộc thánh thể - weight 100
+Công kích+8
+Ngộ tính +10
+May mắn +10
+Sinh lực tối đa +100
+Mị lực +100
+2004 - Sát thần khí đồ - weight 100
+Công kích +8
+Tư chất công pháp +15
+Ngộ tính -10
+Ma đạo +100
+2005 - Lục đạo tu ma giả - weight 100
+Công kích +5
+Tư chất công pháp +6
+Tư chất linh căn +6
+Ngộ tính +10
+Danh vọng +50
+Ma đạo +100
+2006 - Cản thi đạo đồng - weight 100
+Phòng ngự +5
+Tư chất quyền, chưởng, chỉ +20
+Mị lực -100
+Danh vọng +100
+Ma đạo +80
+2007 - Hoàng triều di cô - weight 100
+May mắn +20
+Mị lực +100
+Khi bắt đầu trò chơi, mang theo một tâm pháp trúc cơ màu lam
+Khi bắt đầu trò chơi, mang theo 1000 linh thạch
+2008 - Bắc vực ma anh - weight 100
+Công kích +5
+Tư chất quyền, chưởng, chỉ +10
+Phong linh căn +20
+Danh vọng +100,
+2009 - Long môn cẩm lý - weight 0
+May mắn +40
+Mị lực +50
+Danh vọng +500
+Phòng ngự +10
+Chính đạo +50
+Khi bắt đầu trò chơi, bị một tông môn ngẫu nhiên truy sát
+2010 - Hồng hộc sĩ tộc – weight 100
+Công kích +5
+Tư chất công pháp +10
+Tinh lực tối đa +10
+2112 - Thần tượng môn đồ – weight 200
+Tư chất luyện khí +35
+Khi bắt đầu trò chơi, mang theo một pháp bảo có kèm khí linh ngẫu nhiên
+2116 - Đại năng chuyển thế – weight 200
+Ngộ tính +15
+Khi bắt đầu trò chơi, mang theo một tài liệu đột phá Nguyên Anh Cảnh
+2202 - Tử cực thực lôi thể – weight 300
+Phòng ngự +5
+Lôi linh căn +35
+        Tư chất linh căn hệ khác -10
+2204 - Minh âm ất hỏa thể – weight 300
+Phòng ngự +5
+        Hỏa linh căn +35
+        Tư chất linh căn hệ khác -10
+2206 - U tứ nhược thủy thể – weight 300
+Phòng ngự +5
+Thủy linh căn +35
+        Tư chất linh căn hệ khác -10
+2208 - Thu nguyên bi phong thể – weight 300
+Phòng ngự +5
+Phong linh căn +35
+        Tư chất linh căn hệ khác -10
+2210 - Địch trần linh thổ thể – weight 300
+Phòng ngự +5
+Thổ linh căn +35
+        Tư chất linh căn hệ khác -10
+2212 - Cổ đằng bách mộc thể – weight 300
+Phòng ngự +5
+Mộc linh căn +35
+        Tư chất linh căn hệ khác -10
+2416 - Ngu công di sơn – weight 300
+Sinh lực +80
+Tinh lực tối đa +10
+Niệm lực tối đa +50
+2417 - Hậu nghệ xạ nhật – weight 300
+Công kích +5
+Cự ly công kích +20
+Hội tâm +20
+2418 - Tinh vệ lấp hải – weight 300
+Thổ linh căn +20
+Thủy linh căn +5
+Di tốc +20
+2419 - Toản mộc thủ hỏa – weight 300
+Hỏa linh căn +20
+Mộc linh căn +5
+Phòng ngự +5
+2420 - Khoa phụ truy nhật – weight 300
+Niệm lực tối đa +50
+Cước lực +150
+Ngộ tính +10
+2421 - Hình thiên vũ cán thích - weight 300
+Công kích +10
+Phòng ngự -3
+Sinh lực tối đa +100
+2422 - Tứ diện thụ địch - weight 300
+Mị lực -300
+Công kích +10
+May mắn +10
+Sinh lực tối đa +50
+2424 - Tam hoa bất diệt - weight 300
+Tư chất linh căn hệ hỏa, thổ lôi +20
+Công kích +6
+Chính đạo +100
+2425 - Kiến mộc linh thai - weight 300
+Mộc linh căn +25
+Linh lực tối đa +50
+Mị lực +150
+Phòng ngự +5
+2426 - Quỷ cốc nội môn - weight 50 – lock 1 – Chưa mở yêu cầu
+Công kích +12
+Ngộ tính +30
+Khi bắt đầu trò chơi, mang theo một thân pháp màu cam ngẫu nhiên
+1006 - Khuynh quốc khuynh thành - weight 200
+Mị lực khóa chặt ở 900
+2801 - Nhất nặc thiên kim - weight 300
+        Khi bắt đầu trò chơi, mang theo một đạo lữ với ngoại tính trung trinh
+2803 - Long tổ linh tức - weight 300
+Công kích +5
+Di tốc +10
+Tư chất thương pháp +5
+Khi bắt đầu trò chơi, khởi tạo tông môn đặc thù – Ngự Long Sơn Trang
+Cam
+
+
+1105 - Thiên sát cô tinh - weight 200
+        Công kích +8
+        Hội tâm+20
+        Mị lực -300
+1303 - Thiên sinh ma thai - weight 200
+        Công kích +6
+        Hội tâm+20
+        Ma đạo +100
+1304 - Thiên sinh đạo tử - weight 200
+        Phòng ngự +6
+        May mắn +10
+        Mị lực +100
+        Chính đạo +100
+1305 - Lãnh huyết - weight 200
+        Công kích +6
+        Hội tâm+20
+        Mị lực -100
+1416 - Ngự vật như thần - weight 200
+        Tư chất các hệ đao, thương, kiếm +15
+        Công kích +3
+        Chính đạo +100
+1417 - Nhục thể ma thai - weight 200
+Tư chất các hệ quyền, chưởng, chỉ +15
+        Phòng ngự +3
+        Ma đạo +100
+1434 - Tà ma khí tử - weight 400
+        Tư chất công pháp +10
+        Mị lực +100
+        Chính đạo +100
+1435 - Chính phái dư nghiệt - weight 400
+        Tư chất công pháp +10
+        Mị lực +100
+        Ma đạo +100
+1519 - Phong lôi đạo thai - weight 300
+Phong linh căn +25
+Lôi linh căn +25
+        Chính đạo +100
+        Công kích +3
+1520 - Thổ mộc đạo thai - weight 300
+Thổ linh căn +25
+Mộc linh căn +25
+        Chính đạo +100
+        Công kích +3
+1521 - Phong hỏa ma thai - weight 300
+Phong linh căn +25
+Hỏa linh căn +25
+        Ma đạo +100
+        Công kích +3
+1522 - Thổ thủy ma thai - weight 300
+Thổ linh căn +25
+Thủy linh căn +25
+        Ma đạo +100
+        Công kích +3
+1611 - Dược linh thể - weight 300
+Tư chất luyện đan +30
+1702 - Tuyệt thế thông tuệ - weight 100
+Ngộ tính khóa chặt ở 150
+Tâm tình tối đa -30
+        Mị lực -100
+1801 - Khẩu hàm ngọc hồ - weight 0
+Có bất thế kỳ duyên cùng cửu vĩ yêu hồ tộc
+1802 - Biến thể lân phiến - weight 0
+Có bất thế kỳ duyên cùng hiên viên tộc
+1803 - Thủ chưởng kỳ hậu - weight 0
+Có bất thế kỳ duyên cùng hữu hùng thị
+1901 - Gia truyền pháp bảo - weight 0
+Khi bắt đầu trò chơi, mang theo một pháp bảo màu lam
+1907 - Khoáng thế kỳ ngộ - weight 0
+Khi bắt đầu trò chơi, mang theo một vật liệu đột phá nhất phẩm Kim Đan Cảnh
+2101 - Đan tâm linh đồng - weight 200
+Tư chất luyện đan +20
+Ngộ tính +10
+Danh vọng +100
+        Chính đạo +50
+2102 - Linh bảo thượng đồ - weight 200
+Tư chất luyện khí +20
+        Ngộ tính +10
+        Danh vọng +100
+        Chính đạo +50
+2103 - Thần phù họa thủ - weight 0
+Ngộ tính +10
+Họa phù +60
+Danh vọng +100
+Thọ mệnh -10
+2104 - Vọng khí nhân - weight 0
+Ngộ tính +10
+Phong thủy +50
+May mắn -10
+Danh vọng +100
+2105 - Tam thanh đạo đồng - weight 200
+        Ngộ tính +40
+Thọ mệnh +10
+        Chính đạo +50
+Tâm tình tối đa +20
+2106 - Thiên mệnh chi tôn - weight 200
+        May mắn +30
+        Mị lực +200
+2108 - Truy phong kiếm giả - weight 200
+        Công kích +5
+Tư chất kiếm pháp +15
+Phong linh căn +15
+2109 - Hàng long vũ giả - weight 200
+        Công kích +5
+Tư chất thương pháp +15
+Lôi linh căn +15
+2110 - Ma đao nan dân - weight 200
+        Công kích +5
+Tư chất đao pháp +15
+Hỏa linh căn +15
+2111 - Bất động minh vương - weight 200
+        Phòng ngự +5
+Tư chất các hệ quyền, chưởng, chỉ +14
+2113 - Vẫn tinh hàng thế - weight 200
+Tư chất luyện khí +30
+        May mắn +20
+Thọ mệnh -20
+2115 - Trung năng chuyển thế - weight 300
+        Ngộ tính +10
+Khi bắt đầu trò chơi, mang theo một viên linh châu.
+2301 - Xuyên việt giả - weight 50
+        Ngộ tính +20
+Thọ mệnh +10
+        May mắn +10
+        Danh vọng +100
+2408 - Cổ thụ linh khu - weight 300
+        Phòng ngự +4
+Hộ tâm +10
+Mộc linh căn +10
+Thọ mệnh +5
+        Mị lực -100
+2409 - Long chi huyết mạch - weight 300
+        Công kích +6
+        May mắn +10
+Thọ mệnh +10
+2410 - Phượng chi huyết mạch - weight 300
+        Công kích +6
+        May mắn +10
+        Mị lực +100
+2411 - Hổ chi huyết mạch - weight 300
+        Công kích +6
+        Hội tâm+20
+2412 - Tượng chi huyết mạch - weight 300
+        Phòng ngự +5
+Sinh lực +100
+        May mắn +10
+2415 - Phượng hoàng linh thể - weight 400
+Tư chất kiếm pháp +14
+Hỏa linh căn +14
+        Mị lực +150
+2423 - Đả hổ vũ giả - weight 400
+        Phòng ngự +5
+Hỏa linh căn +15
+Tư chất quyền pháp +15
+1001 - Ngạo cốt tranh tranh - weight 500
+        Phòng ngự +5
+Sinh lực +130
+1004 - Tật phong tấn lôi - weight 500
+Di tốc +20
+Cước lực +100
+Tốc độ thành thục thân pháp +50%
+2709 - Lão gian cự hoạt - weight 200
+Giá cả khi mua đồ trong phường thị -20%
+        Mị lực -100
+2802 - Bạch hạc nhập mộng - weight 0
+Khi bắt đầu trò chơi, có 1 vị đại năng làm sư phụ.
+Tím
+
+
+1101 - Trấn tĩnh như sơn - weight 300
+Tâm tình bất dung bất dịch, khó sản sinh cự đại biến hóa
+1103 - Thọ tinh hậu đại - weight 2
+Thọ mệnh +50
+1204 - Cuồng vọng tự đại - weight 500
+        Công kích +6
+        Phòng ngự -2
+        Mị lực -100
+1401 - Kiếm ma chuyển thế - weight 300
+Tư chất kiếm pháp +25
+        Công kích +1
+        Ma đạo +50
+1402 - Đao ma chuyển thế - weight 300
+Tư chất đao pháp +25
+        Công kích +1
+        Ma đạo +50
+1403 - Thương ma chuyển thế - weight 300
+Tư chất thương pháp +25
+        Công kích +1
+        Ma đạo +50
+1404 - Quyền ma chuyển thế - weight 300
+Tư chất quyền pháp +25
+        Công kích +1
+        Ma đạo +50
+1405 - Chỉ ma chuyển thế - weight 300
+Tư chất chỉ pháp +25
+        Công kích +1
+        Ma đạo +50
+1406 - Chưởng ma chuyển thế - weight 300
+Tư chất chưởng pháp +25
+        Công kích +1
+        Ma đạo +50
+1407 - Kiếm tiên chuyển thế - weight 300
+Tư chất kiếm pháp +25
+        Công kích +1
+        Chính đạo +50
+1408 - Đao tiên chuyển thế - weight 300
+Tư chất đao pháp +25
+        Công kích +1
+        Chính đạo +50
+1409 - Thương tiên chuyển thế - weight 300
+Tư chất thương pháp +25
+        Công kích +1
+        Chính đạo +50
+1410 - Quyền tiên chuyển thế - weight 300
+Tư chất quyền pháp +25
+        Công kích +1
+        Chính đạo +50
+1411 - Chỉ tiên chuyển thế - weight 300
+Tư chất chỉ pháp +25
+        Công kích +1
+        Chính đạo +50
+1412 - Chưởng tiên chuyển thế - weight 300
+Tư chất chưởng pháp +25
+        Công kích +1
+        Chính đạo +50
+1501 - Lôi linh thể - weight 400
+Lôi linh căn +25
+1502 - Thổ linh thể - weight 400
+Thổ linh căn +25
+1503 - Hỏa linh thể - weight 400
+Hỏa linh căn +25
+1504 - Thủy linh thể - weight 400
+Thủy linh căn +25
+1505 - Phong linh thể - weight 400
+Phong linh căn +25
+1506 - Mộc linh thể - weight 400
+Mộc linh căn +25
+1603 - Luyện đan cuồng ma - weight 400
+Tư chất luyện đan +25
+        Ma đạo +50
+1604 - Đan tiên chuyển thế - weight 400
+Tư chất luyện đan +25
+        Chính đạo +100
+1608 - Phá thiên cơ - weight 400
+Tư chất phong thủy +40
+Thể chất -20
+1703 - Thông minh tạ đỉnh - weight 400
+        Ngộ tính +50
+        Mị lực -300
+1707 - Đại trí nhược ngu - weight 400
+        Ngộ tính +50
+Mỗi tháng mất 0.5% tổng lượng linh thạch đang có
+1716 - Tinh lực vượng thịnh - weight 0
+Tinh lực tối đa +20
+Tốc độ tiêu hao tinh lực -30%
+1717 - Nhị tuyền ánh nguyệt - weight 0
+Ngộ tính +20
+Thọ mệnh -20
+1904 - Thần tiên đệ tử - weight 400
+Khi trò chơi bắt đầu, mang theo một bí tịch thân pháp màu tím
+1906 - Động trung kỳ ngộ - weight 0
+Khi trò chơi bắt đầu, mang theo 3000 linh thạch
+1910 - Tiên tử sở tặng - weight 0
+Khi trò chơi bắt đầu, mang theo một nhẫn trữ vật màu tím
+1911 - Phú khả nhị đại - weight 300
+Khi trò chơi bắt đầu, mang theo 2000 linh thạch
+Khi trò chơi bắt đầu, mang theo một tọa kỵ - Phi kiếm
+2107 - Trường phát cập yêu - weight 200 – lock 1 – Chưa mở yêu cầu
+Phòng ngự +5
+May mắn +5
+Mị lực +100
+2114 - Tiểu năng chuyển thế - weight 300
+        Ngộ tính +5
+Khi trò chơi bắt đầu, mang theo một viên linh khí
+2201 - Cửu thiên lôi kiếp thể - weight 300
+        Công kích +5
+Lôi linh căn +20
+Tư chất linh căn hệ khác -10
+2203 - Nguyên dương hỏa phần thể - weight 300
+        Công kích +5
+Hỏa linh căn +20
+        Tư chất linh căn hệ khác -10
+2205 - Hãn lưu thủy linh thể - weight 300
+        Công kích +5
+Thủy linh căn +20
+        Tư chất linh căn hệ khác -10
+2207 - Bắc vực phong thần thể - weight 300
+        Công kích +5
+Phong linh căn +20
+        Tư chất linh căn hệ khác -10
+2209 - Hậu hoàng thổ nguyên thể - weight 300
+        Công kích +5
+Thổ linh căn +20
+        Tư chất linh căn hệ khác -10
+2211 - Sâm la mộc tuyệt thể - weight 300
+        Công kích +5
+Mộc linh căn +20
+        Tư chất linh căn hệ khác -10
+2401 - Trường sinh thể - weight 400
+Thủy linh căn +15
+Mộc linh căn +15
+Thọ mệnh +10
+2402 - Lạc vũ thể - weight 400
+Thủy linh căn +15
+Phong linh căn +15
+        Danh vọng +100
+2403 - Phần diễm thể - weight 400
+        Công kích +5
+Hỏa linh căn +10
+Phong linh căn +10
+Thọ mệnh -10
+2404 - Bạo viêm thể - weight 400
+        Công kích +5
+Hỏa linh căn +10
+Lôi linh căn +10
+        Mị lực -100
+2405 - Minh vương thể - weight 400
+Công kích -1
+        Phòng ngự +5
+Thổ linh căn +10
+Mộc linh căn +10
+2406 - Môn phái khí đồ - weight 400
+Ma đạo +20
+Ngộ tính +20
+Thọ mệnh +50
+Khi trò chơi bắt đầu, tu luyện sắt một bộ tâm pháp.
+Sẽ bị tông môn sở hữu công pháp kia truy sát.
+2407 - Ái thư như mệnh - weight 400
+Khi trò chơi bắt đầu, mang theo một bộ tâm pháp màu lam
+Ngộ tính +30
+Thọ mệnh -30
+2414 - Long thần hộ thể - weight 400
+        Phòng ngự +5
+Tư chất thương pháp +5
+        Mị lực +50
+2708 - Thương nghiệp kỳ tài - weight 500
+Giá trị hàng hóa tại thành trấn -10%
+Lam
+
+
+1301 - Ngã hành ngã tố - weight 500
+Ma đạo +50
+Tâm tình dễ dàng nâng cao
+1413 - Đao kiếm hiệp khách - weight 500
+Tư chất đao pháp cùng kiếm pháp +15
+1414 - Trạc nhất chỉ - weight 500
+Tư chất thương pháp cùng chỉ pháp +15
+1415 - Quyền chưởng liễu đắc - weight 500
+Tư chất quyền pháp cùng chưởng pháp +15
+1425 - Thường sơn nhân - weight 500
+Tư chất thương pháp +10
+        Chính đạo +10
+1430 - Lang hài - weight 500
+        Công kích +5
+Tư chất quyền pháp +10
+        Mị lực -100
+1431 - Kiếm thần chi tử - weight 500
+        Công kích +2
+Tư chất kiếm pháp +5
+        Ngộ tính +10
+1432 - Đao thần chi tử - weight 500
+        Công kích +2
+Tư chất đao pháp +5
+        Ngộ tính +10
+1433 - Thương thần chi tử - weight 500
+        Công kích +2
+Tư chất thương pháp +5
+        Ngộ tính +10
+1507 - Lôi kích bất tử - weight 500
+Lôi linh căn +20
+1508 - Thiêu thán giả - weight 500
+Hỏa linh căn +20
+1509 - Lãng lý bạch điều - weight 500
+Thủy linh căn +20
+1510 - Đôi thổ thành sơn - weight 500
+Thổ linh căn +20
+1511 - Thực thụ thành lâm - weight 500
+Mộc linh căn +20
+1512 - Thảo thượng phi - weight 500
+Phong linh căn +20
+1602 - Luyện đan cuồng nhân - weight 500
+Tư chất luyện đan +20
+        Ma đạo +20
+1610 - Đa tài đa nghệ - weight 0
+Tư chất luyện đan cùng luyện khí +15
+1708 - Thiên sinh tuệ căn - weight 500
+        Tư chất linh căn +5
+        Ngộ tính +10
+1709 - Thiên tư căn cốt - weight 500
+        Tư chất công pháp +5
+        Ngộ tính +10
+1715 - Cật khổ nại lao - weight 500
+        Ngộ tính -5
+Tốc độ tiêu hao tâm tình cùng tinh lực -30%
+1903 - Gia truyện vũ kỹ - weight 0
+Khi bắt đầu trò chơi, học sẵn một võ kỹ màu lam
+1905 - Gia đạo phú dụ - weight 0
+Khi bắt đầu trò chơi, mang theo 1000 linh thạch
+1909 - Hôn ước tại thân - weight 0
+Khi bắt đầu trò chơi, mang theo một nhẫn trữ vật màu lam
+2501 - Phiên phiên lương nhân - weight 800
+Phòng ngự +2
+        Mị lực +50
+        Danh vọng +50
+2502 - Y mệ phiêu phiêu - weight 800
+Phong linh căn +5
+        Mị lực +100
+        Danh vọng +50
+1002 - Thiên sinh linh thể - weight 500
+Linh lực +100
+1003 - Ưng nhãn - weight 200
+Hội tâm +30
+Lục
+
+
+1106 - Chiến đấu cuồng nhân - weight 300
+        Công kích +2
+        Ma đạo +50
+        Mị lực -100
+1203 - Sát trư giả - weight 300
+        Công kích +2
+        Hội tâm+10
+1419 - Thủ sao bản lật - weight 600
+Tư chất chưởng pháp +15
+Tư chất chỉ pháp -10
+1420 - Pha thiện đạn cung - weight 600
+Tư chất chỉ pháp +10
+1421 - Hảo đả sa bao - weight 600
+Tư chất quyền pháp +10
+1422 - Hảo sử biển đam - weight 600
+Tư chất thương pháp +10
+1423 - Phách sài hảo thủ - weight 600
+Tư chất đao pháp +10
+1424 - Hảo ngoạn oa sạn - weight 600
+Tư chất kiếm pháp +10
+1528 - Thủy hương hài tử - weight 600
+Thủy linh căn +10
+        Mị lực +50
+1529 - Sâm lâm hài tử - weight 600
+Mộc linh căn +10
+        Mị lực +50
+1530 - Chích viêm hài tử - weight 600
+Hỏa linh căn +10
+        Mị lực +50
+1531 - Sơn khâu hài tử - weight 600
+Thổ linh căn +10
+        Mị lực +50
+1532 - Truy phong hài tử - weight 600
+Phong linh căn +10
+        Mị lực +50
+1533 - Lôi đình hài tử - weight 600
+Lôi linh căn +10
+        Mị lực +50
+1601 - Tiểu đan đồng - weight 600
+Tư chất luyện đan +12
+1607 - Khám dư sư - weight 600
+Tư chất phong thủy +25
+1609 - Thiết tượng nhi tử - weight 0
+Tư chất luyện khí +15
+Mị lực -50
+2413 - Trường thọ khu - weight 0
+Thọ mệnh +20
+Thể chất +10
+Mị lực +100
+Chính đạo +100
+2503 - Đan thân quý tộc - weight 800
+Mị lực +100
+        Danh vọng +150
+2504 - Hống thanh như lôi - weight 800
+        Công kích +5
+        Mị lực -50
+        Danh vọng +50
+2602 - Vân du thiên hạ - weight 600
+Mị lực +150
+        Danh vọng +100
+2604 - Hạo nhiên chính khí - weight 600
+Danh vọng +100
+        Mị lực +100
+        Chính đạo +100,
+2605 - Tà khí ngoại lộ - weight 600
+Danh vọng +100
+        Mị lực +100
+        Ma đạo +100
+1005 - Tiếu diện nhân - weight 0
+Mị lực +100
+Chính đạo +100
+Xám
+
+
+1102 - Hồi hương đậu - weight 300
+        May mắn +20
+Thọ mệnh -10
+1201 - Trư đột - weight 300
+        Công kích +6
+        Phòng ngự -4
+1202 - Mộc tượng - weight 300
+        Công kích -1
+        Ngộ tính +20
+1302 - Vi nhân chính phái - weight 300
+Chính đạo +50
+        Mị lực +100
+1513 - Vô cụ lôi giả - weight 800
+Lôi linh căn +5
+1514 - Ấu niên ngoạn hỏa - weight 800
+Hỏa linh căn +5
+1515 - Thiện thủy chi nhân - weight 800
+Thủy linh căn +5
+1516 - Cổn thổ ngoan đồng - weight 800
+Thổ linh căn +5
+1517 - Hỉ hảo mộc thực - weight 800
+Mộc linh căn +5
+1518 - Ái phóng phong tranh - weight 800
+Phong linh căn +5
+1605 - Quỷ họa phù - weight 800
+Tư chất phong thủy +10
+Tinh lực +10
+1606 - Thiển thức quái tượng - weight 800
+Tư chất phong thủy +10
+        May mắn +10
+1704 - Hàm nhân - weight 800
+        Ngộ tính -10
+        Mị lực +200
+1705 - Nạo tử - weight 800
+        Ngộ tính -10
+Tâm tình khôi phục rất nhanh
+1706 - Trí kế quá nhân - weight 800
+        Ngộ tính +10
+        May mắn -10
+        Mị lực +100
+1710 - Vũ văn lộng mặc - weight 1000
+        Tư chất công pháp -5
+        Ngộ tính +25
+1711 - Thư hương môn đệ - weight 1000
+        Tư chất công pháp -3
+        Ngộ tính +20
+1712 - Vũ đao lộng thương - weight 1000
+        Tư chất công pháp +3
+        Ngộ tính -5
+1713 - Võ đạo thế gia - weight 1000
+        Tư chất công pháp +3
+        Ngộ tính -5
+2601 - Tả phiết tử - weight 800
+        Ngộ tính +15
+        Danh vọng -50
+2603 - Thiên mệnh giả tằng tôn - weight 800
+        May mắn -5
+        Mị lực +150

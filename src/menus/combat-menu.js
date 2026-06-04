@@ -152,7 +152,11 @@ function buildCombatLog(turns, maxLines = 14) {
  */
 function getDangerRating(player, monster) {
   const playerPower = (player.atk || 10) + (player.def || 5) + (player.max_hp || 100) / 10;
-  const monsterPower = (monster.atk || 10) + (monster.def || 5) + (monster.hp || 100) / 10;
+  const eqB = monster.equipment_bonus || {};
+  const mAtk = (monster.atk || 10) + (eqB.atk || 0);
+  const mDef = (monster.def || 5) + (eqB.def || 0);
+  const mHp = (monster.hp || 100) + (eqB.hp || 0);
+  const monsterPower = mAtk + mDef + mHp / 10;
   const ratio = monsterPower / playerPower;
   if (ratio < 0.5) return { stars: '⭐', text: 'Dễ dàng', color: '#22C55E' };
   if (ratio < 0.8) return { stars: '⭐⭐', text: 'Bình thường', color: '#3B82F6' };
@@ -195,6 +199,40 @@ async function showCombatPreview(interaction, player, monster, confirmAction, ba
   };
   const elementText = elementNames[monster.element] || '⚪ Vô Thuộc Tính';
 
+  // Build skills text
+  const { getSkillById: getSkillConfig } = require('../../config/skills');
+  let skillsText = '';
+  if (monster.skills && monster.skills.length > 0) {
+    const skillNames = monster.skills.map(sid => {
+      const sk = getSkillConfig(sid);
+      return sk ? `${sk.emoji || '💥'} ${sk.name}` : null;
+    }).filter(Boolean);
+    if (skillNames.length > 0) skillsText = skillNames.join(', ');
+  }
+  if (monster.boss_skills && monster.boss_skills.length > 0) {
+    const bossSkillsConfig = require('../../config/boss-skills');
+    const bsNames = monster.boss_skills.map(sid => {
+      const sk = bossSkillsConfig.getBossSkillById(sid);
+      return sk ? `${sk.emoji || '💀'} ${sk.name}` : null;
+    }).filter(Boolean);
+    if (bsNames.length > 0) skillsText += (skillsText ? ', ' : '') + bsNames.join(', ');
+  }
+  if (!skillsText) skillsText = '_Không có kỹ năng đặc biệt_';
+
+  // Equipment bonus text
+  const eqB = monster.equipment_bonus || {};
+  const totalHp = monster.hp + (eqB.hp || 0);
+  const totalAtk = monster.atk + (eqB.atk || 0);
+  const totalDef = monster.def + (eqB.def || 0);
+  const totalSpd = monster.speed + (eqB.speed || 0);
+  const eqParts = [];
+  if (eqB.atk) eqParts.push(`⚔️+${eqB.atk}`);
+  if (eqB.def) eqParts.push(`🛡️+${eqB.def}`);
+  if (eqB.hp) eqParts.push(`❤️+${eqB.hp}`);
+  if (eqB.speed) eqParts.push(`💨+${eqB.speed}`);
+  if (eqB.crit_rate) eqParts.push(`💥+${eqB.crit_rate}%`);
+  const eqText = eqParts.length > 0 ? `║ 🎽 Trang bị: ${eqParts.join(' ')}\n` : '';
+
   const embed = new EmbedBuilder()
     .setColor(danger.color)
     .setTitle(`${monster.emoji} ${monster.name}`)
@@ -206,10 +244,13 @@ async function showCombatPreview(interaction, player, monster, confirmAction, ba
       `║ 🏔️ Cảnh giới: Cấp **${monster.realm_level}**\n` +
       `║ ${elementText}\n` +
       `╠══════════════════════════════════╣\n` +
-      `║ ❤️ HP: **${formatNumber(monster.hp)}**\n` +
-      `║ ⚔️ ATK: **${formatNumber(monster.atk)}**\n` +
-      `║ 🛡️ DEF: **${formatNumber(monster.def)}**\n` +
-      `║ 💨 SPD: **${formatNumber(monster.speed)}**\n` +
+      `║ ❤️ HP: **${formatNumber(totalHp)}**${eqB.hp ? ` (${formatNumber(monster.hp)}+${eqB.hp})` : ''}\n` +
+      `║ ⚔️ ATK: **${formatNumber(totalAtk)}**${eqB.atk ? ` (${formatNumber(monster.atk)}+${eqB.atk})` : ''}\n` +
+      `║ 🛡️ DEF: **${formatNumber(totalDef)}**${eqB.def ? ` (${formatNumber(monster.def)}+${eqB.def})` : ''}\n` +
+      `║ 💨 SPD: **${formatNumber(totalSpd)}**${eqB.speed ? ` (${monster.speed}+${eqB.speed})` : ''}\n` +
+      (eqText ? `╠══════════════════════════════════╣\n${eqText}` : '') +
+      `╠══════════════════════════════════╣\n` +
+      `║ 🎯 Kỹ năng: ${skillsText}\n` +
       `╠══════════════════════════════════╣\n` +
       `║ ⚠️ Mức nguy hiểm: ${danger.stars}\n` +
       `║ 📊 Đánh giá: **${danger.text}**\n` +
@@ -359,11 +400,10 @@ async function executeHunt(interaction, player) {
   const monster = cache.monster;
   interaction.client._combatPreviewCache.delete(interaction.user.id);
 
-  // Boss → interactive combat
-  if (monster.is_boss) {
-    return startInteractiveBossFight(interaction, player, monster);
-  }
+  // TẤT CẢ chiến đấu → interactive combat (theo lượt)
+  return startInteractiveBossFight(interaction, player, monster);
 
+  // === Legacy auto-combat (không còn sử dụng) ===
   // Chạy chiến đấu qua combat engine (fallback nội bộ nếu chưa sẵn sàng)
   let combatResult;
   try {
@@ -544,11 +584,10 @@ async function executeBeastHunt(interaction, player) {
   const monster = cache.monster;
   interaction.client._combatPreviewCache.delete(interaction.user.id);
 
-  // Boss → interactive combat
-  if (monster.is_boss) {
-    return startInteractiveBossFight(interaction, player, monster);
-  }
+  // TẤT CẢ chiến đấu → interactive combat (theo lượt)
+  return startInteractiveBossFight(interaction, player, monster);
 
+  // === Legacy auto-combat (không còn sử dụng) ===
   // Chạy chiến đấu
   let combatResult;
   try {
@@ -958,7 +997,7 @@ async function startInteractiveBossFight(interaction, player, monster) {
 
   await interaction.update({
     embeds: [embed],
-    components: [buttons],
+    components: Array.isArray(buttons) ? buttons : [buttons],
     files: [],
   });
 }
